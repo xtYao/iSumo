@@ -10,10 +10,10 @@ tryCatch({
     library(UniProt.ws)
     library(gProfileR)
     library(rJava)
-    # library(RWeka)
-    # WPM('install-package','alternatingDecisionTrees')
-    # WPM('load-package','alternatingDecisionTrees')
-    # LADTree = make_Weka_classifier('weka/classifiers/trees/LADTree')
+    library(RWeka)
+    WPM('install-package','alternatingDecisionTrees')
+    WPM('load-package','alternatingDecisionTrees')
+    LADTree = make_Weka_classifier('weka/classifiers/trees/LADTree')
     library(h2o)
 }, error=function(e) {
     print("At least one required package failed to load.")
@@ -30,7 +30,7 @@ tryCatch({
 taxId = readline(prompt = "Type the taxonomical ID of the organism: ")
 orgMap = setNames(c("hsapiens"), c("9606"))
 
-
+## download ref proteome from Uniprot
 uniprotTab = paste("data/", taxId, ".tab", sep="")
 
 if (file.exists(uniprotTab)){
@@ -86,15 +86,22 @@ if (file.exists(uniprotTab)){
         saveRDS(proteome,
                 paste("./data/",
                       paste(taxId, "proteome", "rds", sep="."), sep = ""))
+    } else if (taxId == "559292") {
+        print("analyzing S cerevisiae (S288c) data.")
     }
 } else {
     stop("Download Uniprot ref proteome in tab-delimited file first!")
 }
 
 ## task 2: assemble training labels of SUMO substrates
-sumo = fread("data/hsSumoData.txt")
-sumo$uniprotKb = gconvert(sumo$ENSG, organism = taxId,
-                          target = "UNIPROTSWISSPROT")$target
+sumo = fread(paste("data/", taxId, ".sumo.txt", sep = ""))
+if (taxId=="9606") {
+
+}
+
+
+
+
 
 ## task 3: use gProfileR to find significant terms
 gprofiler()
@@ -111,7 +118,7 @@ goConn2 = dbConnect(mysql, user='go_select', password='',
 ## download protein links file from website
 stringDb = fread("data/9606.protein.links.v10.txt")
 ## mapping from ENSP to UniprotKb
-gconvert(proteome[, uniprotKb], organism = orgMap[taxId], target = "ENSP")
+ensp = 
 
 ## task 4: pre-compute GPS-SUMO
 seq = select(x = up, columns = c("UNIPROTKB", "SEQUENCE"),
