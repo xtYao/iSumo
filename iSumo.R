@@ -281,6 +281,116 @@ write.table(iSumoData, paste("data/",taxId,".iSumo.txt",sep=""),
 			quote = F, row.names = F, sep = "\t")
 
 ## Part 2: fitting RF
-
+if (taxId == "9606"){
+	## fitting the model in a pre-optimized way
+	rf = h2o.randomForest(x = 3:(nc-1), y = "isSumo",
+						  training_frame = train,
+						  validation_frame = valid,
+						  balance_classes = T,
+						  nfolds = 10,
+						  keep_cross_validation_predictions = T,
+						  keep_cross_validation_fold_assignment = T,
+						  ntrees = 200,
+						  #stopping_rounds = 3,
+						  score_each_iteration = T,
+						  seed = 123,
+						  max_depth = 30)
+	
+	## null model to compare to: using only GPS-SUMO counts
+	## to make fair comparison, constructed in the EXACT same way
+	rf.null = h2o.randomForest(x = names(gpsCount)[-1], y = "isSumo",
+							   training_frame = train,
+							   validation_frame = valid,
+							   balance_classes = T,
+							   nfolds = 10,
+							   keep_cross_validation_predictions = T,
+							   keep_cross_validation_fold_assignment = T,
+							   ntrees = 200,
+							   #stopping_rounds = 3,
+							   score_each_iteration = T,
+							   seed = 123,
+							   max_depth = 30)
+}
 
 ## part 3: visualize results
+## ROC curve, for either model, plot 10-CV in grey, validation in dotted 
+## red/blue, and test in solid red/blue. Add guideline y=x.
+plotRoc = function(predLabelList, col=grey(0.25), roc=T, cv=F, dashed=F){
+	## make performance measure
+	pred = prediction(predLabelList[[1]], predLabelList[[2]])
+	if (roc) perf = performance(pred, 'tpr', 'fpr') else
+		perf = performance(Pred, 'prec', 'rec')
+	
+	## set line type
+	lType = ifelse(dashed, 2, 1)
+	
+	## plot
+	if (!cv){
+		if (dev.cur()==1) {
+			plot(perf, col=col, lty=lType)
+		} else {
+			plot(perf, col=col, lty=lType, add=T)
+		}
+	} else {
+		if (dev.cur()==1) plot(perf, col='grey', lwd=0.2) else
+			plot(perf, col='grey', lwd=0.2, add=T)
+		##plot(Perf, avg='vertical', col=grey(0.3), add=T)
+	}
+}
+
+## plotting
+## rf: cv --> valid --> test
+getModelPred = function(x, train, valid, test){
+	pred = list()
+	
+	## get CV models predictions
+	cvFold = as.data.frame(
+		h2o.cross_validation_fold_assignment(x))$fold_assignment
+	cvPred = lapply(h2o.cross_validation_predictions(x),
+					function(y) as.data.frame(y))
+	for (i in 1:length(cvPred)){
+		thisName = paste("cv",i,sep="_")
+		thisPred = as.data.frame(cvPred[[i]])[cvFold==(i-1), 3]
+		thisLabel = as.data.frame(train)[cvFold==(i-1), "isSumo"]
+		pred[[thisName]] = list(thisPred, thisLabel)
+	}
+	
+	## get valid predictions
+	validPred = as.data.frame(h2o.predict(x, valid))[, 3]
+	validLabel = as.data.frame(valid)[, "isSumo"]
+	pred$valid = list(validPred, validLabel)
+	
+	## get test predictions
+	testPred = as.data.frame(h2o.predict(x, test))[, 3]
+	testLabel = as.data.frame(test)[, "isSumo"]
+	pred$test = list(testPred, testLabel)
+	
+	return(pred)
+}
+
+## make ROC, and P-R curves
+pred = getModelPred(rf, train, valid, test)
+pred.null = getModelPred(rf.null, train, valid, test)
+
+for (pr in names(pred)) {
+	thisPred = pred[[pr]]
+	thisPred.null = pred.null[[pr]]
+	if (grepl("cv",pr)){
+		plotRoc(thisPred, roc = T, cv = T)
+		plotRoc(thisPred.null, roc = T, cv = T)
+	} else if (pr=="valid"){
+		plotRoc(thisPred, roc = T, cv = F, dashed = T, col = "red")
+		plotRoc(thisPred.null, roc = T, cv = F, dashed = T, col = "blue")
+	} else {
+		plotRoc(thisPred, roc = T, cv = F, dashed = F, col = "red")
+		plotRoc(thisPred.null, roc = T, cv = F, dashed = F, col = "blue")
+	}
+}
+## some garnish
+abline(a = 0, b = 1, lty=3, lwd=0.5, col=grey(0.25))
+legend(x = 0.7, y = 0.3,fill = c("red","blue","white","white"),lty = c(0,0,2,1),
+	   border = F, bty = "n", cex = 1.15, xjust = 0.5, y.intersp = 1.25,
+	   legend = c("iSUMO","seq motif only","validation set","test set"))
+title(main = "Receiver operating characteristics (ROC)
+of iSUMO model versus with only predicted sequence motif")
+
