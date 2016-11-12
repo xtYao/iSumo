@@ -32,10 +32,11 @@ orgMap = setNames(c("hsapiens","scerevisiae"),
 
 ## download ref proteome from Uniprot
 uniprotTab = paste("data/", taxId, ".tab", sep="")
+proteome = fread(uniprotTab)
 
 if (file.exists(uniprotTab)){
     up = UniProt.ws(taxId = as.numeric(taxId))
-    proteome = fread(uniprotTab)
+
     
     ## munging: unify column names
     if (taxId == "9606") {
@@ -83,25 +84,57 @@ if (file.exists(uniprotTab)){
         write.table(proteome, 
                     gsub(".tab", ".mod.tab", uniprotTab),
                     quote=F, sep = "\t", row.names = F)
-        saveRDS(proteome,
-                paste("./data/",
-                      paste(taxId, "proteome", "rds", sep="."), sep = ""))
     } else if (taxId == "559292") {
         print("analyzing S cerevisiae (S288c) data.")
+    	
+    	##
+    	names(proteome) = gsub(pattern = "Entry",
+    						   replacement = "uniprotKb", x = names(proteome))
+    	names(proteome) = gsub(pattern = "Protein names",
+    						   replacement = "protein", x = names(proteome))
+    	names(proteome) = gsub(pattern = "Cross-reference",
+    						   replacement = "", x = names(proteome))
+    	names(proteome) = gsub(pattern = " (GeneID)",
+    						   replacement = "geneId",
+    						   x = names(proteome), fixed = T)
+    	names(proteome) = gsub(pattern = " (SGD)",
+    						   replacement = "sgd",
+    						   x = names(proteome), fixed = T)
+    	
+    	## use primary gene name, if empty use first item in gene names
+    	proteome[, gene := `Gene names  (primary )`]
+    	proteome[, gene := ifelse(nchar(gene)!=0 & !grepl(";", gene), gene,
+    			sapply(strsplit(proteome$`Gene names`[1:10], " "), head, 1))]
+    	
+    	## remove semi colons from sgd and geneId
+    	proteome[, geneId := gsub(";", "", x = geneId)]
+    	proteome[, sgd := gsub(";", "", x = sgd)]
+    	
+    	## convert Mass and Annotation to numeric
+    	proteome[, Mass := as.numeric(gsub(",","",Mass))]
+    	proteome[, Annotation :=
+    		as.numeric( sapply(strsplit(Annotation, split = " "), head, 1) )]
+    	
+    	## get rid of the duplicated sgd
+    	proteome = proteome[!duplicated(sgd), .(uniprotKb, sgd, gene,
+    											protein, geneNames=`Gene names`,
+    											Length, Mass,
+    											Status, Annotation)]
+    	setkey(proteome, "uniprotKb")
     }
 } else {
     stop("Download Uniprot ref proteome in tab-delimited file first!")
 }
+saveRDS(proteome,
+		paste("./data/",
+			  paste(taxId, "proteome", "rds", sep="."), sep = ""))
+
 
 ## task 2: assemble training labels of SUMO substrates
 sumo = fread(paste("data/", taxId, ".sumo.txt", sep = ""))
-if (taxId=="9606") {
-    setkey(sumo, uniprotKb)
-    sumo[, hits := rowSums(sumo[, -("uniprotKb"), with=F])]
-    sumo[, isSumo := hits>0]
-} else if (taxId == "559292") {
-    print("gathering yeast sumo labels.")
-}
+setkey(sumo, uniprotKb)
+sumo[, hits := rowSums(sumo[, -("uniprotKb"), with=F])]
+sumo[, isSumo := hits>0]
 
 ## task 3: use gProfileR to find significant terms
 enrich = gprofiler(query = sumo[isSumo==T, uniprotKb],
@@ -109,13 +142,17 @@ enrich = gprofiler(query = sumo[isSumo==T, uniprotKb],
                    exclude_iea = T, custom_bg = proteome$uniprotKb,
                    significant = F)
 enrich = data.table(enrich)
+
 if(taxId == "9606"){
 	sigGo = enrich[domain %in% c("MF", "CC", "BP") & 
 				   significant==T & term.size<2000 &
 				   	!grepl("sumo", term.name),
 				   .(term.id, term.name, term.size, p.value)]
 } else if (taxId == "599292") {
-	print("yeast GO term enrichment.")
+	sigGo = enrich[domain %in% c("MF", "CC", "BP") &
+				   	term.size>5 & term.size<1000 &
+				   	significant==T & !grepl("sumo", term.name),
+				   .(term.id, term.name, term.size, p.value)]
 }
 setkey(sigGo, term.name)
 
@@ -127,9 +164,12 @@ getUniprotKbByTermId = function(term.id, taxId="9606"){
     
     ## set up GO MySQL connection
     mysql = dbDriver("MySQL")
-    goConn2 = dbConnect(mysql, user='go_select', password='',
-                        host='spitz.lbl.gov', dbname='go_latest')
-
+#    goConn2 = dbConnect(mysql, user='go_select', password='',
+ #                       host='spitz.lbl.gov', dbname='go_latest')
+	goConn2 = dbConnect(mysql, user='go_select', password='amigo',
+					   host='mysql-amigo.ebi.ac.uk', port=4085,
+					   dbname='go_latest')
+    
     ## set up query
     stmtUniprotKbByTermId = sprintf(
         "SELECT DISTINCT dbxref.xref_key AS uniprotKb
@@ -159,37 +199,71 @@ getUniprotKbByTermId = function(term.id, taxId="9606"){
 }
 
 ## expand proteome with GO assocaition
-goMat = as.data.table(lapply(getUniprotKbByTermId(sigGo$term.id, taxId), 
-                             function(x) proteome$uniprotKb %in% x))
-goMat = proteome[, .(uniprotKb)]
-for (id in sigGo$term.id){
-    res = getUniprotKbByTermId(id, taxId)
-    goMat[[sigGo[term.id==id, term.name]]] = goMat$uniprotKb %in% res[[id]]
-}
+goMat = as.data.table(lapply(getUniprotKbByTermId(sigGo$term.id, taxId),        
+							 function(x) proteome$uniprotKb %in% x))
+colnames(goMat) = sigGo[term.id %in% colnames(goMat), term.name]
+# goMat$uniprotKb = proteome[, .(uniprotKb)]
+# for (id in sigGo$term.id){
+#     res = getUniprotKbByTermId(id, taxId)
+#     goMat[[sigGo[term.id==id, term.name]]] = goMat$uniprotKb %in% res[[id]]
+# }
 write.table(goMat, paste("data/", taxId, ".goMat.txt", sep = ""),
             quote = F, row.names = F, sep = "\t")
 
 ## task 5: retrieve STRING database
 ## download protein links file from website
-protInteract = fread("data/9606.protein.actions.v10.txt")
-protInteract = protInteract[mode=="binding",
-							.(p1=item_id_a, p2=item_id_b)]
-if (any(grepl("\\.", protInteract$p1))){
-	protInteract$p1 = sapply(strsplit(protInteract$p1, split = "\\."),
-							 function(x) x[2])
-	protInteract$p2 = sapply(strsplit(protInteract$p2, split = "\\."),
-							 function(x) x[2])
+if (taxId=="9606"){
+	protInteract = fread("data/9606.protein.actions.v10.txt")
+	protInteract = protInteract[mode=="binding",
+								.(p1=item_id_a, p2=item_id_b)]
+	if (any(grepl("\\.", protInteract$p1))){
+		protInteract$p1 = sapply(strsplit(protInteract$p1, split = "\\."),
+								 function(x) x[2])
+		protInteract$p2 = sapply(strsplit(protInteract$p2, split = "\\."),
+								 function(x) x[2])
+	}
+	## mapping from ENSP to UniprotKb
+	ensp = fread(paste("data/", taxId, ".uniprotKb2ensp.txt", sep=""))
+	setkey(ensp, ensp)
+	protInteract$u1 = ensp[protInteract$p1, uniprotKb]
+	protInteract$u2 = ensp[protInteract$p2, uniprotKb]
+	protInteract = protInteract[!is.na(u1) & !is.na(u2), .(u1, u2)]
+	write.table(protInteract, paste("data/", taxId, ".stringInt.txt", sep=""),
+				quote = F, sep = "\t", row.names = F)
+	
+} else if (taxId=="559292") {
+	## NOTE: STRING db doesn't have data for 559292 (S288c), but only 4932 (S.
+	## cerevisiae). We will use that instead.
+	protInteract = fread("data/4932.protein.actions.v10.txt")
+	protInteract = protInteract[mode=="binding",
+								.(p1=item_id_a, p2=item_id_b)]
+	if (any(grepl("\\.", protInteract$p1))){
+		protInteract$p1 = sapply(strsplit(protInteract$p1, split = "\\."),
+								 function(x) x[2])
+		protInteract$p2 = sapply(strsplit(protInteract$p2, split = "\\."),
+								 function(x) x[2])
+	}
+	
+	## mapping of ORF name and sgd
+	sysName = read.table("data/sysNameSgdMapping.csv",
+						 sep = " ", quote = '"', header = T)
+	sysName = as.data.table(sysName)[reason=="MATCH"]
+	setkey(sysName, "secondaryIdentifier")
+	
+	protInteract$s1 = sysName[protInteract$p1, as.character(primaryIdentifier)]
+	protInteract$s2 = sysName[protInteract$p2, as.character(primaryIdentifier)]
+	sgd2uniprotKb = do.call("rbind",
+							lapply(unique(c(protInteract$s1, protInteract$s2)),
+				function(x) proteome[grepl(x, sgd), .(sgd, uniprotKb)]))
+	sgd2uniprotKb = sgd2uniprotKb[!duplicated(sgd)]
+	setkey(sgd2uniprotKb, "sgd")
+	protInteract$u1 = sgd2uniprotKb[protInteract$s1, uniprotKb]
+	protInteract$u2 = sgd2uniprotKb[protInteract$s2, uniprotKb]
+	protInteract = protInteract[!is.na(u1) & !is.na(u2), .(u1, u2)]
+	write.table(protInteract, paste("data/", taxId, ".stringInt.txt", sep=""),
+				quote = F, sep = "\t", row.names = F)
 }
-## mapping from ENSP to UniprotKb
-ensp = fread(paste("data/", taxId, ".uniprotKb2ensp.txt", sep=""))
-setkey(ensp, ensp)
-protInteract$u1 = ensp[protInteract$p1, uniprotKb]
-protInteract$u2 = ensp[protInteract$p2, uniprotKb]
-protInteract = protInteract[!is.na(u1) & !is.na(u2), .(u1, u2)]
-write.table(protInteract, paste("data/", taxId, ".stringInt.txt", sep=""),
-			quote = F, sep = "\t", row.names = F)
-
-## TODO: calculate degrees or find if they are recorded somewhere
+## calculate degrees
 ppiDegree = sapply(proteome$uniprotKb,
 				   function(x){
 				   	nrow(protInteract[u1==x | u2==x,])
@@ -218,6 +292,35 @@ if (taxId == "9606"){
 						  }))
 	humanComplex = as.data.table(humanComplex)
 	colnames(humanComplex) = c("nCorum", "avgCorumSz")
+} else if (taxId == "559292"){
+	## use the same dataset in A Baryshnikova 2016 yeast genetic interaction ppr
+	complexes = fread("data/559292.complexes.txt", sep = "\t")
+	## a list of complex compositions
+	cpxSubunits = setNames(
+		sapply(complexes$`ORFs annotated to complex`, strsplit, "; "),
+		complexes$`Protein Complex Name`)
+	
+	## change key for sysName
+	sysName$primaryIdentifier = as.character(sysName$primaryIdentifier)
+	sysName$secondaryIdentifier = as.character(sysName$secondaryIdentifier)
+	setkey(sysName, "primaryIdentifier")
+	
+	## convert into complex memberships
+	yeastComplex =
+		t(sapply(proteome$uniprotKb,
+				function(x){
+					xOrf = sysName[proteome[x, sgd], secondaryIdentifier]
+					inComp = which(sapply(cpxSubunits, function(y) xOrf %in% y))
+					nComp = length(inComp) # n comp has the prot
+					avgCompSz = 0
+					if (nComp != 0){
+						avgCompSz = # avg n subunit per comp
+						mean(sapply(cpxSubunits[inComp], length))
+					}
+					return(c(nComp, avgCompSz))
+				}))
+	yeastComplex = as.data.table(yeastComplex)
+	colnames(yeastComplex) = c("nComp", "avgCompSz")
 }
 
 ## task 7: phosphosite
@@ -235,17 +338,27 @@ if (taxId == "9606"){
 	acetCount = acet[, table(ACC_ID)]
 	ubiqCount = ubiq[, table(ACC_ID)]
 	
-	## construct feature vectors
-	ptmMat = proteome[, .(uniprotKb)]
-	ptmMat[, nPhos := 
-		   	ifelse(uniprotKb %in% names(phosCount), phosCount[uniprotKb], 0)]
-	ptmMat[, nMeth := 
-		   	ifelse(uniprotKb %in% names(methCount), methCount[uniprotKb], 0)]
-	ptmMat[, nAcet := 
-		   	ifelse(uniprotKb %in% names(acetCount), acetCount[uniprotKb], 0)]
-	ptmMat[, nUbiq := 
-		   	ifelse(uniprotKb %in% names(ubiqCount), ubiqCount[uniprotKb], 0)]
+} else if (taxId == "559292"){
+	## no phosphosite data, use dbPTM data instead
+	dbPTM = fread("data/dbPTM3.txt")
+	yeastPtm = dbPTM[V2 %in% proteome$uniprotKb]
+	
+	phosCount = yeastPtm[V8=="Phosphorylation", table(V2)]
+	methCount = yeastPtm[V8=="Methylation", table(V2)]
+	acetCount = yeastPtm[V8=="Acetylation", table(V2)]
+	ubiqCount = yeastPtm[V8=="Ubiquitylation", table(V2)]
+	
 }
+## construct feature vectors
+ptmMat = proteome[, .(uniprotKb)]
+ptmMat[, nPhos := 
+	   	ifelse(uniprotKb %in% names(phosCount), phosCount[uniprotKb], 0)]
+ptmMat[, nMeth := 
+	   	ifelse(uniprotKb %in% names(methCount), methCount[uniprotKb], 0)]
+ptmMat[, nAcet := 
+	   	ifelse(uniprotKb %in% names(acetCount), acetCount[uniprotKb], 0)]
+ptmMat[, nUbiq := 
+	   	ifelse(uniprotKb %in% names(ubiqCount), ubiqCount[uniprotKb], 0)]
 
 ## task 8: pre-compute GPS-SUMO
 seq = select(x = up, columns = c("UNIPROTKB", "SEQUENCE"),
@@ -257,7 +370,8 @@ writeLines(seq[, paste(">", UNIPROTKB, "\n", SEQUENCE, "\n", sep="")],
 ## Manual step: feed the sequences into GPS-SUMO 2.0 web server
 ## download the result as text and rename it ./data/[taxId].gps.txt
 gps = fread(paste("data/",taxId,".gps.txt", sep=""))
-gpsCount = data.table(dcast(gps, ID ~ Type)); setkey(gpsCount, ID)
+gpsCount = data.table(dcast(gps, ID ~ Type, value.var = "Type"))[,1:4,with=F]
+setkey(gpsCount, ID)
 gpsSumo = do.call(rbind, 
 				  lapply(proteome$uniprotKb,
 				  	   function(x){
@@ -272,11 +386,20 @@ gpsSumo = do.call(rbind,
 ## finally, put together the full dataset
 ## TODO: hardcoded for human, make it generic
 ## TODO: rerun
-iSumoData = cbind(proteome[, .(uniprotKb, symbol, Length, Mass)],
-				  goMat[,-1,with=F], ## GO annotation
-				  ptmMat[,-1,with=F],
-				  ppiDegree, humanComplex, 
-				  gpsSumo, sumo[, .(isSumo)])
+if (taxId=="9606"){
+	iSumoData = cbind(proteome[, .(uniprotKb, symbol, Length, Mass)],
+					  goMat[,-1,with=F], ## GO annotation
+					  ptmMat[,-1,with=F],
+					  ppiDegree, humanComplex, 
+					  gpsSumo, sumo[, .(isSumo)])
+} else if (taxId=="559292"){
+	iSumoData = cbind(proteome[, .(uniprotKb, sgd, Length, Mass)],
+					  goMat[, , with=F],
+					  ptmMat[, -1, with=F],
+					  ppiDegree = ppiDegree[proteome$uniprotKb],
+					  yeastComplex,
+					  gpsSumo, sumo[, .(isSumo)])
+}
 write.table(iSumoData, paste("data/",taxId,".iSumo.txt",sep=""),
 			quote = F, row.names = F, sep = "\t")
 
@@ -284,6 +407,35 @@ write.table(iSumoData, paste("data/",taxId,".iSumo.txt",sep=""),
 if (taxId == "9606"){
 	## fitting the model in a pre-optimized way
 	rf = h2o.randomForest(x = 3:(nc-1), y = "isSumo",
+						  training_frame = train,
+						  validation_frame = valid,
+						  balance_classes = T,
+						  nfolds = 10,
+						  keep_cross_validation_predictions = T,
+						  keep_cross_validation_fold_assignment = T,
+						  ntrees = 200,
+						  #stopping_rounds = 3,
+						  score_each_iteration = T,
+						  seed = 123,
+						  max_depth = 30)
+	
+	## null model to compare to: using only GPS-SUMO counts
+	## to make fair comparison, constructed in the EXACT same way
+	rf.null = h2o.randomForest(x = names(gpsCount)[-1], y = "isSumo",
+							   training_frame = train,
+							   validation_frame = valid,
+							   balance_classes = T,
+							   nfolds = 10,
+							   keep_cross_validation_predictions = T,
+							   keep_cross_validation_fold_assignment = T,
+							   ntrees = 200,
+							   #stopping_rounds = 3,
+							   score_each_iteration = T,
+							   seed = 123,
+							   max_depth = 30)
+} if (taxId == "559292") {
+	## fitting the model in a pre-optimized way
+	rf = h2o.randomForest(x = 2:(nc-1), y = "isSumo",
 						  training_frame = train,
 						  validation_frame = valid,
 						  balance_classes = T,
