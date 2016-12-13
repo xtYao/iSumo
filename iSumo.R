@@ -675,3 +675,8 @@ write.table(finalPrediction, paste(taxId, ".finalPrediction.csv", sep=""),
 			sep = "\t", row.names = F, quote = F)
 
 ## 
+
+
+
+##### SAVE WORKSPCE
+save.image(file = paste(taxId, "RData", sep = "."))
