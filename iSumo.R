@@ -136,6 +136,52 @@ setkey(sumo, uniprotKb)
 sumo[, hits := rowSums(sumo[, -("uniprotKb"), with=F])]
 sumo[, isSumo := hits>0]
 
+## stacked bar plot to show composition of hits
+meltSumo = melt(sumo[, 1:6, with=F]*sumo$hits)[value>0]
+
+reorder_size <- function(x, decreasing = FALSE) {
+  factor(x, levels = names(sort(table(x), decreasing = decreasing)))
+}
+
+g = ggplot(meltSumo, aes(x = reorder_size(variable, T), fill = value)) +
+#	labs(x = "", y = "Number of SUMOylated proteins found") +
+#	scale_colour_brewer(type = "qual", name = "Confirmed by") +
+	geom_bar(width = 0.6) +
+	theme(axis.line = element_line(size=1, colour = "black"), 
+        panel.grid.major = element_blank(), panel.grid.minor = element_blank(), 
+        panel.border = element_blank(), panel.background = element_blank())
+g
+
+#	geom_abline(slope = 0, intercept = 0) +
+	theme_bw(base_size = 16, base_family = "sans") + 
+	theme(axis.text.x =
+		  	element_text(size=16, ##angle = 90,
+		  				 hjust = 0, debug = T, vjust = 0),
+		  axis.text.y = element_text(size=16),
+		  axis.ticks.x = element_line(size = 0),
+		  axis.line =
+		  	element_line(size = 2, color = "black"),
+		  axis.title.y = element_text(size = 16),
+		  axis.title.x = element_blank(),
+		  legend.position = c(.8, .8),
+		  legend.text = element_text(size = 16),
+		  legend.title = element_text(size = 16),
+		  panel.border = element_blank(),
+#		  panel.border = element_rect(color = "black", size=1),
+		  panel.grid.major = element_blank(),
+		  panel.background = element_blank())
+		  #panel.margin = margin(0,0,0,0))
+g
+## add x y axis
+
+## tilt x values
+## bigger font
+## color palate
+## remove background
+
+## redo x y labels
+
+
 ## task 3: use gProfileR to find significant terms
 enrich = gprofiler(query = sumo[isSumo==T, uniprotKb],
                    organism = orgMap[taxId], ordered_query = F,
@@ -171,27 +217,51 @@ getUniprotKbByTermId = function(term.id, taxId="9606"){
 					   dbname='go_latest')
     
     ## set up query
-    stmtUniprotKbByTermId = sprintf(
-        "SELECT DISTINCT dbxref.xref_key AS uniprotKb
-        FROM term
-        INNER JOIN graph_path ON (term.id = graph_path.term1_id)
-        INNER JOIN association ON (graph_path.term2_id = association.term_id)
-        INNER JOIN gene_product ON (association.gene_product_id = gene_product.id)
-        INNER JOIN species ON (gene_product.species_id = species.id)
-        INNER JOIN dbxref ON (gene_product.dbxref_id = dbxref.id)
-        WHERE
-        acc = '%s'
-        AND
-        ncbi_taxa_id = '%s'
-        AND
-        dbxref.xref_dbname = 'UniprotKB'",
-        term.id, taxId)
+	if (taxId=="9606"){
+		stmtUniprotKbByTermId = sprintf(
+			"SELECT DISTINCT dbxref.xref_key AS uniprotKb
+			FROM term
+			INNER JOIN graph_path ON (term.id = graph_path.term1_id)
+			INNER JOIN association ON (graph_path.term2_id = association.term_id)
+			INNER JOIN gene_product ON (association.gene_product_id = gene_product.id)
+			INNER JOIN species ON (gene_product.species_id = species.id)
+			INNER JOIN dbxref ON (gene_product.dbxref_id = dbxref.id)
+			WHERE
+			acc = '%s'
+			AND
+			ncbi_taxa_id = '%s'
+			AND
+			dbxref.xref_dbname = 'UniprotKB'",
+			term.id, taxId)
+	} else if (taxId=="559292"){
+		stmtUniprotKbByTermId = sprintf(
+			"SELECT DISTINCT dbxref.xref_key AS sgd
+			FROM term
+			INNER JOIN graph_path ON (term.id = graph_path.term1_id)
+			INNER JOIN association ON (graph_path.term2_id = association.term_id)
+			INNER JOIN gene_product ON (association.gene_product_id = gene_product.id)
+			INNER JOIN species ON (gene_product.species_id = species.id)
+			INNER JOIN dbxref ON (gene_product.dbxref_id = dbxref.id)
+			WHERE
+			acc = '%s'
+			AND
+			ncbi_taxa_id = '%s'
+			AND
+			dbxref.xref_dbname = 'SGD'",
+			term.id, taxId)
+	} else {
+		stop("Not yet implemented for this organism!!!")
+	}
     
     ## execute the query and return a list
     ## of the same length of term.id, each element is a char vec of UniprotKb
     res = lapply(stmtUniprotKbByTermId,
              function(x){
-                 dbGetQuery(goConn2, x)$uniprotKb
+             	if (taxId=="9606"){
+             		dbGetQuery(goConn2, x)$uniprotKb
+             	} else {
+             		dbGetQuery(goConn2, x)$sgd
+             	}
              })
     res = setNames(res, term.id)
     dbDisconnect(goConn2)
@@ -199,8 +269,8 @@ getUniprotKbByTermId = function(term.id, taxId="9606"){
 }
 
 ## expand proteome with GO assocaition
-goMat = as.data.table(lapply(getUniprotKbByTermId(sigGo$term.id, taxId),        
-							 function(x) proteome$uniprotKb %in% x))
+goMat = as.data.table(lapply(getUniprotKbByTermId(sigGo$term.id, taxId),
+							 function(x) proteome$sgd %in% x))
 colnames(goMat) = sigGo[term.id %in% colnames(goMat), term.name]
 # goMat$uniprotKb = proteome[, .(uniprotKb)]
 # for (id in sigGo$term.id){
@@ -404,70 +474,56 @@ write.table(iSumoData, paste("data/",taxId,".iSumo.txt",sep=""),
 			quote = F, row.names = F, sep = "\t")
 
 ## Part 2: fitting RF
-if (taxId == "9606"){
-	## fitting the model in a pre-optimized way
-	rf = h2o.randomForest(x = 3:(nc-1), y = "isSumo",
-						  training_frame = train,
-						  validation_frame = valid,
-						  balance_classes = T,
-						  nfolds = 10,
-						  keep_cross_validation_predictions = T,
-						  keep_cross_validation_fold_assignment = T,
-						  ntrees = 200,
-						  #stopping_rounds = 3,
-						  score_each_iteration = T,
-						  seed = 123,
-						  max_depth = 30)
-	
-	## null model to compare to: using only GPS-SUMO counts
-	## to make fair comparison, constructed in the EXACT same way
-	rf.null = h2o.randomForest(x = names(gpsCount)[-1], y = "isSumo",
-							   training_frame = train,
-							   validation_frame = valid,
-							   balance_classes = T,
-							   nfolds = 10,
-							   keep_cross_validation_predictions = T,
-							   keep_cross_validation_fold_assignment = T,
-							   ntrees = 200,
-							   #stopping_rounds = 3,
-							   score_each_iteration = T,
-							   seed = 123,
-							   max_depth = 30)
-} if (taxId == "559292") {
-	## fitting the model in a pre-optimized way
-	rf = h2o.randomForest(x = 2:(nc-1), y = "isSumo",
-						  training_frame = train,
-						  validation_frame = valid,
-						  balance_classes = T,
-						  nfolds = 10,
-						  keep_cross_validation_predictions = T,
-						  keep_cross_validation_fold_assignment = T,
-						  ntrees = 200,
-						  #stopping_rounds = 3,
-						  score_each_iteration = T,
-						  seed = 123,
-						  max_depth = 30)
-	
-	## null model to compare to: using only GPS-SUMO counts
-	## to make fair comparison, constructed in the EXACT same way
-	rf.null = h2o.randomForest(x = names(gpsCount)[-1], y = "isSumo",
-							   training_frame = train,
-							   validation_frame = valid,
-							   balance_classes = T,
-							   nfolds = 10,
-							   keep_cross_validation_predictions = T,
-							   keep_cross_validation_fold_assignment = T,
-							   ntrees = 200,
-							   #stopping_rounds = 3,
-							   score_each_iteration = T,
-							   seed = 123,
-							   max_depth = 30)
-}
+source(paste(taxId, ".modelTuning.R", sep=""))
+fn = dir(paste("models/", taxId, ".rf.h2o", sep=""), full.names = T)
+rf = h2o.loadModel(fn)
+fn.null = dir(paste("models/", taxId, ".rf.null.h2o", sep=""))
+rf.null = h2o.loadModel(fn.null)
 
 ## part 3: visualize results
+####################
+## Figure 1. Stacked bar of number of SUMO proteins found in each paper,
+## decomposed into confirmed by X studies
+if (taxId == "9606"){
+	
+} else if (taxId == "559292"){
+	m1 = melt(data = sumo, id.vars = "hits", measure.vars = 1:6)
+	m2 = m1[hits>0 & value==TRUE, table(hits, variable)]
+	m3 = melt(m2, value.name = "nSumo")
+	m3$variable <- reorder(x = m3$variable, X = m3$nSumo, FUN = sum)
+	m3$hits = as.factor(m3$hits)
+}
+fig1 = ggplot(data = m3) +
+	geom_bar(mapping = aes(x = variable, y = nSumo, fill = hits),
+			 stat = "identity") +
+	ylab("Number of SUMOylated proteins") +
+	scale_fill_brewer(name="Number of studies\nin consensus", type = "seq",
+					  palette = "BuGn", direction = -1)+
+	theme(axis.line =
+		  	element_line(size=1, colour = "black",
+		  				 arrow = arrow(angle = 30,
+		  				 			  length = unit(x = 0.1, units = "inch"),
+		  				 			  type = "open", ends = "last")), 
+		  panel.grid.major = element_blank(),
+		  panel.grid.minor = element_blank(), 
+		  panel.border = element_blank(),
+		  panel.background = element_blank()) +
+	theme(axis.title.x = element_blank(),
+		  axis.title.y = element_text(size = 16),
+		  axis.text.x = element_text(size = 16),
+		  axis.text.y = element_text(size = 16),
+		  axis.ticks = element_blank()) +
+	theme(legend.position = c(0.2, 0.8),
+		  legend.text = element_text(size = 16),
+		  legend.key.size = unit(0.5, "inch"),
+		  legend.title = element_text(size = 16))
+fig1
+	
+###################
+## Figure2.
 ## ROC curve, for either model, plot 10-CV in grey, validation in dotted 
 ## red/blue, and test in solid red/blue. Add guideline y=x.
-plotRoc = function(predLabelList, col=grey(0.25), roc=T, cv=F, dashed=F){
+plotRoc = function(predLabelList, col=grey(0.25), roc=T, cv=F, dashed=F, lwd=1){
 	## make performance measure
 	pred = prediction(predLabelList[[1]], predLabelList[[2]])
 	if (roc) perf = performance(pred, 'tpr', 'fpr') else
@@ -479,9 +535,9 @@ plotRoc = function(predLabelList, col=grey(0.25), roc=T, cv=F, dashed=F){
 	## plot
 	if (!cv){
 		if (dev.cur()==1) {
-			plot(perf, col=col, lty=lType)
+			plot(perf, col=col, lty=lType, lwd = lwd)
 		} else {
-			plot(perf, col=col, lty=lType, add=T)
+			plot(perf, col=col, lty=lType, lwd = lwd, add=T)
 		}
 	} else {
 		if (dev.cur()==1) plot(perf, col='grey', lwd=0.2) else
@@ -524,25 +580,98 @@ getModelPred = function(x, train, valid, test){
 pred = getModelPred(rf, train, valid, test)
 pred.null = getModelPred(rf.null, train, valid, test)
 
+svg(filename=paste(taxId, ".ROC.svg", sep=""),
+	width=8, height=8,
+	pointsize=12)
+plot.new()
+par(cex=1, cex.lab=1, cex.main=1, tcl=-0.1)
 for (pr in names(pred)) {
 	thisPred = pred[[pr]]
 	thisPred.null = pred.null[[pr]]
 	if (grepl("cv",pr)){
+		## grey line: CV
 		plotRoc(thisPred, roc = T, cv = T)
 		plotRoc(thisPred.null, roc = T, cv = T)
 	} else if (pr=="valid"){
-		plotRoc(thisPred, roc = T, cv = F, dashed = T, col = "red")
-		plotRoc(thisPred.null, roc = T, cv = F, dashed = T, col = "blue")
+		## dashed line: valid
+		plotRoc(thisPred, roc = T, cv = F, dashed = T, col = "red", lwd=2)
+		plotRoc(thisPred.null, roc = T, cv = F, dashed = T, col = "blue", lwd=2)
 	} else {
-		plotRoc(thisPred, roc = T, cv = F, dashed = F, col = "red")
-		plotRoc(thisPred.null, roc = T, cv = F, dashed = F, col = "blue")
+		## solid line: test
+		plotRoc(thisPred, roc = T, cv = F, dashed = F, col = "red", lwd=3)
+		plotRoc(thisPred.null, roc = T, cv = F, dashed = F, col = "blue", lwd=3)
 	}
 }
 ## some garnish
+axis(side = 1, at = seq(0,5)/5, labels = seq(0,5)/5)
+axis(side = 2, at = seq(0,5)/5, labels = seq(0,5)/5)
+title(##main = "Receiver operating characteristics (ROC)
+##of iSUMO model versus with only predicted sequence motif", 
+	  xlab = "False positive rate", ylab = "True positive rate")
 abline(a = 0, b = 1, lty=3, lwd=0.5, col=grey(0.25))
-legend(x = 0.7, y = 0.3,fill = c("red","blue","white","white"),lty = c(0,0,2,1),
-	   border = F, bty = "n", cex = 1.15, xjust = 0.5, y.intersp = 1.25,
+legend(x = 0.7, y = 0.3,
+	   fill = c("red","blue",rgb(0, 0, 0, 0),rgb(0, 0, 0, 0)),lty = c(0,0,2,1),
+	   border = F, bty = "n", xjust = 0.5, y.intersp = 1.25,
 	   legend = c("iSUMO","seq motif only","validation set","test set"))
-title(main = "Receiver operating characteristics (ROC)
-of iSUMO model versus with only predicted sequence motif")
+dev.off()
 
+#################################
+## Figure 3.
+## collect relative importance of features
+varImp = as.data.table(rf@model$variable_importances)
+## sort variable levels by importance
+varImp$variable = reorder(varImp$variable, varImp$relative_importance)
+
+svg(filename=paste(taxId, ".varImp.svg", sep=""),
+	width=8, height=8,
+	pointsize=12)
+plot.new()
+
+fig3 = ggplot(data = varImp[1:30]) +
+	geom_bar(mapping = aes(x = variable, y = scaled_importance),
+			 stat = "identity", width = 0.6) +
+	ylab(label = "Relative importance") +
+	xlab(label = "Variable name") +
+	theme(axis.line =
+		  	element_line(size=1, colour = "black",
+		  				 arrow = arrow(angle = 30,
+		  				 			  length = unit(x = 0.1, units = "inch"),
+		  				 			  type = "open", ends = "last")), 
+		  panel.grid.major = element_blank(),
+		  panel.grid.minor = element_blank(), 
+		  panel.border = element_blank(),
+		  panel.background = element_blank()) +
+	theme(axis.title.x = element_blank(),
+		  axis.title.y = element_text(size = 16),
+		  axis.text.x = element_text(size = 16),
+		  axis.text.y = element_text(size = 16),
+		  axis.ticks = element_blank()) +
+	coord_flip() +
+	theme(legend.position = c(0.2, 0.8),
+		  legend.text = element_text(size = 16),
+		  legend.key.size = unit(0.5, "inch"),
+		  legend.title = element_text(size = 16))
+print(fig3)
+dev.off()
+
+#################################
+## Table 
+finalPerformance = h2o.performance(rf, dt)
+## find the threshold maximizing F2 value
+threshold = as.data.table(
+	finalPerformance@metrics$max_criteria_and_metric_scores)[
+		metric=="max f2", threshold]
+
+## dt is the h2o frame used for model tuning
+finalPrediction = as.data.table(h2o.predict(rf, newdata = dt))[, -1, with=F]
+finalPrediction[, ":="(uniprotKb = proteome$uniprotKb,
+					   protein = proteome$protein,
+					   gene = proteome$gene,
+					   isSumo = iSumoData$isSumo)]
+finalPrediction$predict = finalPrediction$TRUE.>threshold
+setkey(finalPrediction, "uniprotKb")
+saveRDS(finalPrediction, paste(taxId, ".finalPrediction.rds", sep=""))
+write.table(finalPrediction, paste(taxId, ".finalPrediction.csv", sep=""),
+			sep = "\t", row.names = F, quote = F)
+
+## 
