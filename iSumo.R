@@ -1,5 +1,5 @@
 ## TODO: in the final release, remove these two lines
-setwd("gitLcl/iSumo/")
+setwd("~/gitLcl/iSumo/")
 load(".RData")
 ## loading library
 print("Loading required R packages...")
@@ -9,8 +9,7 @@ tryCatch({
     library(RMySQL)
     library(ROCR)
     library(ggplot2)
-    library(rPython)
-    library(UniProt.ws)
+    library(UniProt.ws) ## bioc
     library(gProfileR)
     library(h2o)
     library(knncat)
@@ -27,107 +26,110 @@ tryCatch({
 
 ## decide which organism
 taxId = readline(prompt = "Type the taxonomical ID of the organism: ")
-orgMap = setNames(c("hsapiens","scerevisiae"),
-				  c("9606","559292"))
+orgMap = setNames(c("hsapiens","scerevisiae"), c("9606","559292"))
 
-## download ref proteome from Uniprot
-uniprotTab = paste("data/", taxId, ".tab", sep="")
-proteome = fread(uniprotTab)
+proteomeFn =
+    paste("./data/", paste(taxId, "proteome", "rds", sep="."), sep = "")
+if (!file.exists(proteomeFn)){
+    ## download ref proteome from Uniprot
+    uniprotTab = paste("data/", taxId, ".tab", sep="")
+    proteome = fread(uniprotTab)
 
-if (file.exists(uniprotTab)){
-    up = UniProt.ws(taxId = as.numeric(taxId))
+    if (file.exists(uniprotTab)){
+        up = UniProt.ws(taxId = as.numeric(taxId))
 
-    
-    ## munging: unify column names
-    if (taxId == "9606") {
-        names(proteome) = gsub(pattern = "Entry",
-                               replacement = "uniprotKb", x = names(proteome))
-        names(proteome) = gsub(pattern = "Cross-reference",
-                               replacement = "", x = names(proteome))
-        names(proteome) = gsub(pattern = " (Ensembl)",
-                               replacement = "ensembl",
-                               x = names(proteome), fixed = T)
-        names(proteome) = gsub(pattern = " (GeneID)",
-                               replacement = "geneId",
-                               x = names(proteome), fixed = T)
-        names(proteome) = gsub(pattern = "Protein names",
-                               replacement = "protein", x = names(proteome))
-        names(proteome) = gsub(pattern = "Gene names  (primary )",
-                               replacement = "symbol",
-                               x = names(proteome), fixed = T)
-        names(proteome) = gsub(pattern = "Gene names",
-                               replacement = "gene", x = names(proteome))
-        
-        proteomeAll = proteome
-        ## filter1: full annotation score
-        proteome = proteome[Annotation=="5 out of 5"]
-        ## convert numeric value
-        proteome[, Mass := as.numeric(gsub(",","",Mass))]
-        proteome[, Length := as.numeric(Length)]
 
-        ## filter2: non-empty HGNC symbol
-        proteinWoSymbol = proteome[symbol=="", protein]
-        saveRDS(proteinWoSymbol,
-                paste("data/", taxId, ".proteinWoSymbol.rds", sep=""))
-        proteome = proteome[symbol != ""]
-        
-        ## filter3: deduplicate by hgnc, keep the ones with geneId
-        symbolDup = proteome[which(duplicated(symbol)), unique(symbol)]
-        proteomeSymbolDedup = 
-            proteome[symbol %in% symbolDup &
-                         geneId != "" &
-                         !duplicated(geneId)][!duplicated(symbol)]
-        proteome = rbind(proteome[!(hgnc %in% hgncDup)], proteomeHgncDedup)
-        
-        ## save the data
-        setkey(proteome, "uniprotKb")
-        write.table(proteome, 
-                    gsub(".tab", ".mod.tab", uniprotTab),
-                    quote=F, sep = "\t", row.names = F)
-    } else if (taxId == "559292") {
-        print("analyzing S cerevisiae (S288c) data.")
-    	
-    	##
-    	names(proteome) = gsub(pattern = "Entry",
-    						   replacement = "uniprotKb", x = names(proteome))
-    	names(proteome) = gsub(pattern = "Protein names",
-    						   replacement = "protein", x = names(proteome))
-    	names(proteome) = gsub(pattern = "Cross-reference",
-    						   replacement = "", x = names(proteome))
-    	names(proteome) = gsub(pattern = " (GeneID)",
-    						   replacement = "geneId",
-    						   x = names(proteome), fixed = T)
-    	names(proteome) = gsub(pattern = " (SGD)",
-    						   replacement = "sgd",
-    						   x = names(proteome), fixed = T)
-    	
-    	## use primary gene name, if empty use first item in gene names
-    	proteome[, gene := `Gene names  (primary )`]
-    	proteome[, gene := ifelse(nchar(gene)!=0 & !grepl(";", gene), gene,
-    			sapply(strsplit(proteome$`Gene names`[1:10], " "), head, 1))]
-    	
-    	## remove semi colons from sgd and geneId
-    	proteome[, geneId := gsub(";", "", x = geneId)]
-    	proteome[, sgd := gsub(";", "", x = sgd)]
-    	
-    	## convert Mass and Annotation to numeric
-    	proteome[, Mass := as.numeric(gsub(",","",Mass))]
-    	proteome[, Annotation :=
-    		as.numeric( sapply(strsplit(Annotation, split = " "), head, 1) )]
-    	
-    	## get rid of the duplicated sgd
-    	proteome = proteome[!duplicated(sgd), .(uniprotKb, sgd, gene,
-    											protein, geneNames=`Gene names`,
-    											Length, Mass,
-    											Status, Annotation)]
-    	setkey(proteome, "uniprotKb")
+        ## munging: unify column names
+        if (taxId == "9606") {
+            names(proteome) = gsub(pattern = "Entry",
+                                   replacement = "uniprotKb", x = names(proteome))
+            names(proteome) = gsub(pattern = "Cross-reference",
+                                   replacement = "", x = names(proteome))
+            names(proteome) = gsub(pattern = " (Ensembl)",
+                                   replacement = "ensembl",
+                                   x = names(proteome), fixed = T)
+            names(proteome) = gsub(pattern = " (GeneID)",
+                                   replacement = "geneId",
+                                   x = names(proteome), fixed = T)
+            names(proteome) = gsub(pattern = "Protein names",
+                                   replacement = "protein", x = names(proteome))
+            names(proteome) = gsub(pattern = "Gene names  (primary )",
+                                   replacement = "symbol",
+                                   x = names(proteome), fixed = T)
+            names(proteome) = gsub(pattern = "Gene names",
+                                   replacement = "gene", x = names(proteome))
+
+            proteomeAll = proteome
+            ## filter1: full annotation score
+            proteome = proteome[Annotation=="5 out of 5"]
+            ## convert numeric value
+            proteome[, Mass := as.numeric(gsub(",","",Mass))]
+            proteome[, Length := as.numeric(Length)]
+
+            ## filter2: non-empty HGNC symbol
+            proteinWoSymbol = proteome[symbol=="", protein]
+            saveRDS(proteinWoSymbol,
+                    paste("data/", taxId, ".proteinWoSymbol.rds", sep=""))
+            proteome = proteome[symbol != ""]
+
+            ## filter3: deduplicate by hgnc, keep the ones with geneId
+            symbolDup = proteome[which(duplicated(symbol)), unique(symbol)]
+            proteomeSymbolDedup =
+                proteome[symbol %in% symbolDup &
+                             geneId != "" &
+                             !duplicated(geneId)][!duplicated(symbol)]
+            proteome = rbind(proteome[!(hgnc %in% hgncDup)], proteomeHgncDedup)
+
+            ## save the data
+            setkey(proteome, "uniprotKb")
+            write.table(proteome,
+                        gsub(".tab", ".mod.tab", uniprotTab),
+                        quote=F, sep = "\t", row.names = F)
+        } else if (taxId == "559292") {
+            print("analyzing S cerevisiae (S288c) data.")
+
+            ##
+            names(proteome) = gsub(pattern = "Entry",
+                                   replacement = "uniprotKb", x = names(proteome))
+            names(proteome) = gsub(pattern = "Protein names",
+                                   replacement = "protein", x = names(proteome))
+            names(proteome) = gsub(pattern = "Cross-reference",
+                                   replacement = "", x = names(proteome))
+            names(proteome) = gsub(pattern = " (GeneID)",
+                                   replacement = "geneId",
+                                   x = names(proteome), fixed = T)
+            names(proteome) = gsub(pattern = " (SGD)",
+                                   replacement = "sgd",
+                                   x = names(proteome), fixed = T)
+
+            ## use primary gene name, if empty use first item in gene names
+            proteome[, gene := `Gene names  (primary )`]
+            proteome[, gene := ifelse(nchar(gene)!=0 & !grepl(";", gene), gene,
+                                      sapply(strsplit(proteome$`Gene names`[1:10], " "), head, 1))]
+
+            ## remove semi colons from sgd and geneId
+            proteome[, geneId := gsub(";", "", x = geneId)]
+            proteome[, sgd := gsub(";", "", x = sgd)]
+
+            ## convert Mass and Annotation to numeric
+            proteome[, Mass := as.numeric(gsub(",","",Mass))]
+            proteome[, Annotation :=
+                         as.numeric( sapply(strsplit(Annotation, split = " "), head, 1) )]
+
+            ## get rid of the duplicated sgd
+            proteome = proteome[!duplicated(sgd), .(uniprotKb, sgd, gene,
+                                                    protein, geneNames=`Gene names`,
+                                                    Length, Mass,
+                                                    Status, Annotation)]
+            setkey(proteome, "uniprotKb")
+        }
+    } else {
+        stop("Download Uniprot ref proteome in tab-delimited file first!")
     }
+    saveRDS(proteome, proteomFn)
 } else {
-    stop("Download Uniprot ref proteome in tab-delimited file first!")
+    proteome = readRDS(proteomeFn)
 }
-saveRDS(proteome,
-		paste("./data/",
-			  paste(taxId, "proteome", "rds", sep="."), sep = ""))
 
 
 ## task 2: assemble training labels of SUMO substrates
@@ -136,42 +138,42 @@ setkey(sumo, uniprotKb)
 sumo[, hits := rowSums(sumo[, -("uniprotKb"), with=F])]
 sumo[, isSumo := hits>0]
 
-## stacked bar plot to show composition of hits
-meltSumo = melt(sumo[, 1:6, with=F]*sumo$hits)[value>0]
-
-reorder_size <- function(x, decreasing = FALSE) {
-  factor(x, levels = names(sort(table(x), decreasing = decreasing)))
-}
-
-g = ggplot(meltSumo, aes(x = reorder_size(variable, T), fill = value)) +
-#	labs(x = "", y = "Number of SUMOylated proteins found") +
-#	scale_colour_brewer(type = "qual", name = "Confirmed by") +
-	geom_bar(width = 0.6) +
-	theme(axis.line = element_line(size=1, colour = "black"), 
-        panel.grid.major = element_blank(), panel.grid.minor = element_blank(), 
-        panel.border = element_blank(), panel.background = element_blank())
-g
-
-#	geom_abline(slope = 0, intercept = 0) +
-	theme_bw(base_size = 16, base_family = "sans") + 
-	theme(axis.text.x =
-		  	element_text(size=16, ##angle = 90,
-		  				 hjust = 0, debug = T, vjust = 0),
-		  axis.text.y = element_text(size=16),
-		  axis.ticks.x = element_line(size = 0),
-		  axis.line =
-		  	element_line(size = 2, color = "black"),
-		  axis.title.y = element_text(size = 16),
-		  axis.title.x = element_blank(),
-		  legend.position = c(.8, .8),
-		  legend.text = element_text(size = 16),
-		  legend.title = element_text(size = 16),
-		  panel.border = element_blank(),
-#		  panel.border = element_rect(color = "black", size=1),
-		  panel.grid.major = element_blank(),
-		  panel.background = element_blank())
-		  #panel.margin = margin(0,0,0,0))
-g
+# ## stacked bar plot to show composition of hits
+# meltSumo = melt(sumo[, 1:6, with=F]*sumo$hits)[value>0]
+#
+# reorder_size <- function(x, decreasing = FALSE) {
+#   factor(x, levels = names(sort(table(x), decreasing = decreasing)))
+# }
+#
+# g = ggplot(meltSumo, aes(x = reorder_size(variable, T), fill = value)) +
+# #	labs(x = "", y = "Number of SUMOylated proteins found") +
+# #	scale_colour_brewer(type = "qual", name = "Confirmed by") +
+# 	geom_bar(width = 0.6) +
+# 	theme(axis.line = element_line(size=1, colour = "black"),
+#         panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+#         panel.border = element_blank(), panel.background = element_blank())
+# g
+#
+# #	geom_abline(slope = 0, intercept = 0) +
+# 	theme_bw(base_size = 16, base_family = "sans") +
+# 	theme(axis.text.x =
+# 		  	element_text(size=16, ##angle = 90,
+# 		  				 hjust = 0, debug = T, vjust = 0),
+# 		  axis.text.y = element_text(size=16),
+# 		  axis.ticks.x = element_line(size = 0),
+# 		  axis.line =
+# 		  	element_line(size = 2, color = "black"),
+# 		  axis.title.y = element_text(size = 16),
+# 		  axis.title.x = element_blank(),
+# 		  legend.position = c(.8, .8),
+# 		  legend.text = element_text(size = 16),
+# 		  legend.title = element_text(size = 16),
+# 		  panel.border = element_blank(),
+# #		  panel.border = element_rect(color = "black", size=1),
+# 		  panel.grid.major = element_blank(),
+# 		  panel.background = element_blank())
+# 		  #panel.margin = margin(0,0,0,0))
+# g
 ## add x y axis
 
 ## tilt x values
@@ -190,7 +192,7 @@ enrich = gprofiler(query = sumo[isSumo==T, uniprotKb],
 enrich = data.table(enrich)
 
 if(taxId == "9606"){
-	sigGo = enrich[domain %in% c("MF", "CC", "BP") & 
+	sigGo = enrich[domain %in% c("MF", "CC", "BP") &
 				   significant==T & term.size<2000 &
 				   	!grepl("sumo", term.name),
 				   .(term.id, term.name, term.size, p.value)]
@@ -201,13 +203,15 @@ if(taxId == "9606"){
 				   .(term.id, term.name, term.size, p.value)]
 }
 setkey(sigGo, term.name)
+## Cleaning: don't include any annotation directly show SUMO status
+sigGo = sigGo[!grepl("sumo", term.name, ignore.case = T)]
 
 ## task 4: retrieve GO-gene association for all genes and all selected terms
 ## set up connection
 getUniprotKbByTermId = function(term.id, taxId="9606"){
     ## Note: this function is vectorized in respect to term.id
     ## TODO: check if taxId is of length 1
-    
+
     ## set up GO MySQL connection
     mysql = dbDriver("MySQL")
 #    goConn2 = dbConnect(mysql, user='go_select', password='',
@@ -215,7 +219,7 @@ getUniprotKbByTermId = function(term.id, taxId="9606"){
 	goConn2 = dbConnect(mysql, user='go_select', password='amigo',
 					   host='mysql-amigo.ebi.ac.uk', port=4085,
 					   dbname='go_latest')
-    
+
     ## set up query
 	if (taxId=="9606"){
 		stmtUniprotKbByTermId = sprintf(
@@ -252,14 +256,14 @@ getUniprotKbByTermId = function(term.id, taxId="9606"){
 	} else {
 		stop("Not yet implemented for this organism!!!")
 	}
-    
+
     ## execute the query and return a list
     ## of the same length of term.id, each element is a char vec of UniprotKb
     res = lapply(stmtUniprotKbByTermId,
              function(x){
              	if (taxId=="9606"){
              		dbGetQuery(goConn2, x)$uniprotKb
-             	} else {
+             	} else if (taxId == "559292") {
              		dbGetQuery(goConn2, x)$sgd
              	}
              })
@@ -269,14 +273,16 @@ getUniprotKbByTermId = function(term.id, taxId="9606"){
 }
 
 ## expand proteome with GO assocaition
-goMat = as.data.table(lapply(getUniprotKbByTermId(sigGo$term.id, taxId),
-							 function(x) proteome$sgd %in% x))
+goMat = as.data.table(lapply(sigGo$term.id, function(x){
+    ids = unlist(getUniprotKbByTermId(x), use.names = F)
+    if (taxId == "9606"){
+        proteome$uniprotKb %in% ids
+    } else if (taxId == "559292"){
+        proteome$sgd %in% ids
+    }
+}))
 colnames(goMat) = sigGo[term.id %in% colnames(goMat), term.name]
-# goMat$uniprotKb = proteome[, .(uniprotKb)]
-# for (id in sigGo$term.id){
-#     res = getUniprotKbByTermId(id, taxId)
-#     goMat[[sigGo[term.id==id, term.name]]] = goMat$uniprotKb %in% res[[id]]
-# }
+
 write.table(goMat, paste("data/", taxId, ".goMat.txt", sep = ""),
             quote = F, row.names = F, sep = "\t")
 
@@ -300,7 +306,7 @@ if (taxId=="9606"){
 	protInteract = protInteract[!is.na(u1) & !is.na(u2), .(u1, u2)]
 	write.table(protInteract, paste("data/", taxId, ".stringInt.txt", sep=""),
 				quote = F, sep = "\t", row.names = F)
-	
+
 } else if (taxId=="559292") {
 	## NOTE: STRING db doesn't have data for 559292 (S288c), but only 4932 (S.
 	## cerevisiae). We will use that instead.
@@ -313,13 +319,13 @@ if (taxId=="9606"){
 		protInteract$p2 = sapply(strsplit(protInteract$p2, split = "\\."),
 								 function(x) x[2])
 	}
-	
+
 	## mapping of ORF name and sgd
 	sysName = read.table("data/sysNameSgdMapping.csv",
 						 sep = " ", quote = '"', header = T)
 	sysName = as.data.table(sysName)[reason=="MATCH"]
 	setkey(sysName, "secondaryIdentifier")
-	
+
 	protInteract$s1 = sysName[protInteract$p1, as.character(primaryIdentifier)]
 	protInteract$s2 = sysName[protInteract$p2, as.character(primaryIdentifier)]
 	sgd2uniprotKb = do.call("rbind",
@@ -369,12 +375,12 @@ if (taxId == "9606"){
 	cpxSubunits = setNames(
 		sapply(complexes$`ORFs annotated to complex`, strsplit, "; "),
 		complexes$`Protein Complex Name`)
-	
+
 	## change key for sysName
 	sysName$primaryIdentifier = as.character(sysName$primaryIdentifier)
 	sysName$secondaryIdentifier = as.character(sysName$secondaryIdentifier)
 	setkey(sysName, "primaryIdentifier")
-	
+
 	## convert into complex memberships
 	yeastComplex =
 		t(sapply(proteome$uniprotKb,
@@ -401,33 +407,33 @@ if (taxId == "9606"){
 	meth = fread("data/psp/Methylation_site_dataset", skip=3)
 	acet = fread("data/psp/Acetylation_site_dataset", skip=3)
 	ubiq = fread("data/psp/Ubiquitination_site_dataset", skip = 3)
-	
+
 	## count how many each protein has
 	phosCount = phos[, table(ACC_ID)]
 	methCount = meth[, table(ACC_ID)]
 	acetCount = acet[, table(ACC_ID)]
 	ubiqCount = ubiq[, table(ACC_ID)]
-	
+
 } else if (taxId == "559292"){
 	## no phosphosite data, use dbPTM data instead
 	dbPTM = fread("data/dbPTM3.txt")
 	yeastPtm = dbPTM[V2 %in% proteome$uniprotKb]
-	
+
 	phosCount = yeastPtm[V8=="Phosphorylation", table(V2)]
 	methCount = yeastPtm[V8=="Methylation", table(V2)]
 	acetCount = yeastPtm[V8=="Acetylation", table(V2)]
 	ubiqCount = yeastPtm[V8=="Ubiquitylation", table(V2)]
-	
+
 }
 ## construct feature vectors
 ptmMat = proteome[, .(uniprotKb)]
-ptmMat[, nPhos := 
+ptmMat[, nPhos :=
 	   	ifelse(uniprotKb %in% names(phosCount), phosCount[uniprotKb], 0)]
-ptmMat[, nMeth := 
+ptmMat[, nMeth :=
 	   	ifelse(uniprotKb %in% names(methCount), methCount[uniprotKb], 0)]
-ptmMat[, nAcet := 
+ptmMat[, nAcet :=
 	   	ifelse(uniprotKb %in% names(acetCount), acetCount[uniprotKb], 0)]
-ptmMat[, nUbiq := 
+ptmMat[, nUbiq :=
 	   	ifelse(uniprotKb %in% names(ubiqCount), ubiqCount[uniprotKb], 0)]
 
 ## task 8: pre-compute GPS-SUMO
@@ -442,7 +448,7 @@ writeLines(seq[, paste(">", UNIPROTKB, "\n", SEQUENCE, "\n", sep="")],
 gps = fread(paste("data/",taxId,".gps.txt", sep=""))
 gpsCount = data.table(dcast(gps, ID ~ Type, value.var = "Type"))[,1:4,with=F]
 setkey(gpsCount, ID)
-gpsSumo = do.call(rbind, 
+gpsSumo = do.call(rbind,
 				  lapply(proteome$uniprotKb,
 				  	   function(x){
 				  	   	if (x %in% gpsCount$ID){
@@ -460,7 +466,7 @@ if (taxId=="9606"){
 	iSumoData = cbind(proteome[, .(uniprotKb, symbol, Length, Mass)],
 					  goMat[,-1,with=F], ## GO annotation
 					  ptmMat[,-1,with=F],
-					  ppiDegree, humanComplex, 
+					  ppiDegree, humanComplex,
 					  gpsSumo, sumo[, .(isSumo)])
 } else if (taxId=="559292"){
 	iSumoData = cbind(proteome[, .(uniprotKb, sgd, Length, Mass)],
@@ -485,7 +491,13 @@ rf.null = h2o.loadModel(fn.null)
 ## Figure 1. Stacked bar of number of SUMO proteins found in each paper,
 ## decomposed into confirmed by X studies
 if (taxId == "9606"){
-	
+    m1 = melt(data = sumo, id.vars = "hits", measure.vars = 1:18)
+    m2 = m1[hits>0 & value==TRUE, table(hits, variable)]
+    m3 = melt(m2, value.name = "nSumo")
+    m3$variable <- reorder(x = m3$variable, X = m3$nSumo, FUN = sum)
+    m3 = rbind(m3[hits<9],
+               m3[hits>=9, .(hits = "9+", nSumo = sum(nSumo)), by = variable])
+    m3$hits = as.factor(m4$hits)
 } else if (taxId == "559292"){
 	m1 = melt(data = sumo, id.vars = "hits", measure.vars = 1:6)
 	m2 = m1[hits>0 & value==TRUE, table(hits, variable)]
@@ -493,6 +505,19 @@ if (taxId == "9606"){
 	m3$variable <- reorder(x = m3$variable, X = m3$nSumo, FUN = sum)
 	m3$hits = as.factor(m3$hits)
 }
+
+## some species specific pars
+if (taxId == "9606"){
+    pl.mar = margin(t = 0, r = 120, b = 12, l = 4, unit = "pt")
+    width = 11
+} else if (taxId == "559292"){
+    pl.mar = margin(t = 0, r = 40, b = 12, l = 4, unit = "pt")
+    width = 8
+}
+
+svg(filename = paste(taxId, ".sumoStudies.svg", sep = ""),
+    width = width, height = 8)
+plot.new()
 fig1 = ggplot(data = m3) +
 	geom_bar(mapping = aes(x = variable, y = nSumo, fill = hits),
 			 stat = "identity") +
@@ -503,35 +528,37 @@ fig1 = ggplot(data = m3) +
 		  	element_line(size=1, colour = "black",
 		  				 arrow = arrow(angle = 30,
 		  				 			  length = unit(x = 0.1, units = "inch"),
-		  				 			  type = "open", ends = "last")), 
+		  				 			  type = "open", ends = "last")),
 		  panel.grid.major = element_blank(),
-		  panel.grid.minor = element_blank(), 
+		  panel.grid.minor = element_blank(),
 		  panel.border = element_blank(),
 		  panel.background = element_blank()) +
 	theme(axis.title.x = element_blank(),
 		  axis.title.y = element_text(size = 16),
-		  axis.text.x = element_text(size = 16),
+		  axis.text.x = element_text(size = 16, angle = 335, hjust = 0),
 		  axis.text.y = element_text(size = 16),
 		  axis.ticks = element_blank()) +
-	theme(legend.position = c(0.2, 0.8),
+	theme(legend.position = c(0.2, 0.5),
 		  legend.text = element_text(size = 16),
 		  legend.key.size = unit(0.5, "inch"),
-		  legend.title = element_text(size = 16))
-fig1
-	
+		  legend.title = element_text(size = 16)) +
+    theme(plot.margin = pl.mar)
+print(fig1)
+dev.off()
+
 ###################
 ## Figure2.
-## ROC curve, for either model, plot 10-CV in grey, validation in dotted 
+## ROC curve, for either model, plot 10-CV in grey, validation in dotted
 ## red/blue, and test in solid red/blue. Add guideline y=x.
 plotRoc = function(predLabelList, col=grey(0.25), roc=T, cv=F, dashed=F, lwd=1){
 	## make performance measure
 	pred = prediction(predLabelList[[1]], predLabelList[[2]])
 	if (roc) perf = performance(pred, 'tpr', 'fpr') else
 		perf = performance(Pred, 'prec', 'rec')
-	
+
 	## set line type
 	lType = ifelse(dashed, 2, 1)
-	
+
 	## plot
 	if (!cv){
 		if (dev.cur()==1) {
@@ -550,7 +577,7 @@ plotRoc = function(predLabelList, col=grey(0.25), roc=T, cv=F, dashed=F, lwd=1){
 ## rf: cv --> valid --> test
 getModelPred = function(x, train, valid, test){
 	pred = list()
-	
+
 	## get CV models predictions
 	cvFold = as.data.frame(
 		h2o.cross_validation_fold_assignment(x))$fold_assignment
@@ -562,17 +589,17 @@ getModelPred = function(x, train, valid, test){
 		thisLabel = as.data.frame(train)[cvFold==(i-1), "isSumo"]
 		pred[[thisName]] = list(thisPred, thisLabel)
 	}
-	
+
 	## get valid predictions
 	validPred = as.data.frame(h2o.predict(x, valid))[, 3]
 	validLabel = as.data.frame(valid)[, "isSumo"]
 	pred$valid = list(validPred, validLabel)
-	
+
 	## get test predictions
 	testPred = as.data.frame(h2o.predict(x, test))[, 3]
 	testLabel = as.data.frame(test)[, "isSumo"]
 	pred$test = list(testPred, testLabel)
-	
+
 	return(pred)
 }
 
@@ -606,7 +633,7 @@ for (pr in names(pred)) {
 axis(side = 1, at = seq(0,5)/5, labels = seq(0,5)/5)
 axis(side = 2, at = seq(0,5)/5, labels = seq(0,5)/5)
 title(##main = "Receiver operating characteristics (ROC)
-##of iSUMO model versus with only predicted sequence motif", 
+##of iSUMO model versus with only predicted sequence motif",
 	  xlab = "False positive rate", ylab = "True positive rate")
 abline(a = 0, b = 1, lty=3, lwd=0.5, col=grey(0.25))
 legend(x = 0.7, y = 0.3,
@@ -623,7 +650,7 @@ varImp = as.data.table(rf@model$variable_importances)
 varImp$variable = reorder(varImp$variable, varImp$relative_importance)
 
 svg(filename=paste(taxId, ".varImp.svg", sep=""),
-	width=8, height=8,
+	width=12, height=8,
 	pointsize=12)
 plot.new()
 
@@ -636,9 +663,9 @@ fig3 = ggplot(data = varImp[1:30]) +
 		  	element_line(size=1, colour = "black",
 		  				 arrow = arrow(angle = 30,
 		  				 			  length = unit(x = 0.1, units = "inch"),
-		  				 			  type = "open", ends = "last")), 
+		  				 			  type = "open", ends = "last")),
 		  panel.grid.major = element_blank(),
-		  panel.grid.minor = element_blank(), 
+		  panel.grid.minor = element_blank(),
 		  panel.border = element_blank(),
 		  panel.background = element_blank()) +
 	theme(axis.title.x = element_blank(),
@@ -655,7 +682,7 @@ print(fig3)
 dev.off()
 
 #################################
-## Table 
+## Table
 finalPerformance = h2o.performance(rf, dt)
 ## find the threshold maximizing F2 value
 threshold = as.data.table(
@@ -674,7 +701,7 @@ saveRDS(finalPrediction, paste(taxId, ".finalPrediction.rds", sep=""))
 write.table(finalPrediction, paste(taxId, ".finalPrediction.csv", sep=""),
 			sep = "\t", row.names = F, quote = F)
 
-## 
+##
 
 
 
