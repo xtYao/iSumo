@@ -10,8 +10,8 @@ sumoUniprotKb = lapply(sumoEnsg, function(x) ensg[ensg %in% x, uniprotKb])
 
 ## newly added 4 studies
 hendriks = fread("data/hendriks.txt")
-hendriks = hendriks[!duplicated()]
-hendriks2 = fread("data/hendriks2", sep = "\t")
+hendriks = hendriks[, unique(uniprotKb)]
+hendriks2 = fread("data/hendriks2.txt", sep = "\t")
 hendriks2 = sort(unique(do.call(c, strsplit(hendriks2$uniprotKb, split = ";"))))
 hendriks2 = unique(gsub(hendriks2, pattern = "-*", replacement = ""))
 impens = fread("data/Impens.txt")
@@ -21,7 +21,7 @@ lamoliatte = unique(lamoliatte$uniprotKb)
 tammsalu = fread("data/tammsalu.txt")
 tammsalu = unique(tammsalu$uniprotKb)
 
-sumoUniprotKb$hendriks = hendriks2
+sumoUniprotKb$hendriks = hendriks
 sumoUniprotKb$impens = impens
 sumoUniprotKb$lamoliatte = lamoliatte
 sumoUniprotKb$tammsalu = tammsalu

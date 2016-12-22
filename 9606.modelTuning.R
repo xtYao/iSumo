@@ -1,4 +1,4 @@
-h2o.init()
+h2o.init(max_mem_size = "1g")
 ## TODO: split training set
 ## convention: label in last col, IDs in first 2 cols
 dt = h2o.importFile(paste("data/",taxId,".iSumo.txt",sep=""))
@@ -31,15 +31,15 @@ rf0.nt200 = h2o.randomForest(x = 3:(nc-1), y = nc,
                        seed = 123)
 
 ## balancing, stopping round 2, default max depth 20
-rf0.b = h2o.randomForest(x = 3:(nc-1), y = nc,
+rf0.b.nt200 = h2o.randomForest(x = 3:(nc-1), y = nc,
 						 training_frame = train, validation_frame = valid,
 						 balance_classes = T,
 						 nfolds = 10,
 						 keep_cross_validation_predictions = T,
 						 keep_cross_validation_fold_assignment = T,
 						 ntrees = 200,
-						 stopping_rounds = 2,
-						 score_each_iteration = T,
+						 # stopping_rounds = 2,
+						 # score_each_iteration = T,
 						 seed = 123)
 
 ## balancing, stopping rounds 2, max depth 30
@@ -108,33 +108,20 @@ rf2.b.md30.nt100 = h2o.randomForest(x = 3:(nc-1), y = nc,
 							  seed = 123,
 							  max_depth = 30)
 
-## balancing, 200 trees, max depth 30, default mtries
-rf2.b.md30.nt200 = h2o.randomForest(x = 3:(nc-1), y = nc,
-									training_frame = train,
-									validation_frame = valid,
-									balance_classes = T,
-									nfolds = 10,
-									keep_cross_validation_predictions = T,
-									keep_cross_validation_fold_assignment = T,
-									ntrees = 200,
-									#stopping_rounds = 3,
-									score_each_iteration = T,
-									seed = 123,
-									max_depth = 30)
-
 ## looks like if we keep increasing the number of trees, we can acheive better
 ## validation and cross-validation AUC, but at the cost of long training time
 
 ## TODO: compare the validation performance
 rfs = list(rf0,
            rf0.nt200,
-           rf0.b,
+           rf0.b.nt200,
            rf0.b.md30,
            rf0.b.md30.mt10, ## early converging
 		   rf1.b, ## late converging
 		   rf2.b.md30,
-		   rf2.b.md30.nt100,
-		   rf2.b.md30.nt200) ## hard-set nTree
+		   rf2.b.md30.nt100
+		   # rf2.b.md30.nt200
+		   ) ## hard-set nTree
 names(rfs) = sapply(rfs, function(x) x@model_id)
 
 ## manifest of all these models
@@ -175,18 +162,18 @@ for (m in names(rfs)){
 ## save performance metrics
 write.table(manifest,
             paste("models/",taxId,"/manifest.txt",sep=""),
-            sep = "\t", quote = F, row.names = names(rfs))
+            sep = "\t", quote = F, row.names = F)
 
 
 
-## conclusion: the non-balanced 200 tree 20 max depth is the best
-rf = rfs[['DRF_model_R_1481751746690_762']]
+## conclusion: the balanced 200 tree 20 max depth is the best
+rf = rfs[["DRF_model_R_1482256972191_9663"]]
 h2o.saveModel(rf, paste("models/",taxId,".rf.h2o",sep=""))
 
 ## fit null model the same way
 rf.null = h2o.randomForest(x = names(gpsCount)[-1], y = "isSumo",
                            training_frame = train, validation_frame = valid,
-                           balance_classes = F,
+                           balance_classes = T,
                            nfolds = 10,
                            keep_cross_validation_predictions = T,
                            keep_cross_validation_fold_assignment = T,

@@ -1,0 +1,623 @@
+term.id	term.name	term.size	p.value
+GO:0003676	nucleic acid binding	1949	4.45e-281
+GO:0044822	poly(A) RNA binding	906	3.42e-220
+GO:0003723	RNA binding	1093	1.07e-219
+GO:0006396	RNA processing	620	9.17e-119
+GO:0016071	mRNA metabolic process	479	2.87e-89
+GO:0005694	chromosome	604	4.22e-88
+GO:0030529	intracellular ribonucleoprotein complex	470	6.77e-88
+GO:1990904	ribonucleoprotein complex	470	6.77e-88
+GO:0044427	chromosomal part	563	5.62e-80
+GO:0022613	ribonucleoprotein complex biogenesis	311	5.9e-77
+GO:0003677	DNA binding	963	3.95e-72
+GO:0000228	nuclear chromosome	388	1.14e-62
+GO:0006397	mRNA processing	306	5.44e-62
+GO:0005730	nucleolus	558	7.94e-60
+GO:0042254	ribosome biogenesis	202	1.18e-59
+GO:0006364	rRNA processing	170	1.57e-59
+GO:0008380	RNA splicing	294	4.3e-59
+GO:0044451	nucleoplasm part	491	1.02e-58
+GO:0016072	rRNA metabolic process	175	6.76e-58
+GO:0000375	RNA splicing, via transesterification reactions	242	2.65e-57
+GO:0044454	nuclear chromosome part	361	4.78e-57
+GO:0000377	RNA splicing, via transesterification reactions with bulged adenosine as nucleophile	238	5.51e-57
+GO:0000398	mRNA splicing, via spliceosome	238	5.51e-57
+GO:0051252	regulation of RNA metabolic process	1979	2.01e-56
+GO:0034660	ncRNA metabolic process	382	8.65e-56
+GO:0034470	ncRNA processing	252	8.88e-51
+GO:0000785	chromatin	310	3.46e-48
+GO:2001141	regulation of RNA biosynthetic process	1879	1.23e-47
+GO:1903506	regulation of nucleic acid-templated transcription	1856	1.71e-47
+GO:0006325	chromatin organization	457	1.74e-47
+GO:0006355	regulation of transcription, DNA-templated	1849	5.25e-47
+GO:0006614	SRP-dependent cotranslational protein targeting to membrane	83	4.4e-44
+GO:0051276	chromosome organization	434	5.77e-44
+GO:0006259	DNA metabolic process	700	1.01e-42
+GO:0006613	cotranslational protein targeting to membrane	88	1.3e-42
+GO:1902494	catalytic complex	943	2.71e-42
+GO:0051172	negative regulation of nitrogen compound metabolic process	988	3.8e-42
+GO:0019080	viral gene expression	174	2.11e-41
+GO:0045047	protein targeting to ER	86	2.86e-41
+GO:0045934	negative regulation of nucleobase-containing compound metabolic process	882	7.79e-41
+GO:0010629	negative regulation of gene expression	992	9.2e-41
+GO:0022626	cytosolic ribosome	86	9.32e-40
+GO:0072599	establishment of protein localization to endoplasmic reticulum	90	1.74e-39
+GO:0005681	spliceosomal complex	124	1.79e-39
+GO:0044033	multi-organism metabolic process	189	2.33e-39
+GO:0006413	translational initiation	158	2.86e-38
+GO:0019083	viral transcription	163	3.68e-38
+GO:0006366	transcription from RNA polymerase II promoter	1376	3.76e-38
+GO:0051253	negative regulation of RNA metabolic process	783	7.46e-38
+GO:0010605	negative regulation of macromolecule metabolic process	1499	8.01e-38
+GO:2000113	negative regulation of cellular macromolecule biosynthetic process	881	7.37e-37
+GO:0043933	macromolecular complex subunit organization	1591	1.82e-36
+GO:0006412	translation	413	2.42e-36
+GO:0000790	nuclear chromatin	219	3.37e-36
+GO:0043043	peptide biosynthetic process	429	4.26e-35
+GO:0000184	nuclear-transcribed mRNA catabolic process, nonsense-mediated decay	111	4.93e-35
+GO:0009892	negative regulation of metabolic process	1618	1.67e-34
+GO:0010558	negative regulation of macromolecule biosynthetic process	920	1.98e-34
+GO:0007049	cell cycle	1159	4.43e-34
+GO:0070161	anchoring junction	588	6.83e-34
+GO:0005912	adherens junction	579	1.04e-33
+GO:0019058	viral life cycle	353	1.59e-33
+GO:0098687	chromosomal region	223	1.9e-33
+GO:0031324	negative regulation of cellular metabolic process	1492	2.04e-33
+GO:0045892	negative regulation of transcription, DNA-templated	728	2.19e-33
+GO:1903507	negative regulation of nucleic acid-templated transcription	732	2.48e-33
+GO:0070972	protein localization to endoplasmic reticulum	104	4.37e-33
+GO:0000975	regulatory region DNA binding	517	7.25e-33
+GO:0001067	regulatory region nucleic acid binding	517	7.25e-33
+GO:0044212	transcription regulatory region DNA binding	517	7.25e-33
+GO:0009890	negative regulation of biosynthetic process	975	4.33e-32
+GO:1902679	negative regulation of RNA biosynthetic process	747	6.8e-32
+GO:0031327	negative regulation of cellular biosynthetic process	960	1.14e-31
+GO:0018205	peptidyl-lysine modification	296	1.49e-31
+GO:0003690	double-stranded DNA binding	440	1.97e-31
+GO:0044391	ribosomal subunit	97	3.83e-31
+GO:0016604	nuclear body	183	4.54e-31
+GO:0005840	ribosome	120	1.11e-30
+GO:0043604	amide biosynthetic process	478	4.54e-30
+GO:0071013	catalytic step 2 spliceosome	81	1.1e-29
+GO:0043565	sequence-specific DNA binding	528	1.18e-29
+GO:0022402	cell cycle process	1014	1.19e-29
+GO:0001071	nucleic acid binding transcription factor activity	658	3.42e-28
+GO:0003700	transcription factor activity, sequence-specific DNA binding	658	3.42e-28
+GO:0098641	cadherin binding involved in cell-cell adhesion	253	5.82e-28
+GO:0022618	ribonucleoprotein complex assembly	146	3.44e-27
+GO:0071826	ribonucleoprotein complex subunit organization	152	6.8e-27
+GO:0098632	protein binding involved in cell-cell adhesion	258	7.73e-27
+GO:0006357	regulation of transcription from RNA polymerase II promoter	1174	8.34e-27
+GO:0003682	chromatin binding	235	9.91e-27
+GO:0006281	DNA repair	378	1.62e-26
+GO:0071824	protein-DNA complex subunit organization	157	3.95e-26
+GO:0098631	protein binding involved in cell adhesion	263	9.26e-26
+GO:1990837	sequence-specific double-stranded DNA binding	384	1.62e-25
+GO:0003735	structural constituent of ribosome	107	2.45e-25
+GO:1903047	mitotic cell cycle process	670	5.07e-25
+GO:0022625	cytosolic large ribosomal subunit	45	5.52e-25
+GO:0045296	cadherin binding	267	6.3e-25
+GO:0000278	mitotic cell cycle	723	7.25e-25
+GO:0006974	cellular response to DNA damage stimulus	605	1.51e-24
+GO:0044445	cytosolic part	174	2.65e-24
+GO:0000976	transcription regulatory region sequence-specific DNA binding	361	6.41e-24
+GO:0006518	peptide metabolic process	537	1.14e-23
+GO:0000956	nuclear-transcribed mRNA catabolic process	181	3.49e-23
+GO:0005913	cell-cell adherens junction	283	5.34e-23
+GO:0044085	cellular component biogenesis	1902	9.02e-23
+GO:0051173	positive regulation of nitrogen compound metabolic process	1243	1.77e-22
+GO:0030054	cell junction	776	1.81e-22
+GO:0006401	RNA catabolic process	213	2.11e-22
+GO:0006402	mRNA catabolic process	191	4.13e-22
+GO:0000781	chromosome, telomeric region	113	4.21e-22
+GO:0016569	covalent chromatin modification	301	4.99e-22
+GO:0001012	RNA polymerase II regulatory region DNA binding	300	1.21e-21
+GO:0000977	RNA polymerase II regulatory region sequence-specific DNA binding	300	1.21e-21
+GO:0071103	DNA conformation change	151	1.31e-21
+GO:0045935	positive regulation of nucleobase-containing compound metabolic process	1177	1.39e-21
+GO:0065004	protein-DNA complex assembly	130	1.59e-21
+GO:0034622	cellular macromolecular complex assembly	647	3.1e-20
+GO:0043603	cellular amide metabolic process	635	6.31e-20
+GO:0006612	protein targeting to membrane	155	8.56e-20
+GO:0016570	histone modification	292	1.04e-19
+GO:0033365	protein localization to organelle	675	1.12e-19
+GO:0016032	viral process	615	1.12e-19
+GO:0000784	nuclear chromosome, telomeric region	100	1.16e-19
+GO:0044764	multi-organism cellular process	619	1.2e-19
+GO:0051254	positive regulation of RNA metabolic process	997	1.65e-19
+GO:0030055	cell-substrate junction	344	2.56e-19
+GO:0005924	cell-substrate adherens junction	340	6.5e-19
+GO:0044419	interspecies interaction between organisms	630	6.81e-19
+GO:0044403	symbiosis, encompassing mutualism through parasitism	630	6.81e-19
+GO:0005925	focal adhesion	339	1.45e-18
+GO:0072594	establishment of protein localization to organelle	501	1.81e-18
+GO:1902680	positive regulation of RNA biosynthetic process	966	1.87e-18
+GO:0010557	positive regulation of macromolecule biosynthetic process	1131	2.83e-18
+GO:0034728	nucleosome organization	92	4.25e-18
+GO:0004386	helicase activity	93	9.7e-18
+GO:0044265	cellular macromolecule catabolic process	719	1.17e-17
+GO:0010628	positive regulation of gene expression	1161	1.33e-17
+GO:1903508	positive regulation of nucleic acid-templated transcription	945	1.43e-17
+GO:0045893	positive regulation of transcription, DNA-templated	945	1.43e-17
+GO:0070647	protein modification by small protein conjugation or removal	655	1.54e-17
+GO:0044770	cell cycle phase transition	439	2.74e-17
+GO:0016607	nuclear speck	82	2.75e-17
+GO:0006333	chromatin assembly or disassembly	102	2.92e-17
+GO:0015934	large ribosomal subunit	55	3e-17
+GO:0006403	RNA localization	154	3.11e-17
+GO:0043487	regulation of RNA stability	126	3.18e-17
+GO:0034655	nucleobase-containing compound catabolic process	298	3.54e-17
+GO:0010608	posttranscriptional regulation of gene expression	319	4.78e-17
+GO:0033554	cellular response to stress	1392	4.94e-17
+GO:0065003	macromolecular complex assembly	1132	5.03e-17
+GO:0006323	DNA packaging	108	5.22e-17
+GO:0032446	protein modification by small protein conjugation	571	7.11e-17
+GO:0008026	ATP-dependent helicase activity	76	7.87e-17
+GO:0070035	purine NTP-dependent helicase activity	76	7.87e-17
+GO:0006338	chromatin remodeling	115	1.64e-16
+GO:0000122	negative regulation of transcription from RNA polymerase II promoter	447	2.41e-16
+GO:0043488	regulation of mRNA stability	124	2.79e-16
+GO:0044772	mitotic cell cycle phase transition	417	4.57e-16
+GO:0042393	histone binding	128	5.87e-16
+GO:0030684	preribosome	43	6.08e-16
+GO:0043566	structure-specific DNA binding	86	8.01e-16
+GO:0031497	chromatin assembly	79	1.13e-15
+GO:0050684	regulation of mRNA processing	65	1.41e-15
+GO:0051168	nuclear export	153	1.85e-15
+GO:0046700	heterocycle catabolic process	321	2.53e-15
+GO:0071166	ribonucleoprotein complex localization	114	2.82e-15
+GO:0031328	positive regulation of cellular biosynthetic process	1222	3.39e-15
+GO:0000988	transcription factor activity, protein binding	463	5.81e-15
+GO:0070603	SWI/SNF superfamily-type complex	62	6.95e-15
+GO:0019439	aromatic compound catabolic process	328	7.58e-15
+GO:0016458	gene silencing	165	8.42e-15
+GO:0009891	positive regulation of biosynthetic process	1242	9.82e-15
+GO:0051169	nuclear transport	357	1.03e-14
+GO:0044270	cellular nitrogen compound catabolic process	326	1.19e-14
+GO:0071426	ribonucleoprotein complex export from nucleus	111	1.33e-14
+GO:0000987	core promoter proximal region sequence-specific DNA binding	191	1.6e-14
+GO:0000978	RNA polymerase II core promoter proximal region sequence-specific DNA binding	182	1.84e-14
+GO:0007059	chromosome segregation	243	2.03e-14
+GO:0000989	transcription factor activity, transcription factor binding	458	2.59e-14
+GO:0051726	regulation of cell cycle	704	3.35e-14
+GO:0044877	macromolecular complex binding	744	3.62e-14
+GO:0001159	core promoter proximal region DNA binding	193	3.7e-14
+GO:0006913	nucleocytoplasmic transport	351	3.82e-14
+GO:0022627	cytosolic small ribosomal subunit	36	3.89e-14
+GO:1990234	transferase complex	552	6.37e-14
+GO:0006334	nucleosome assembly	65	1.22e-13
+GO:0006405	RNA export from nucleus	112	1.3e-13
+GO:0040029	regulation of gene expression, epigenetic	184	1.64e-13
+GO:1901361	organic cyclic compound catabolic process	342	1.65e-13
+GO:0000723	telomere maintenance	110	2.08e-13
+GO:0003712	transcription cofactor activity	426	2.1e-13
+GO:0051052	regulation of DNA metabolic process	264	2.82e-13
+GO:0008134	transcription factor binding	384	3.33e-13
+GO:0032200	telomere organization	111	3.74e-13
+GO:1905368	peptidase complex	55	6.22e-13
+GO:0006302	double-strand break repair	150	6.29e-13
+GO:0031124	mRNA 3'-end processing	77	6.92e-13
+GO:0031491	nucleosome binding	34	7.58e-13
+GO:0030532	small nuclear ribonucleoprotein complex	53	8.31e-13
+GO:0090150	establishment of protein localization to membrane	295	8.54e-13
+GO:0042273	ribosomal large subunit biogenesis	38	8.58e-13
+GO:0003729	mRNA binding	107	9.56e-13
+GO:1903311	regulation of mRNA metabolic process	86	1.62e-12
+GO:0097525	spliceosomal snRNP complex	47	1.78e-12
+GO:0000775	chromosome, centromeric region	114	2.04e-12
+GO:0016887	ATPase activity	330	2.22e-12
+GO:0000819	sister chromatid segregation	191	2.73e-12
+GO:0050839	cell adhesion molecule binding	389	3e-12
+GO:0045944	positive regulation of transcription from RNA polymerase II promoter	669	3.13e-12
+GO:0031123	RNA 3'-end processing	98	3.41e-12
+GO:0010564	regulation of cell cycle process	449	3.5e-12
+GO:0050658	RNA transport	124	4.08e-12
+GO:1905369	endopeptidase complex	50	4.08e-12
+GO:0050657	nucleic acid transport	124	4.08e-12
+GO:0000502	proteasome complex	50	4.08e-12
+GO:0043044	ATP-dependent chromatin remodeling	57	4.27e-12
+GO:0000981	RNA polymerase II transcription factor activity, sequence-specific DNA binding	395	5.31e-12
+GO:0006406	mRNA export from nucleus	99	6.22e-12
+GO:0071427	mRNA-containing ribonucleoprotein complex export from nucleus	99	6.22e-12
+GO:0098813	nuclear chromosome segregation	210	7.42e-12
+GO:0051436	negative regulation of ubiquitin-protein ligase activity involved in mitotic cell cycle	70	7.84e-12
+GO:0034708	methyltransferase complex	86	9.63e-12
+GO:0015935	small ribosomal subunit	42	1.04e-11
+GO:0006260	DNA replication	221	1.07e-11
+GO:0046907	intracellular transport	1183	1.2e-11
+GO:0042274	ribosomal small subunit biogenesis	40	1.22e-11
+GO:0051437	positive regulation of ubiquitin-protein ligase activity involved in regulation of mitotic cell cycle transition	76	1.47e-11
+GO:0051439	regulation of ubiquitin-protein ligase activity involved in mitotic cell cycle	71	1.67e-11
+GO:0051236	establishment of RNA localization	127	1.82e-11
+GO:1901987	regulation of cell cycle phase transition	254	2.37e-11
+GO:1901990	regulation of mitotic cell cycle phase transition	237	2.46e-11
+GO:0006369	termination of RNA polymerase II transcription	59	2.53e-11
+GO:0043484	regulation of RNA splicing	77	2.95e-11
+GO:1904667	negative regulation of ubiquitin protein ligase activity	72	3.48e-11
+GO:0051028	mRNA transport	102	3.5e-11
+GO:0000245	spliceosomal complex assembly	41	4.07e-11
+GO:0017111	nucleoside-triphosphatase activity	511	5.04e-11
+GO:0031492	nucleosomal DNA binding	22	6.58e-11
+GO:1904668	positive regulation of ubiquitin protein ligase activity	79	1.13e-10
+GO:0005198	structural molecule activity	397	1.18e-10
+GO:0006342	chromatin silencing	56	1.26e-10
+GO:0005911	cell-cell junction	439	1.33e-10
+GO:0051444	negative regulation of ubiquitin-protein transferase activity	77	1.78e-10
+GO:0009057	macromolecule catabolic process	894	1.83e-10
+GO:0044815	DNA packaging complex	28	2.45e-10
+GO:0031490	chromatin DNA binding	52	2.63e-10
+GO:0003724	RNA helicase activity	57	2.91e-10
+GO:0032993	protein-DNA complex	78	3.41e-10
+GO:0051443	positive regulation of ubiquitin-protein transferase activity	92	3.71e-10
+GO:0034399	nuclear periphery	65	4.01e-10
+GO:0045814	negative regulation of gene expression, epigenetic	73	4.37e-10
+GO:0007062	sister chromatid cohesion	113	5.21e-10
+GO:1903321	negative regulation of protein modification by small protein conjugation or removal	116	5.23e-10
+GO:0031145	anaphase-promoting complex-dependent catabolic process	79	6.42e-10
+GO:1903320	regulation of protein modification by small protein conjugation or removal	210	6.99e-10
+GO:0006605	protein targeting	505	7.07e-10
+GO:1904666	regulation of ubiquitin protein ligase activity	82	7.48e-10
+GO:0031397	negative regulation of protein ubiquitination	111	8.4e-10
+GO:2000060	positive regulation of protein ubiquitination involved in ubiquitin-dependent protein catabolic process	85	8.52e-10
+GO:0004004	ATP-dependent RNA helicase activity	56	9.75e-10
+GO:0008186	RNA-dependent ATPase activity	56	9.75e-10
+GO:1902582	single-organism intracellular transport	539	1.15e-09
+GO:0016817	hydrolase activity, acting on acid anhydrides	543	1.16e-09
+GO:0016818	hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides	543	1.16e-09
+GO:0016462	pyrophosphatase activity	543	1.16e-09
+GO:0008094	DNA-dependent ATPase activity	67	1.66e-09
+GO:0007346	regulation of mitotic cell cycle	375	1.68e-09
+GO:1903322	positive regulation of protein modification by small protein conjugation or removal	160	2.11e-09
+GO:0000786	nucleosome	22	2.88e-09
+GO:2000058	regulation of protein ubiquitination involved in ubiquitin-dependent protein catabolic process	91	4.99e-09
+GO:0071897	DNA biosynthetic process	143	5.17e-09
+GO:0042623	ATPase activity, coupled	252	6.01e-09
+GO:0006353	DNA-templated transcription, termination	92	8.47e-09
+GO:0051438	regulation of ubiquitin-protein transferase activity	101	9.18e-09
+GO:0008135	translation factor activity, RNA binding	62	1.25e-08
+GO:0032040	small-subunit processome	21	1.34e-08
+GO:0042255	ribosome assembly	33	1.41e-08
+GO:0048024	regulation of mRNA splicing, via spliceosome	40	1.82e-08
+GO:0005684	U2-type spliceosomal complex	25	2.04e-08
+GO:0000118	histone deacetylase complex	50	2.4e-08
+GO:0051641	cellular localization	1806	2.44e-08
+GO:0010501	RNA secondary structure unwinding	38	2.48e-08
+GO:0015931	nucleobase-containing compound transport	144	2.61e-08
+GO:0003713	transcription coactivator activity	254	2.69e-08
+GO:0006310	DNA recombination	161	3.23e-08
+GO:0000788	nuclear nucleosome	18	3.69e-08
+GO:0031396	regulation of protein ubiquitination	192	3.92e-08
+GO:0035326	enhancer binding	62	7.43e-08
+GO:0030490	maturation of SSU-rRNA	28	7.83e-08
+GO:0033044	regulation of chromosome organization	115	8.19e-08
+GO:0038061	NIK/NF-kappaB signaling	91	1e-07
+GO:0072657	protein localization to membrane	383	1.02e-07
+GO:0006521	regulation of cellular amino acid metabolic process	52	1.1e-07
+GO:1903052	positive regulation of proteolysis involved in cellular protein catabolic process	145	1.25e-07
+GO:0006261	DNA-dependent DNA replication	107	1.45e-07
+GO:0072331	signal transduction by p53 class mediator	221	1.46e-07
+GO:1901566	organonitrogen compound biosynthetic process	954	1.66e-07
+GO:0005635	nuclear envelope	247	1.85e-07
+GO:0035097	histone methyltransferase complex	69	1.86e-07
+GO:1902275	regulation of chromatin organization	105	2.33e-07
+GO:0034613	cellular protein localization	1131	2.41e-07
+GO:1903364	positive regulation of cellular protein catabolic process	157	2.5e-07
+GO:0031398	positive regulation of protein ubiquitination	147	2.52e-07
+GO:0070727	cellular macromolecule localization	1138	3.21e-07
+GO:0001158	enhancer sequence-specific DNA binding	51	3.5e-07
+GO:0050686	negative regulation of mRNA processing	21	3.54e-07
+GO:0002181	cytoplasmic translation	41	3.9e-07
+GO:0000792	heterochromatin	41	3.9e-07
+GO:0003714	transcription corepressor activity	172	3.95e-07
+GO:0005856	cytoskeleton	1145	4.25e-07
+GO:0000387	spliceosomal snRNP assembly	34	4.52e-07
+GO:0033238	regulation of cellular amine metabolic process	60	6.59e-07
+GO:0090263	positive regulation of canonical Wnt signaling pathway	92	6.68e-07
+GO:0017053	transcriptional repressor complex	63	7.58e-07
+GO:0030686	90S preribosome	16	8.56e-07
+GO:0005852	eukaryotic translation initiation factor 3 complex	16	8.56e-07
+GO:0000470	maturation of LSU-rRNA	16	8.56e-07
+GO:1903050	regulation of proteolysis involved in cellular protein catabolic process	185	8.63e-07
+GO:1903362	regulation of cellular protein catabolic process	203	9.59e-07
+GO:0005667	transcription factor complex	182	9.96e-07
+GO:0000123	histone acetyltransferase complex	75	1.04e-06
+GO:0000793	condensed chromosome	84	1.1e-06
+GO:0006289	nucleotide-excision repair	106	1.32e-06
+GO:0090305	nucleic acid phosphodiester bond hydrolysis	107	1.97e-06
+GO:0051649	establishment of localization in cell	1442	2.12e-06
+GO:0003684	damaged DNA binding	46	2.64e-06
+GO:0001228	transcriptional activator activity, RNA polymerase II transcription regulatory region sequence-specific binding	175	2.74e-06
+GO:0006354	DNA-templated transcription, elongation	108	2.93e-06
+GO:0044248	cellular catabolic process	1177	2.98e-06
+GO:0016573	histone acetylation	105	3.16e-06
+GO:1901796	regulation of signal transduction by p53 class mediator	148	3.29e-06
+GO:0000982	transcription factor activity, RNA polymerase II core promoter proximal region sequence-specific binding	197	3.41e-06
+GO:0006520	cellular amino acid metabolic process	226	3.49e-06
+GO:1902493	acetyltransferase complex	84	4.51e-06
+GO:0031248	protein acetyltransferase complex	84	4.51e-06
+GO:0043414	macromolecule methylation	149	4.52e-06
+GO:0004003	ATP-dependent DNA helicase activity	25	4.97e-06
+GO:1903312	negative regulation of mRNA metabolic process	25	4.97e-06
+GO:0006886	intracellular protein transport	705	5.71e-06
+GO:0000380	alternative mRNA splicing, via spliceosome	32	5.88e-06
+GO:0006473	protein acetylation	133	6.11e-06
+GO:0032204	regulation of telomere maintenance	61	6.16e-06
+GO:0032259	methylation	164	6.49e-06
+GO:0005689	U12-type spliceosomal complex	21	6.65e-06
+GO:0000462	maturation of SSU-rRNA from tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA)	21	6.65e-06
+GO:0071011	precatalytic spliceosome	19	6.76e-06
+GO:0000776	kinetochore	85	7.07e-06
+GO:0000726	non-recombinational repair	53	7.79e-06
+GO:0006475	internal protein amino acid acetylation	114	8.32e-06
+GO:0018394	peptidyl-lysine acetylation	111	9.17e-06
+GO:0003678	DNA helicase activity	40	9.59e-06
+GO:0002479	antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-dependent	59	9.88e-06
+GO:0018393	internal peptidyl-lysine acetylation	108	1.01e-05
+GO:0006303	double-strand break repair via nonhomologous end joining	48	1.04e-05
+GO:0000980	RNA polymerase II distal enhancer sequence-specific DNA binding	43	1.29e-05
+GO:1990391	DNA repair complex	33	1.44e-05
+GO:0032784	regulation of DNA-templated transcription, elongation	33	1.44e-05
+GO:0060071	Wnt signaling pathway, planar cell polarity pathway	90	1.59e-05
+GO:0090175	regulation of establishment of planar polarity	90	1.59e-05
+GO:0022607	cellular component assembly	1728	1.93e-05
+GO:0005732	small nucleolar ribonucleoprotein complex	14	1.96e-05
+GO:0016363	nuclear matrix	49	1.97e-05
+GO:0030177	positive regulation of Wnt signaling pathway	120	2.15e-05
+GO:0001076	transcription factor activity, RNA polymerase II transcription factor binding	94	2.24e-05
+GO:0016605	PML body	55	2.54e-05
+GO:0005686	U2 snRNP	16	2.68e-05
+GO:0033119	negative regulation of RNA splicing	16	2.68e-05
+GO:0006368	transcription elongation from RNA polymerase II promoter	85	2.71e-05
+GO:0005839	proteasome core complex	18	2.91e-05
+GO:0042826	histone deacetylase binding	70	3.14e-05
+GO:0043596	nuclear replication fork	34	3.31e-05
+GO:0005657	replication fork	50	3.63e-05
+GO:0002474	antigen processing and presentation of peptide antigen via MHC class I	86	4.11e-05
+GO:0005643	nuclear pore	56	4.45e-05
+GO:0001738	morphogenesis of a polarized epithelium	99	4.46e-05
+GO:0042590	antigen processing and presentation of exogenous peptide antigen via MHC class I	62	4.93e-05
+GO:0003697	single-stranded DNA binding	68	5.07e-05
+GO:0001736	establishment of planar polarity	93	5.3e-05
+GO:0007164	establishment of tissue polarity	93	5.3e-05
+GO:0000082	G1/S transition of mitotic cell cycle	186	5.34e-05
+GO:0006457	protein folding	137	6.4e-05
+GO:0031056	regulation of histone modification	84	6.59e-05
+GO:0000460	maturation of 5.8S rRNA	23	7.46e-05
+GO:0000731	DNA synthesis involved in DNA repair	69	8.11e-05
+GO:0019899	enzyme binding	1282	0.000102
+GO:0071010	prespliceosome	19	0.000113
+GO:1904874	positive regulation of telomerase RNA localization to Cajal body	15	0.00012
+GO:1904872	regulation of telomerase RNA localization to Cajal body	15	0.00012
+GO:0000070	mitotic sister chromatid segregation	112	0.000132
+GO:0051054	positive regulation of DNA metabolic process	143	0.000134
+GO:1903902	positive regulation of viral life cycle	83	0.000158
+GO:0018193	peptidyl-amino acid modification	802	0.000159
+GO:0098781	ncRNA transcription	80	0.00017
+GO:0044843	cell cycle G1/S phase transition	195	0.000195
+GO:0090568	nuclear transcriptional repressor complex	24	0.000209
+GO:0034502	protein localization to chromosome	54	0.000335
+GO:0046364	monosaccharide biosynthetic process	60	0.000345
+GO:0032451	demethylase activity	32	0.000361
+GO:0070911	global genome nucleotide-excision repair	32	0.000361
+GO:0000428	DNA-directed RNA polymerase complex	95	0.00037
+GO:0055029	nuclear DNA-directed RNA polymerase complex	95	0.00037
+GO:1901575	organic substance catabolic process	1344	0.000405
+GO:0015630	microtubule cytoskeleton	720	0.000433
+GO:0043161	proteasome-mediated ubiquitin-dependent protein catabolic process	295	0.00046
+GO:1902580	single-organism cellular localization	821	0.000466
+GO:0032508	DNA duplex unwinding	35	0.000478
+GO:1902562	H4 histone acetyltransferase complex	35	0.000478
+GO:0000075	cell cycle checkpoint	188	0.000505
+GO:0031047	gene silencing by RNA	106	0.000511
+GO:0090545	CHD-type complex	16	0.000524
+GO:0016581	NuRD complex	16	0.000524
+GO:0090670	RNA localization to Cajal body	16	0.000524
+GO:0090672	telomerase RNA localization	16	0.000524
+GO:0090671	telomerase RNA localization to Cajal body	16	0.000524
+GO:0005682	U5 snRNP	14	0.000532
+GO:0032452	histone demethylase activity	25	0.000532
+GO:0075733	intracellular transport of virus	64	0.000539
+GO:0006278	RNA-dependent DNA biosynthetic process	52	0.000542
+GO:0010212	response to ionizing radiation	83	0.00055
+GO:0017069	snRNA binding	30	0.000552
+GO:2001252	positive regulation of chromosome organization	55	0.000555
+GO:0043543	protein acylation	152	0.000586
+GO:0004407	histone deacetylase activity	38	0.00059
+GO:0033558	protein deacetylase activity	38	0.00059
+GO:0044430	cytoskeletal part	873	0.000667
+GO:0031331	positive regulation of cellular catabolic process	227	0.000667
+GO:0032392	DNA geometric change	41	0.00069
+GO:0030880	RNA polymerase complex	97	0.000737
+GO:0045732	positive regulation of protein catabolic process	209	0.000826
+GO:0008213	protein alkylation	94	0.000827
+GO:0006479	protein methylation	94	0.000827
+GO:1902581	multi-organism cellular localization	65	0.000837
+GO:1902583	multi-organism intracellular transport	65	0.000837
+GO:0045862	positive regulation of proteolysis	287	0.000906
+GO:0000209	protein polyubiquitination	221	0.000932
+GO:0016574	histone ubiquitination	36	0.000935
+GO:0032786	positive regulation of DNA-templated transcription, elongation	21	0.00106
+GO:0033683	nucleotide-excision repair, DNA incision	39	0.0011
+GO:0035966	response to topologically incorrect protein	133	0.00113
+GO:0048524	positive regulation of viral process	95	0.00116
+GO:0003743	translation initiation factor activity	31	0.00116
+GO:0071339	MLL1 complex	26	0.00125
+GO:0044665	MLL1/2 complex	26	0.00125
+GO:0051053	negative regulation of DNA metabolic process	92	0.00131
+GO:0006986	response to unfolded protein	123	0.00134
+GO:0001104	RNA polymerase II transcription cofactor activity	63	0.00135
+GO:0022624	proteasome accessory complex	19	0.00142
+GO:0034504	protein localization to nucleus	262	0.00143
+GO:0042787	protein ubiquitination involved in ubiquitin-dependent protein catabolic process	174	0.00144
+GO:0007004	telomere maintenance via telomerase	51	0.00145
+GO:0006399	tRNA metabolic process	106	0.0015
+GO:0016591	DNA-directed RNA polymerase II, holoenzyme	76	0.00153
+GO:0033036	macromolecule localization	1737	0.00161
+GO:0010948	negative regulation of cell cycle process	182	0.00163
+GO:0031965	nuclear membrane	149	0.00172
+GO:0009314	response to radiation	271	0.00175
+GO:0006296	nucleotide-excision repair, DNA incision, 5'-to lesion	37	0.00176
+GO:0006418	tRNA aminoacylation for protein translation	37	0.00176
+GO:0016567	protein ubiquitination	463	0.00179
+GO:0030687	preribosome, large subunit precursor	17	0.00182
+GO:0000154	rRNA modification	17	0.00182
+GO:0097526	spliceosomal tri-snRNP complex	24	0.00186
+GO:0046794	transport of virus	67	0.00194
+GO:0048025	negative regulation of mRNA splicing, via spliceosome	11	0.00205
+GO:1904816	positive regulation of protein localization to chromosome, telomeric region	11	0.00205
+GO:0035064	methylated histone binding	43	0.00217
+GO:0006312	mitotic recombination	43	0.00217
+GO:0008023	transcription elongation factor complex	43	0.00217
+GO:0008327	methyl-CpG binding	15	0.00218
+GO:0001191	transcriptional repressor activity, RNA polymerase II transcription factor binding	61	0.00218
+GO:0007067	mitotic nuclear division	237	0.00221
+GO:0035567	non-canonical Wnt signaling pathway	132	0.00225
+GO:0000974	Prp19 complex	13	0.00233
+GO:1904814	regulation of protein localization to chromosome, telomeric region	13	0.00233
+GO:0031329	regulation of cellular catabolic process	301	0.00252
+GO:0044798	nuclear transcription factor complex	101	0.00268
+GO:0006298	mismatch repair	27	0.00277
+GO:0006336	DNA replication-independent nucleosome assembly	35	0.00281
+GO:0034724	DNA replication-independent nucleosome organization	35	0.00281
+GO:0034508	centromere complex assembly	35	0.00281
+GO:1902579	multi-organism localization	68	0.0029
+GO:0044766	multi-organism transport	68	0.0029
+GO:0042176	regulation of protein catabolic process	290	0.00298
+GO:0034248	regulation of cellular amide metabolic process	231	0.0031
+GO:0031570	DNA integrity checkpoint	137	0.00324
+GO:0043632	modification-dependent macromolecule catabolic process	405	0.00331
+GO:0019941	modification-dependent protein catabolic process	397	0.00345
+GO:0002478	antigen processing and presentation of exogenous peptide antigen	152	0.00357
+GO:0010833	telomere maintenance via telomere lengthening	56	0.00367
+GO:0005720	nuclear heterochromatin	20	0.00387
+GO:0000381	regulation of alternative mRNA splicing, via spliceosome	25	0.00422
+GO:0044389	ubiquitin-like protein ligase binding	237	0.00456
+GO:0032269	negative regulation of cellular protein metabolic process	629	0.00459
+GO:1905330	regulation of morphogenesis of an epithelium	124	0.00466
+GO:0001077	transcriptional activator activity, RNA polymerase II core promoter proximal region sequence-specific binding	124	0.00466
+GO:0001047	core promoter binding	103	0.0049
+GO:1905269	positive regulation of chromatin organization	63	0.00501
+GO:0016571	histone methylation	76	0.00511
+GO:0060249	anatomical structure homeostasis	222	0.00512
+GO:0005838	proteasome regulatory particle	18	0.00537
+GO:0031440	regulation of mRNA 3'-end processing	18	0.00537
+GO:0034243	regulation of transcription elongation from RNA polymerase II promoter	18	0.00537
+GO:0005697	telomerase holoenzyme complex	18	0.00537
+GO:0031625	ubiquitin protein ligase binding	234	0.00539
+GO:0002223	stimulatory C-type lectin receptor signaling pathway	100	0.00564
+GO:0019319	hexose biosynthetic process	57	0.00567
+GO:0006734	NADH metabolic process	28	0.00575
+GO:0005832	chaperonin-containing T-complex	8	0.00588
+GO:1904871	positive regulation of protein localization to Cajal body	8	0.00588
+GO:1904869	regulation of protein localization to Cajal body	8	0.00588
+GO:0032206	positive regulation of telomere maintenance	42	0.006
+GO:0031647	regulation of protein stability	173	0.00609
+GO:0019213	deacetylase activity	45	0.00618
+GO:0070491	repressing transcription factor binding	45	0.00618
+GO:0006511	ubiquitin-dependent protein catabolic process	393	0.00623
+GO:0000724	double-strand break repair via homologous recombination	70	0.00624
+GO:0051704	multi-organism process	1146	0.00634
+GO:0010390	histone monoubiquitination	23	0.00638
+GO:0006297	nucleotide-excision repair, DNA gap filling	23	0.00638
+GO:0005819	spindle	166	0.00683
+GO:0004812	aminoacyl-tRNA ligase activity	31	0.00714
+GO:0000722	telomere maintenance via recombination	31	0.00714
+GO:0036002	pre-mRNA binding	16	0.00715
+GO:0010498	proteasomal protein catabolic process	320	0.00738
+GO:0043021	ribonucleoprotein complex binding	58	0.00863
+GO:0009056	catabolic process	1422	0.00883
+GO:0006735	NADH regeneration	26	0.00897
+GO:0061621	canonical glycolysis	26	0.00897
+GO:0061718	glucose catabolic process to pyruvate	26	0.00897
+GO:0061615	glycolytic process through fructose-6-phosphate	26	0.00897
+GO:0061620	glycolytic process through glucose-6-phosphate	26	0.00897
+GO:0070198	protein localization to chromosome, telomeric region	26	0.00897
+GO:0000725	recombinational repair	71	0.00901
+GO:0044802	single-organism membrane organization	653	0.00909
+GO:0043486	histone exchange	37	0.00916
+GO:0050434	positive regulation of viral transcription	37	0.00916
+GO:0005687	U4 snRNP	10	0.0095
+GO:0000244	spliceosomal tri-snRNP complex assembly	10	0.0095
+GO:0097346	INO80-type complex	21	0.00951
+GO:0030515	snoRNA binding	21	0.00951
+GO:0043038	amino acid activation	40	0.00972
+GO:0046496	nicotinamide nucleotide metabolic process	88	0.00972
+GO:0019362	pyridine nucleotide metabolic process	88	0.00972
+GO:0043039	tRNA aminoacylation	40	0.00972
+GO:0044452	nucleolar part	43	0.01
+GO:0002220	innate immune response activating cell surface receptor signaling pathway	102	0.0101
+GO:0034709	methylosome	12	0.0101
+GO:0032968	positive regulation of transcription elongation from RNA polymerase II promoter	12	0.0101
+GO:0019884	antigen processing and presentation of exogenous antigen	157	0.0112
+GO:0016874	ligase activity	113	0.0112
+GO:0019843	rRNA binding	29	0.0113
+GO:1900034	regulation of cellular response to heat	75	0.0115
+GO:0000280	nuclear division	299	0.0124
+GO:2000027	regulation of organ morphogenesis	150	0.0125
+GO:0006283	transcription-coupled nucleotide-excision repair	72	0.0129
+GO:0015030	Cajal body	32	0.0133
+GO:0016876	ligase activity, forming aminoacyl-tRNA and related compounds	32	0.0133
+GO:0016875	ligase activity, forming carbon-oxygen bonds	32	0.0133
+GO:0006270	DNA replication initiation	24	0.0139
+GO:0046540	U4/U6 x U5 tri-snRNP complex	19	0.0139
+GO:0006376	mRNA splice site selection	19	0.0139
+GO:0000083	regulation of transcription involved in G1/S transition of mitotic cell cycle	24	0.0139
+GO:0006417	regulation of translation	208	0.0142
+GO:0047485	protein N-terminus binding	69	0.0143
+GO:0021762	substantia nigra development	35	0.0148
+GO:0035770	ribonucleoprotein granule	118	0.0162
+GO:0006733	oxidoreduction coenzyme metabolic process	97	0.0181
+GO:0051817	modification of morphology or physiology of other organism involved in symbiotic interaction	73	0.0182
+GO:0048002	antigen processing and presentation of peptide antigen	167	0.0189
+GO:0050821	protein stabilization	115	0.019
+GO:0031400	negative regulation of protein modification process	410	0.0191
+GO:0061695	transferase complex, transferring phosphorus-containing groups	198	0.0195
+GO:0051248	negative regulation of protein metabolic process	670	0.0205
+GO:0000717	nucleotide-excision repair, DNA duplex unwinding	22	0.0214
+GO:0036464	cytoplasmic ribonucleoprotein granule	112	0.0222
+GO:0003725	double-stranded RNA binding	54	0.0224
+GO:0006094	gluconeogenesis	54	0.0224
+GO:0043967	histone H4 acetylation	54	0.0224
+GO:0051082	unfolded protein binding	54	0.0224
+GO:0035257	nuclear hormone receptor binding	105	0.0233
+GO:0006301	postreplication repair	51	0.0239
+GO:0000077	DNA damage checkpoint	127	0.0248
+GO:0034719	SMN-Sm protein complex	15	0.0275
+GO:0070822	Sin3-type complex	15	0.0275
+GO:0005685	U1 snRNP	15	0.0275
+GO:0006346	methylation-dependent chromatin silencing	15	0.0275
+GO:0030894	replisome	25	0.0284
+GO:0009896	positive regulation of catabolic process	268	0.0291
+GO:0000463	maturation of LSU-rRNA from tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA)	7	0.0299
+GO:0044106	cellular amine metabolic process	92	0.0322
+GO:0044839	cell cycle G2/M phase transition	162	0.0324
+GO:0031055	chromatin remodeling at centromere	28	0.0343
+GO:0071004	U2-type prespliceosome	13	0.036
+GO:0000027	ribosomal large subunit assembly	13	0.036
+GO:0006096	glycolytic process	52	0.0361
+GO:0031072	heat shock protein binding	52	0.0361
+GO:0006998	nuclear envelope organization	65	0.0362
+GO:0009894	regulation of catabolic process	386	0.0382
+GO:0042769	DNA damage response, detection of DNA damage	31	0.0387
+GO:0006409	tRNA export from nucleus	31	0.0387
+GO:0071431	tRNA-containing ribonucleoprotein complex export from nucleus	31	0.0387
+GO:0045786	negative regulation of cell cycle	361	0.0394
+GO:0051348	negative regulation of transferase activity	254	0.0409
+GO:0051568	histone H3-K4 methylation	34	0.0415
+GO:0048857	neural nucleus development	40	0.0431
+GO:0042405	nuclear inclusion body	11	0.0431
+GO:0070202	regulation of establishment of protein localization to chromosome	11	0.0431
+GO:0010565	regulation of cellular ketone metabolic process	122	0.0435
+GO:0031597	cytosolic proteasome complex	9	0.0437
+GO:0000478	endonucleolytic cleavage involved in rRNA processing	9	0.0437
+GO:0031441	negative regulation of mRNA 3'-end processing	9	0.0437
+GO:1904851	positive regulation of establishment of protein localization to telomere	9	0.0437
+GO:1904867	protein localization to Cajal body	9	0.0437
+GO:1903405	protein localization to nuclear body	9	0.0437
+GO:1990173	protein localization to nucleoplasm	9	0.0437
+GO:0003746	translation elongation factor activity	9	0.0437
+GO:0034968	histone lysine methylation	59	0.0447
+GO:0070199	establishment of protein localization to chromosome	23	0.0448
+GO:0080135	regulation of cellular response to stress	456	0.0476
+GO:0031935	regulation of chromatin silencing	18	0.049
+GO:0034605	cellular response to heat	90	0.0496

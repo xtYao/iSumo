@@ -138,51 +138,6 @@ setkey(sumo, uniprotKb)
 sumo[, hits := rowSums(sumo[, -("uniprotKb"), with=F])]
 sumo[, isSumo := hits>0]
 
-# ## stacked bar plot to show composition of hits
-# meltSumo = melt(sumo[, 1:6, with=F]*sumo$hits)[value>0]
-#
-# reorder_size <- function(x, decreasing = FALSE) {
-#   factor(x, levels = names(sort(table(x), decreasing = decreasing)))
-# }
-#
-# g = ggplot(meltSumo, aes(x = reorder_size(variable, T), fill = value)) +
-# #	labs(x = "", y = "Number of SUMOylated proteins found") +
-# #	scale_colour_brewer(type = "qual", name = "Confirmed by") +
-# 	geom_bar(width = 0.6) +
-# 	theme(axis.line = element_line(size=1, colour = "black"),
-#         panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-#         panel.border = element_blank(), panel.background = element_blank())
-# g
-#
-# #	geom_abline(slope = 0, intercept = 0) +
-# 	theme_bw(base_size = 16, base_family = "sans") +
-# 	theme(axis.text.x =
-# 		  	element_text(size=16, ##angle = 90,
-# 		  				 hjust = 0, debug = T, vjust = 0),
-# 		  axis.text.y = element_text(size=16),
-# 		  axis.ticks.x = element_line(size = 0),
-# 		  axis.line =
-# 		  	element_line(size = 2, color = "black"),
-# 		  axis.title.y = element_text(size = 16),
-# 		  axis.title.x = element_blank(),
-# 		  legend.position = c(.8, .8),
-# 		  legend.text = element_text(size = 16),
-# 		  legend.title = element_text(size = 16),
-# 		  panel.border = element_blank(),
-# #		  panel.border = element_rect(color = "black", size=1),
-# 		  panel.grid.major = element_blank(),
-# 		  panel.background = element_blank())
-# 		  #panel.margin = margin(0,0,0,0))
-# g
-## add x y axis
-
-## tilt x values
-## bigger font
-## color palate
-## remove background
-
-## redo x y labels
-
 
 ## task 3: use gProfileR to find significant terms
 enrich = gprofiler(query = sumo[isSumo==T, uniprotKb],
@@ -205,6 +160,10 @@ if(taxId == "9606"){
 setkey(sigGo, term.name)
 ## Cleaning: don't include any annotation directly show SUMO status
 sigGo = sigGo[!grepl("sumo", term.name, ignore.case = T)]
+
+## Table 1: significantly enrich GO terms in SUMO set
+write.table(sigGo[order(p.value)], paste(taxId,".sigGo.txt",sep = ""),
+			sep = "\t", row.names = F, quote = F)
 
 ## task 4: retrieve GO-gene association for all genes and all selected terms
 ## set up connection
@@ -281,7 +240,7 @@ goMat = as.data.table(lapply(sigGo$term.id, function(x){
         proteome$sgd %in% ids
     }
 }))
-colnames(goMat) = sigGo[term.id %in% colnames(goMat), term.name]
+colnames(goMat) = sigGo[, term.name]
 
 write.table(goMat, paste("data/", taxId, ".goMat.txt", sep = ""),
             quote = F, row.names = F, sep = "\t")
@@ -399,6 +358,10 @@ if (taxId == "9606"){
 	colnames(yeastComplex) = c("nComp", "avgCompSz")
 }
 
+## Table 2. analyzing RNA-binding, SUMO in protein complexes
+
+
+
 ## task 7: phosphosite
 ## include number of P/M/A/U modification sites
 if (taxId == "9606"){
@@ -464,7 +427,7 @@ gpsSumo = do.call(rbind,
 ## TODO: rerun
 if (taxId=="9606"){
 	iSumoData = cbind(proteome[, .(uniprotKb, symbol, Length, Mass)],
-					  goMat[,-1,with=F], ## GO annotation
+					  goMat, ## GO annotation
 					  ptmMat[,-1,with=F],
 					  ppiDegree, humanComplex,
 					  gpsSumo, sumo[, .(isSumo)])
@@ -495,9 +458,8 @@ if (taxId == "9606"){
     m2 = m1[hits>0 & value==TRUE, table(hits, variable)]
     m3 = melt(m2, value.name = "nSumo")
     m3$variable <- reorder(x = m3$variable, X = m3$nSumo, FUN = sum)
-    m3 = rbind(m3[hits<9],
-               m3[hits>=9, .(hits = "9+", nSumo = sum(nSumo)), by = variable])
-    m3$hits = as.factor(m4$hits)
+    m3 = data.table(m3)
+    m3[, hits := ifelse(hits>=9, "9+", as.character(hits))]
 } else if (taxId == "559292"){
 	m1 = melt(data = sumo, id.vars = "hits", measure.vars = 1:6)
 	m2 = m1[hits>0 & value==TRUE, table(hits, variable)]
@@ -700,10 +662,6 @@ setkey(finalPrediction, "uniprotKb")
 saveRDS(finalPrediction, paste(taxId, ".finalPrediction.rds", sep=""))
 write.table(finalPrediction, paste(taxId, ".finalPrediction.csv", sep=""),
 			sep = "\t", row.names = F, quote = F)
-
-##
-
-
 
 ##### SAVE WORKSPCE
 save.image(file = paste(taxId, "RData", sep = "."))
