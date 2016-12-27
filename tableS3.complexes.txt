@@ -1,0 +1,1941 @@
+Complex name	Complex size	Organism	Number of RNA-binding subunits	Number of SUMOylated subunits	RNA binding	SUMOylated	RNA.SUMO
+BCL6-HDAC4 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+BCL6-HDAC5 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+BCL6-HDAC7 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+Multisubunit ACTR coactivator complex	4	human	1	0	TRUE	FALSE	TRUE.FALSE
+BLOC-3 (biogenesis of lysosome-related organelles complex 3)	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+BLOC-2 (biogenesis of lysosome-related organelles complex 2)	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+MUS81-CDS1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+NCOR complex	6	human	0	2	FALSE	TRUE	FALSE.TRUE
+BLOC-1 (biogenesis of lysosome-related organelles complex 1)	8	human	0	0	FALSE	FALSE	FALSE.FALSE
+Arp2/3 protein complex	7	human	0	6	FALSE	TRUE	FALSE.TRUE
+PA28gamma complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+PA28 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+PA700 complex	20	human	2	15	TRUE	TRUE	TRUE.TRUE
+AP1 adaptor complex	8	human	0	1	FALSE	TRUE	FALSE.TRUE
+Mi-2/NuRD-MTA2 complex	5	human	0	3	FALSE	TRUE	FALSE.TRUE
+Gamma-secretase complex (APH1A, PSEN1, PSENEN, NCSTN variant)	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+DNMT3B complex	7	human	1	6	TRUE	TRUE	TRUE.TRUE
+HDAC4-ERK1 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+HDAC4-ERK2 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+SMRT complex	5	human	0	2	FALSE	TRUE	FALSE.TRUE
+AP3 adapter complex	7	human	0	0	FALSE	FALSE	FALSE.FALSE
+Interferon-stimulated gene factor 3 transcription complex ISGF3	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+Mi2/NuRD complex	7	human	2	7	TRUE	TRUE	TRUE.TRUE
+AP4 adaptor complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+TSC1-TSC2 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Ubiquitin E3 ligase (SKP1A, FBXW8, CUL7, RBX1)	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+NUMAC complex (nucleosomal methylation activator complex)	10	human	1	6	TRUE	TRUE	TRUE.TRUE
+Nup 107-160 subcomplex	9	human	1	7	TRUE	TRUE	TRUE.TRUE
+FA complex (Fanconi anemia complex), cytoplasmic	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+CD28-transactivation complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+Ku antigen-NARG1 complex	3	human	3	3	TRUE	TRUE	TRUE.TRUE
+Anaphase-promoting complex	9	human	0	4	FALSE	TRUE	FALSE.TRUE
+p300-MDM2-p53 protein complex	3	human	1	1	TRUE	TRUE	TRUE.TRUE
+hNURF complex	4	human	1	4	TRUE	TRUE	TRUE.TRUE
+RNA polymerase II holoenzyme complex	24	human	8	8	TRUE	TRUE	TRUE.TRUE
+RNA polymerase II core complex	12	human	4	4	TRUE	TRUE	TRUE.TRUE
+Prefoldin complex	6	human	0	2	FALSE	TRUE	FALSE.TRUE
+SNAPc (small nuclear RNA-activating protein) complex	5	human	0	0	FALSE	FALSE	FALSE.FALSE
+Polycomb repressive complex 1 (PRC1, hPRC-H)	13	human	3	11	TRUE	TRUE	TRUE.TRUE
+GPR56-CD81-Galphaq/11-Gbeta complex	8	human	0	1	FALSE	TRUE	FALSE.TRUE
+GPI-GnT activity complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+Lymphotoxin beta receptor complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Rnase/Mrp complex	10	human	6	2	TRUE	TRUE	TRUE.TRUE
+NDC80 kinetochore complex	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+PIDDsome complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Telosome complex	6	human	0	2	FALSE	TRUE	FALSE.TRUE
+E-box sequence-binding complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+CD147-gamma-secretase complex (APH-1a, PS-1, PEN-2, NCT variant)	5	human	0	1	FALSE	TRUE	FALSE.TRUE
+APP-FE65-LRP complex	3	human	1	0	TRUE	FALSE	TRUE.FALSE
+Gamma-BAR-AP1 complex	9	human	0	1	FALSE	TRUE	FALSE.TRUE
+PBAF complex (Polybromo- and BAF containing complex)	12	human	1	7	TRUE	TRUE	TRUE.TRUE
+TFIIE complex	2	human	1	0	TRUE	FALSE	TRUE.FALSE
+TFIIF complex (transcription factor IIF)	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+Retrotranslocation complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+Condensin I complex	5	human	0	3	FALSE	TRUE	FALSE.TRUE
+Condensin I-PARP-1-XRCC1 complex	7	human	1	5	TRUE	TRUE	TRUE.TRUE
+Condensin II	5	human	0	5	FALSE	TRUE	FALSE.TRUE
+Conserved oligomeric Golgi (COG) complex	8	human	0	0	FALSE	FALSE	FALSE.FALSE
+Cohesin-SA1 complex	4	human	1	4	TRUE	TRUE	TRUE.TRUE
+Cohesin-SA2 complex	4	human	1	4	TRUE	TRUE	TRUE.TRUE
+MRN complex (MRE11-RAD50-NBN complex)	3	human	0	3	FALSE	TRUE	FALSE.TRUE
+OGT-TRAK1-TRAK2 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+PNUTS-PP1 complex	2	human	1	2	TRUE	TRUE	TRUE.TRUE
+26S proteasome	22	human	4	19	TRUE	TRUE	TRUE.TRUE
+Wave-2 complex	5	human	0	0	FALSE	FALSE	FALSE.FALSE
+BAF complex	13	human	1	6	TRUE	TRUE	TRUE.TRUE
+Mitotic checkpoint complex (MCC)	4	human	0	2	FALSE	TRUE	FALSE.TRUE
+20S proteasome	14	human	2	13	TRUE	TRUE	TRUE.TRUE
+PA28-20S proteasome	16	human	2	13	TRUE	TRUE	TRUE.TRUE
+PA700-20S-PA28 complex	36	human	4	28	TRUE	TRUE	TRUE.TRUE
+PA28gamma-20S proteasome	15	human	2	13	TRUE	TRUE	TRUE.TRUE
+HUIC complex	2	human	2	2	TRUE	TRUE	TRUE.TRUE
+Ubiquitin E3 ligase (ASB2, TCEB1, TCEB2, CUL5, RNF7)	5	human	0	2	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (ASB1, TCEB1, TCEB2, CUL5, RNF7)	5	human	0	2	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (ASB6, TCEB1, TCEB2, CUL5, RNF7)	5	human	0	2	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (ASB7, TCEB1, TCEB2, CUL5, RNF7)	5	human	0	2	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (ASB12, TCEB1, TCEB2, CUL5, RNF7)	5	human	0	2	FALSE	TRUE	FALSE.TRUE
+DNA ligase IV-XRCC1 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (WSB1, TCEB1, TCEB2, CUL5, RBX1)	5	human	0	2	FALSE	TRUE	FALSE.TRUE
+CAND1-CUL1-RBX1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ARF-Mule complex	3	human	2	1	TRUE	TRUE	TRUE.TRUE
+CAND1-CUL2-RBX1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+CAND1-CUL3-RBX1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+CAND1-CUL4A-RBX1 complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+CAND1-CUL4B-RBX1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (SKP1A, BTRC, CUL1)	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+NAT complex	7	human	0	1	FALSE	TRUE	FALSE.TRUE
+Mediator complex	32	human	0	6	FALSE	TRUE	FALSE.TRUE
+ARC complex	15	human	0	6	FALSE	TRUE	FALSE.TRUE
+HuCHRAC complex	4	human	0	3	FALSE	TRUE	FALSE.TRUE
+WICH complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+SWI-SNF chromatin remodeling-related-BRCA1 complex	11	human	2	9	TRUE	TRUE	TRUE.TRUE
+BRCA1-CTIP-ZBRK1 repressor complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+BRCA1-BACH1 complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+RalBP1-CDC2-CCNB1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+BRAFT complex	13	human	0	5	FALSE	TRUE	FALSE.TRUE
+BLM complex III	4	human	0	3	FALSE	TRUE	FALSE.TRUE
+RalBP1-CCNB1-AP2A-NUMB-EPN1 complex	6	human	0	0	FALSE	FALSE	FALSE.FALSE
+BCDX2 complex	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+RAD51C-XRCC3 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+TBPIP/HOP2-MND1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+RAD51B-RAD51C complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+RAD51B-RAD51C-RAD51D-XRCC2-XRCC3 complex	5	human	0	1	FALSE	TRUE	FALSE.TRUE
+R/M complex (RAD50-MRE11 complex)	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+ATR-ATRIP complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+RAD17-RFC complex	5	human	0	1	FALSE	TRUE	FALSE.TRUE
+RAD17-RFC-9-1-1 checkpoint supercomplex	8	human	0	1	FALSE	TRUE	FALSE.TRUE
+HMGB1-HMGB2-HSC70-ERP60-GAPDH complex	5	human	4	5	TRUE	TRUE	TRUE.TRUE
+SNF2h-cohesin-NuRD complex	16	human	5	15	TRUE	TRUE	TRUE.TRUE
+CRSP complex	11	human	0	4	FALSE	TRUE	FALSE.TRUE
+PCNA-MLH1-PMS1 complex	3	human	0	3	FALSE	TRUE	FALSE.TRUE
+PCNA-MSH2-MSH6 complex	3	human	0	3	FALSE	TRUE	FALSE.TRUE
+ARC-L complex	14	human	0	5	FALSE	TRUE	FALSE.TRUE
+ARC complex	15	human	0	6	FALSE	TRUE	FALSE.TRUE
+PCNA-DNA polymerase delta complex	5	human	0	3	FALSE	TRUE	FALSE.TRUE
+VEGF transcriptional complex	6	human	1	3	TRUE	TRUE	TRUE.TRUE
+IRF3-CBP complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+PC2 complex	12	human	1	4	TRUE	TRUE	TRUE.TRUE
+SMCC complex	17	human	1	6	TRUE	TRUE	TRUE.TRUE
+INO80 chromatin remodeling complex	13	human	1	7	TRUE	TRUE	TRUE.TRUE
+SRCAP-associated chromatin remodeling complex	10	human	0	5	FALSE	TRUE	FALSE.TRUE
+Ribosome, cytoplasmic	81	human	77	71	TRUE	TRUE	TRUE.TRUE
+60S ribosomal subunit, cytoplasmic	47	human	46	42	TRUE	TRUE	TRUE.TRUE
+Cell cycle kinase complex CDC2	6	human	0	2	FALSE	TRUE	FALSE.TRUE
+Cell cycle kinase complex CDK2	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+Cell cycle kinase complex CDK4	4	human	0	2	FALSE	TRUE	FALSE.TRUE
+Cell cycle kinase complex CDK5	5	human	0	2	FALSE	TRUE	FALSE.TRUE
+PCNA-p21 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+28S ribosomal subunit, mitochondrial	30	human	18	1	TRUE	TRUE	TRUE.TRUE
+55S ribosome, mitochondrial	78	human	46	1	TRUE	TRUE	TRUE.TRUE
+39S ribosomal subunit, mitochondrial	48	human	28	0	TRUE	FALSE	TRUE.FALSE
+Ku antigen complex	2	human	2	2	TRUE	TRUE	TRUE.TRUE
+PSF-p54(nrb) complex	2	human	2	2	TRUE	TRUE	TRUE.TRUE
+p54(nrb)-PSF-matrin3 complex	3	human	3	3	TRUE	TRUE	TRUE.TRUE
+DNA ligase IV-XRCC4-AHNK complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+40S ribosomal subunit, cytoplasmic	31	human	30	28	TRUE	TRUE	TRUE.TRUE
+DNA ligase IV-XRCC4 complex (LX complex)	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+DNA ligase IV-XRCC4-PNK complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+Spliceosome	143	human	116	106	TRUE	TRUE	TRUE.TRUE
+DNA ligase IV-condensin complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+DNA-PK-Ku antigen complex	3	human	3	3	TRUE	TRUE	TRUE.TRUE
+DNA ligase IV-XRCC4-XLF complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+Artemis-DNA-PK complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+DNA ligase III-XRCC1-PNK-DNA-pol III multiprotein complex	4	human	0	4	FALSE	TRUE	FALSE.TRUE
+DNA ligase III-XRCC1 complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+ERCC1-ERCC4-MSH2 complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+MSH2-MSH6-PMS1-MLH1 complex	4	human	0	4	FALSE	TRUE	FALSE.TRUE
+MSH2-MSH6 complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+MSH2-MSH3 complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+PCNA-MutS-alpha-MutL-alpha-DNA complex	5	human	0	5	FALSE	TRUE	FALSE.TRUE
+MutL-alpha complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+MutL-beta complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (UBADC1, RNF123)	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+MCM complex	6	human	0	6	FALSE	TRUE	FALSE.TRUE
+ORC complex (origin recognition complex)	6	human	0	5	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (SKP1A, FBXW2, CUL1)	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (DDB1, CUL4A, RBX1)	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+Succinyl-CoA synthetase, GDP-forming	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+Succinyl-CoA synthetase, ADP-forming	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+Isocitrate dehydrogenase, cytoplasmic	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+Guanylyl cyclase, soluble (GUCY1A2, GUCY1B3)	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Guanylyl cyclase, soluble (GUCY1A3, GUCY1B3)	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Farnesyltransferase	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Beta-dystroglycan-caveolin-3 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+EXO1-MLH1-PMS2 complex	3	human	0	3	FALSE	TRUE	FALSE.TRUE
+EXO1-MLH1-PCNA complex	3	human	0	3	FALSE	TRUE	FALSE.TRUE
+MSH4-MSH5-GPS2 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Meprin A	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Molybdopterin synthase	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Phosphatidylinositol 3-kinase complex (PIK3C3, PIK3R4)	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+18S U11/U12 snRNP	24	human	19	16	TRUE	TRUE	TRUE.TRUE
+N-NOS-CHIP-HSP70-1 complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+BASC complex (BRCA1-associated genome surveillance complex)	12	human	1	9	TRUE	TRUE	TRUE.TRUE
+GCN5-TRRAP histone acetyltransferase complex	10	human	1	8	TRUE	TRUE	TRUE.TRUE
+TFTC-type histone acetyl transferase complex	11	human	0	4	FALSE	TRUE	FALSE.TRUE
+BP-SMAD complex	8	human	0	2	FALSE	TRUE	FALSE.TRUE
+CRB1-MPP5-INADL complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+MPP4-MPP5-CRB1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Gamma-secretase complex (APH1A, PSEN1, PSENEN, NCSTN)	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+Gamma-secretase complex (APH1B, PSEN2, PSENEN, NCSTN)	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+Gamma-secretase complex (APH1A, PSEN2, PSENEN, NCSTN)	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+TFIID-beta complex	12	human	0	5	FALSE	TRUE	FALSE.TRUE
+TFTC complex (TATA-binding protein-free TAF-II-containing complex)	17	human	1	8	TRUE	TRUE	TRUE.TRUE
+Prolyl 4-hydroxylase (alpha(I)-type)	2	human	1	2	TRUE	TRUE	TRUE.TRUE
+Prolyl 4-hydroxylase (alpha(III)-type)	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+STAGA complex (SPT3-TAF9-GCN5 acetyltransferase complex)	13	human	1	7	TRUE	TRUE	TRUE.TRUE
+PCAF complex	10	human	0	5	FALSE	TRUE	FALSE.TRUE
+STAGA core complex (SPT3-TAF9-GCN5 acetyltransferase complex)	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+TFIID complex, B-cell specific	12	human	0	5	FALSE	TRUE	FALSE.TRUE
+WIP-WASp-actin-myosin-IIa complex	6	human	1	3	TRUE	TRUE	TRUE.TRUE
+TFIIA complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+DA complex	15	human	0	7	FALSE	TRUE	FALSE.TRUE
+DAB complex	16	human	0	7	FALSE	TRUE	FALSE.TRUE
+TFIID complex	12	human	1	6	TRUE	TRUE	TRUE.TRUE
+TFIID-beta complex	12	human	0	5	FALSE	TRUE	FALSE.TRUE
+Kinase-scaffold-phosphatase complex, PKA-AKAP79-CaN	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+AMY-1-S-AKAP84-RII-beta complex	3	human	1	0	TRUE	FALSE	TRUE.FALSE
+KCNQ1 macromolecular complex	10	human	0	1	FALSE	TRUE	FALSE.TRUE
+Polycystin-1-E-cadherin-beta-catenin complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Polycystin-1-E-cadherin-beta-catenin-Flotillin-2 complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+TIP60 histone acetylase complex	5	human	0	4	FALSE	TRUE	FALSE.TRUE
+TRPC3-TRPC4 channel complex, redox-sensitive	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+NuA4/Tip60 HAT complex	16	human	0	10	FALSE	TRUE	FALSE.TRUE
+XPA-ERCC1-ERCC4 complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+IMP3-IMP4-MPP10 complex	3	human	3	1	TRUE	TRUE	TRUE.TRUE
+TRAP complex	16	human	2	5	TRUE	TRUE	TRUE.TRUE
+TRPC1-TRPC3-TRPC7 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+IGF1-IGFBP3-ALS complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+DRIP complex	14	human	0	6	FALSE	TRUE	FALSE.TRUE
+NOS3-CAV1-NOSTRIN complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+TDT-TDIF2-core-histone complex	4	human	1	1	TRUE	TRUE	TRUE.TRUE
+IFNB1-IFNAR1-IFNAR2- complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+RHOA-IP3R-TRPC1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+TRP1-G alpha-11-IP3R3-CAV1 signaling complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+Channel complex TRPM6-TRPM7	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Decapping complex	5	human	4	1	TRUE	TRUE	TRUE.TRUE
+LSm1-7 complex	7	human	7	2	TRUE	TRUE	TRUE.TRUE
+LSm2-8 complex	7	human	7	2	TRUE	TRUE	TRUE.TRUE
+F1F0-ATP synthase (EC 3.6.3.14), mitochondrial	16	human	2	3	TRUE	TRUE	TRUE.TRUE
+p300-CBP-p270-SWI/SNF complex	7	human	1	4	TRUE	TRUE	TRUE.TRUE
+p300-CBP-p270 complex	3	human	1	0	TRUE	FALSE	TRUE.FALSE
+ABIN2-NFKB1-MAP3K8 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+FHL2-p53-HIPK2 complex	3	human	0	3	FALSE	TRUE	FALSE.TRUE
+Mi2/NuRD-BCL6-MTA3 complex	5	human	0	3	FALSE	TRUE	FALSE.TRUE
+NuRD.1 complex	8	human	2	5	TRUE	TRUE	TRUE.TRUE
+Kv4.2-DPP10 channel complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+TIM (TIMM17ab, TIMM23, TIMM44) complex, mitochondrial	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+MSL complex	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+CTF18-CTF8-DCC1-RFC3 complex	4	human	0	2	FALSE	TRUE	FALSE.TRUE
+NRD complex (Nucleosome remodeling and deacetylation complex)	7	human	3	6	TRUE	TRUE	TRUE.TRUE
+Ubiquitin E3 ligase (SKP1A, SKP2, CUL1)	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+CASK-LIN7C-APBA1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+CoREST-HDAC complex	7	human	2	6	TRUE	TRUE	TRUE.TRUE
+AKAP250-PKA-PDE4D complex	5	human	0	2	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (VHL, TCEB1, TCEB2, CUL2)	4	human	0	3	FALSE	TRUE	FALSE.TRUE
+TIM (TIMM9, TIMM10) complex, mitochondrial	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+LSD1-CoREST complex	2	human	1	2	TRUE	TRUE	TRUE.TRUE
+LSD1 complex	13	human	1	8	TRUE	TRUE	TRUE.TRUE
+MRN-TRRAP complex (MRE11A-RAD50-NBN-TRRAP complex)	4	human	0	4	FALSE	TRUE	FALSE.TRUE
+BLM-TRF2 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+Tacc1-chTOG-AuroraA  complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Anti-HDAC2 complex	18	human	4	15	TRUE	TRUE	TRUE.TRUE
+anti-BHC110 complex	11	human	2	10	TRUE	TRUE	TRUE.TRUE
+XFIM complex	5	human	2	5	TRUE	TRUE	TRUE.TRUE
+AGPS-GNPAT complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+BHC complex	6	human	2	6	TRUE	TRUE	TRUE.TRUE
+RANBPM-Muskelin-TWA1-HSMpp8 complex	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+RANBPM-SMP1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+CtBP complex	17	human	3	10	TRUE	TRUE	TRUE.TRUE
+ASPP1-SAM68 complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+HDAC1-associated protein complex	9	human	4	9	TRUE	TRUE	TRUE.TRUE
+HDAC1-associated core complex cI	3	human	1	3	TRUE	TRUE	TRUE.TRUE
+HDAC1-associated core complex cII	10	human	3	8	TRUE	TRUE	TRUE.TRUE
+HDAC2-asscociated core complex	8	human	3	6	TRUE	TRUE	TRUE.TRUE
+AP3-BLOC1 complex	15	human	0	0	FALSE	FALSE	FALSE.FALSE
+BLOC1-BLOC2 complex	11	human	0	0	FALSE	FALSE	FALSE.FALSE
+HSF1-HSF2 complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+Retromer complex (SNX1, SNX2, VPS35, VPS29, VPS26A)	5	human	0	1	FALSE	TRUE	FALSE.TRUE
+TIM (TIMM23, TIMM50) complex, mitochondrial	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+BKCA-beta2AR-AKAP79 signaling complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+BKCA-beta2AR complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+GINS complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+RANBMP-CD39 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+C-CFTR-NHERF(PDZ1 domain)-ezrin complex	3	human	1	1	TRUE	TRUE	TRUE.TRUE
+PAX9-MSX1 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+MeCP1 complex	9	human	3	9	TRUE	TRUE	TRUE.TRUE
+CFTR-NHERF-beta(2)AR signaling complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+BRMS1-SIN3-HDAC complex	8	human	3	7	TRUE	TRUE	TRUE.TRUE
+BRMS1-RBP1 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+ARD1-NATH complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+SNARE complex (RINT1, ZW10, p31)	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+SNARE complex (HGS, SNAP25, STX13)	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+SNARE complex (VAMP2, SNAP25, STX13)	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+BRG1-SIN3A complex	14	human	3	11	TRUE	TRUE	TRUE.TRUE
+BRM-SIN3A complex	15	human	3	12	TRUE	TRUE	TRUE.TRUE
+PU.1-SIN3A-HDAC complex	3	human	2	2	TRUE	TRUE	TRUE.TRUE
+PU.1-TBP complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+MAF1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+MAF2 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+P2X7 receptor signalling complex	12	human	3	6	TRUE	TRUE	TRUE.TRUE
+DDB2 complex	13	human	1	4	TRUE	TRUE	TRUE.TRUE
+CSA complex	13	human	1	3	TRUE	TRUE	TRUE.TRUE
+CSA-POLIIa complex	14	human	2	4	TRUE	TRUE	TRUE.TRUE
+Ubiquitin E3 ligase (FBXO31, SKP1A, CUL1, RBX1)	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+SNARE complex (STX4, SNAP23, VAMP1)	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+SNARE complex (STX4, SNAP23, VAMP2)	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+SIN3 complex	7	human	4	7	TRUE	TRUE	TRUE.TRUE
+SNARE complex (STX4, VAMP1, VAMP7)	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+SIN3-ING1b complex I	9	human	4	8	TRUE	TRUE	TRUE.TRUE
+SIN3-ING1b complex II	16	human	4	13	TRUE	TRUE	TRUE.TRUE
+NCOR-HDAC3 complex	5	human	0	2	FALSE	TRUE	FALSE.TRUE
+SIN3-SAP25 complex	11	human	4	10	TRUE	TRUE	TRUE.TRUE
+NCOR-SIN3-RPD3 complex	4	human	2	4	TRUE	TRUE	TRUE.TRUE
+C/EBPalpha-HNF6 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+NCOR-SIN3-HDAC1 complex	3	human	1	3	TRUE	TRUE	TRUE.TRUE
+TRAF6-TAK1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+MeCP2-SIN3A-HDAC complex	4	human	3	4	TRUE	TRUE	TRUE.TRUE
+UTM-SGCE-DAG1-CAV1-NOS3 complex	5	human	0	0	FALSE	FALSE	FALSE.FALSE
+Exon junction complex (F4A3-MLN51-UPF3B-MAGOH-Y14-PYM)	6	human	5	2	TRUE	TRUE	TRUE.TRUE
+Prune-Gelsolin complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Prune-GSK3beta complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Prune/Nm23-H1 complex	2	human	1	0	TRUE	FALSE	TRUE.FALSE
+Apoptosis- and splicing-associated protein complex (ASAP-S), SAP18-RNPS1-Acinus-S	3	human	3	2	TRUE	TRUE	TRUE.TRUE
+Y14-Magoh complex	2	human	2	1	TRUE	TRUE	TRUE.TRUE
+Dysferlin-affixin complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+TREX complex	8	human	8	4	TRUE	TRUE	TRUE.TRUE
+NDPKA-AMPKalpha1 complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+THO complex	5	human	5	2	TRUE	TRUE	TRUE.TRUE
+LARC complex (LCR-associated remodeling complex)	19	human	4	18	TRUE	TRUE	TRUE.TRUE
+URI complex (Unconventional prefoldin RPB5 Interactor)	9	human	0	4	FALSE	TRUE	FALSE.TRUE
+ITCH-FAM/USP9x complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+SMG-1-Upf1-eRF1-eRF3 complex (SURF)	5	human	3	2	TRUE	TRUE	TRUE.TRUE
+Exon junction complex	8	human	8	4	TRUE	TRUE	TRUE.TRUE
+MR-UBC9-SRC1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+NuA4/Tip60-HAT complex B	8	human	0	5	FALSE	TRUE	FALSE.TRUE
+Exosome	11	human	11	3	TRUE	TRUE	TRUE.TRUE
+DDB complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+SNARE complex (VAMP2, SNAP25, STX1a, CPLX1)	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+SNARE complex (VAMP2, SNAP25, STX1a, CPLX2)	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+SNARE complex (STX11, VAMP2, SNAP23)	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+NuA4/Tip60-HAT complex A	15	human	0	9	FALSE	TRUE	FALSE.TRUE
+DMAP1-associated complex	10	human	0	7	FALSE	TRUE	FALSE.TRUE
+SNARE complex (STX2, SNAP23)	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+SNARE complex (STX4, SNAP23)	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+BRM-SIN3A-HDAC complex	12	human	3	10	TRUE	TRUE	TRUE.TRUE
+eRF1-eRF3-GTP-Mg(2+) complex	3	human	1	1	TRUE	TRUE	TRUE.TRUE
+FCP1-associated protein complex	7	human	3	4	TRUE	TRUE	TRUE.TRUE
+Upf complex (UPF1, UPF2, UPF3a)	3	human	3	1	TRUE	TRUE	TRUE.TRUE
+Upf complex (UPF1, UPF2, UPF3b)	3	human	3	1	TRUE	TRUE	TRUE.TRUE
+Postsplicing complex	7	human	7	3	TRUE	TRUE	TRUE.TRUE
+MRIP-MBS-RHOA complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+20S methylosome-SmD complex	4	human	3	3	TRUE	TRUE	TRUE.TRUE
+SNARE complex (STX6, SNAP23)	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+mRNA decay complex (UPF1, UPF2, UPF3B, DCP2, XRN1, XRN2, EXOSC2, EXOSC4, EXOSC10, PARN)	10	human	10	3	TRUE	TRUE	TRUE.TRUE
+JBP1-pICln complex	3	human	2	2	TRUE	TRUE	TRUE.TRUE
+TRPC1-STIM1-ORAI1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+PAR-6-VE-cadherin complex, endothelial	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+PAR-6-PAR-3-VE-cadherin complex, endothelial	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+Anti-Sm protein complex	7	human	3	4	TRUE	TRUE	TRUE.TRUE
+6S methyltransferase complex	3	human	3	2	TRUE	TRUE	TRUE.TRUE
+20S methylosome and RG-containing Sm protein complex	6	human	5	5	TRUE	TRUE	TRUE.TRUE
+6S methyltransferase and RG-containing Sm proteins complex	8	human	8	7	TRUE	TRUE	TRUE.TRUE
+20S methyltransferase core complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+LIN9-BMYB complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+PCI-PSA-SCG2 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+RICH1/AMOT polarity complex, Flag-Rich1 precipitated	9	human	0	4	FALSE	TRUE	FALSE.TRUE
+RICH1-PAR3-aPKC polarity complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+RICH1/AMOT polarity complex, Flag-Amot precipitated	8	human	0	3	FALSE	TRUE	FALSE.TRUE
+DNMT1-G9a-PCNA complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+DNMT1-G9a complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+TRAP-SMCC mediator complex	10	human	0	3	FALSE	TRUE	FALSE.TRUE
+BRAF53-BRCA2 complex	7	human	2	7	TRUE	TRUE	TRUE.TRUE
+SNARE complex (STX1A, SNAP29)	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+SNARE complex (VAMP3, VAMP4, VAMP8, STX6)	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+SNARE complex (VAMP3, VAMP4, STX16)	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+SNARE complex (VAMP3, STX6, VTI1A)	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+SNARE complex (VAMP4, STX6, STX16, VTI1a, VTI1b)	5	human	0	0	FALSE	FALSE	FALSE.FALSE
+PRKAC-AKAP5-ADRB1 complex	5	human	0	0	FALSE	FALSE	FALSE.FALSE
+MTA1 complex	6	human	2	4	TRUE	TRUE	TRUE.TRUE
+MTA2 complex	9	human	2	7	TRUE	TRUE	TRUE.TRUE
+MTA1-HDAC core complex	5	human	2	3	TRUE	TRUE	TRUE.TRUE
+CDK8-CyclinC-Mediator complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+RET-Rai complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+SHC3-GAB1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+ADAR1-CDK2 complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+ARC92-Mediator complex	13	human	0	5	FALSE	TRUE	FALSE.TRUE
+CRSP-Mediator 2 complex	10	human	0	3	FALSE	TRUE	FALSE.TRUE
+SNARE complex (SNAP23, STX1A)	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+CERF complex (CECR2-containing remodeling factor complex)	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+PAR3-PAR6-PALS1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Remodeling and spacing factor (RSF) complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+SNF2L-RSF1 complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+Toposome	7	human	7	7	TRUE	TRUE	TRUE.TRUE
+WCRF complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+SCRIB-LGL2 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+CENP-A nucleosome associated complex	6	human	0	2	FALSE	TRUE	FALSE.TRUE
+SCRIB-VANGL2 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+CEN complex	37	human	9	25	TRUE	TRUE	TRUE.TRUE
+Scrib-beta-PIX-GIT1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+SCRIB-APC complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+FACT-NEK9 complex	3	human	2	2	TRUE	TRUE	TRUE.TRUE
+FACT complex	2	human	2	2	TRUE	TRUE	TRUE.TRUE
+FACT complex, UV-activated	5	human	2	4	TRUE	TRUE	TRUE.TRUE
+Class C Vps complex (VPS11, VPS18, STX7)	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Class C Vps complex (VPS11, VPS18, VPS16)	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+CDC7-DBF7 complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+LLGL2-PAR-6B-PRKCI complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+LLGL1-PAR-6B-PRKCI complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+BRCA1-RAD50-MRE11-NBS1 complex	4	human	1	4	TRUE	TRUE	TRUE.TRUE
+EED-EZH2 complex	5	human	2	2	TRUE	TRUE	TRUE.TRUE
+GAA1-GPI8-PIGT-PIG-PIGS complex	5	human	0	1	FALSE	TRUE	FALSE.TRUE
+Polycomb repressive complex 2 (PRC2)	5	human	3	3	TRUE	TRUE	TRUE.TRUE
+KIN17-PCNA-RPA70 complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+p23 protein complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+TorsinA-TorsinB complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+RC complex (Replication competent complex)	9	human	0	4	FALSE	TRUE	FALSE.TRUE
+RC complex during S-phase of cell cycle	13	human	2	8	TRUE	TRUE	TRUE.TRUE
+RC complex during G2/M-phase of cell cycle	13	human	2	8	TRUE	TRUE	TRUE.TRUE
+CAK complex (Cdk-activating kinase complex)	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+HNF4A-SUB1 complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+TFIIH transcription factor complex	10	human	2	2	TRUE	TRUE	TRUE.TRUE
+CAK-ERCC2 complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+TFIIH transcription factor core complex	5	human	2	2	TRUE	TRUE	TRUE.TRUE
+PCNA-PAF complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+p33ING1b-PCNA complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+SRA-SRC-1 ribonucleoprotein complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Snurportin-CRM1-RanGTP complex	3	human	3	3	TRUE	TRUE	TRUE.TRUE
+Ubiquitin E3 ligase (SKP1A, SKP2, CUL1, RBX1)	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (FBXW11, SKP1A, CUL1, RBX1)	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+ESR1-RELA-BCL3-NCOA3 complex	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+ZNF198-PML complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+ZNF198-SUMO1 complex	2	human	1	2	TRUE	TRUE	TRUE.TRUE
+DIPA-MCRS1 complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+SNX complex (SNX1, SNX6)	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Retromer complex (SNX1, SNX2, VPS35, VPS29, VPS26B)	5	human	0	0	FALSE	FALSE	FALSE.FALSE
+BAR-BCL2-CASP8 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+GRASP-GRP1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+IFP35-NMI complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+CD8A-LCK complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+12S U11 snRNP	15	human	11	10	TRUE	TRUE	TRUE.TRUE
+FIF-FGR2 complex	2	human	1	2	TRUE	TRUE	TRUE.TRUE
+SNX complex (SNX1a, SNX2, SNX4)	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+SNX complex (SNX2), oligomeric	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+P-TEFb.2 complex	2	human	2	2	TRUE	TRUE	TRUE.TRUE
+P-TEFb.1 complex	2	human	2	2	TRUE	TRUE	TRUE.TRUE
+P-TEFb.4 complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+DNA repair complex NEIL2-PNK-Pol(beta)-LigIII(alpha)-XRCC1	5	human	0	3	FALSE	TRUE	FALSE.TRUE
+DNA repair complex NEIL1-PNK-Pol(beta)-LigIII(alpha)-XRCC1	5	human	0	3	FALSE	TRUE	FALSE.TRUE
+BIRC5-AURKB-INCENP-EVI5 complex	4	human	0	2	FALSE	TRUE	FALSE.TRUE
+PRNP-ApolopoproteinE3 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+VAM1-VELI1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+APLG1-Rababtin5 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+SNX complex (SNX1a, SNX2, SNX4, LEPR)	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+PCNA-KU antigen complex	3	human	2	3	TRUE	TRUE	TRUE.TRUE
+SNX complex (SNX1a, SNX2, SNX4, INSR)	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+SNX complex (SNX1a, SNX2, SNX4, EGFR)	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+SNX complex (SNX1,1a,2,4, PDGF receptor)	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+eIF3 complex (EIF3S6, EIF3S5, EIF3S4, EIF3S3, EIF3S6IP, EIF3S2, EIF3S9, EIF3S12,  EIF3S10, EIF3S8,  EIF3S1, EIF3S7, PCID1)	13	human	13	12	TRUE	TRUE	TRUE.TRUE
+DNA polymerase alpha-primase complex	4	human	0	3	FALSE	TRUE	FALSE.TRUE
+SNX complex (SNX1a, SNX2, SNX4, TFRC)	4	human	1	1	TRUE	TRUE	TRUE.TRUE
+TFIIIC containing complex	5	human	0	5	FALSE	TRUE	FALSE.TRUE
+TFIIIC containing-TOP1-SUB1 complex	7	human	2	7	TRUE	TRUE	TRUE.TRUE
+DNA synthesome complex (17 subunits)	18	human	1	12	TRUE	TRUE	TRUE.TRUE
+5S-DNA-TFIIIA-TFIIIC2 subcomplex	6	human	1	5	TRUE	TRUE	TRUE.TRUE
+5S-DNA-TFIIIA-TFIIIC2-TFIIIB subcomplex	9	human	1	7	TRUE	TRUE	TRUE.TRUE
+CRM1-Survivin-AuroraB mitotic complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+CRM1-Survivin mitotic complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+Chromosomal passenger complex CPC (INCENP, CDCA8, BIRC5, AURKB)	4	human	0	3	FALSE	TRUE	FALSE.TRUE
+WNK1-OSR1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+WNK1-SPAk complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Hip1R-cortactin complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+RFC2-RIalpha complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+RFC2-RIalpha complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+ATR-HDAC2 complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+ATR-HDAC2-CHD4 complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+SNARE complex (VAMP2, SNAP25, STX1a, CPLX1, CPLX3)	5	human	0	0	FALSE	FALSE	FALSE.FALSE
+SNARE complex (VAMP2, SNAP25, STX1a, CPLX3, CPLX4)	5	human	0	0	FALSE	FALSE	FALSE.FALSE
+SNARE complex (VAMP2, SNAP25, STX1a, STX3, CPLX1, CPLX3, CPLX4)	7	human	0	0	FALSE	FALSE	FALSE.FALSE
+Complexin complex (STX3, CPLX1, CPLX3)	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+CF IIAm complex (Cleavage factor IIAm complex)	16	human	11	9	TRUE	TRUE	TRUE.TRUE
+SMN complex	16	human	10	11	TRUE	TRUE	TRUE.TRUE
+Cleavage and polyadenylation factor (CPSF)	5	human	5	2	TRUE	TRUE	TRUE.TRUE
+Cleavage stimulation factor	3	human	3	0	TRUE	FALSE	TRUE.FALSE
+Polyadenylation complex (CSTF1, CSTF2, CSTF3, SYMPK CPSF1, CPSF2, CPSF3)	7	human	6	2	TRUE	TRUE	TRUE.TRUE
+snRNP-free U1A (SF-A) complex	4	human	4	3	TRUE	TRUE	TRUE.TRUE
+Histone H3.1 complex	10	human	1	8	TRUE	TRUE	TRUE.TRUE
+Histone H3.3 complex	9	human	1	7	TRUE	TRUE	TRUE.TRUE
+Integrator complex	12	human	0	5	FALSE	TRUE	FALSE.TRUE
+DSS1 complex	13	human	0	5	FALSE	TRUE	FALSE.TRUE
+Integrator-RNAPII complex	14	human	2	7	TRUE	TRUE	TRUE.TRUE
+p33ING1b-HDAC1 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+ING1-p300-PCNA complex	3	human	1	1	TRUE	TRUE	TRUE.TRUE
+Ubiquitin E3 ligase (DDB1, DDB2, CUL4A, CUL4B, RBX1)	5	human	0	3	FALSE	TRUE	FALSE.TRUE
+RNF20-RNF40-UbE2E1 complex	3	human	2	3	TRUE	TRUE	TRUE.TRUE
+p400-associated complex	7	human	0	4	FALSE	TRUE	FALSE.TRUE
+Paf complex	5	human	0	4	FALSE	TRUE	FALSE.TRUE
+SKI complex	3	human	1	1	TRUE	TRUE	TRUE.TRUE
+SNARE complex (STX4, VAMP8, VAMP3, SNAP23)	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+cMYC-ATPase-helicase complex	5	human	0	5	FALSE	TRUE	FALSE.TRUE
+CBC complex (cap binding complex)	2	human	2	1	TRUE	TRUE	TRUE.TRUE
+TIP49-TIP48-BAF53 complex	3	human	0	3	FALSE	TRUE	FALSE.TRUE
+PHAX-CBC complex (cap binding complex)	3	human	3	2	TRUE	TRUE	TRUE.TRUE
+TRRAP-BAF53-HAT complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+CRM1-RAN-PHAX-CBC complex (cap binding complex)	5	human	5	4	TRUE	TRUE	TRUE.TRUE
+Polycomb repressive complex 4 (PRC4)	3	human	1	0	TRUE	FALSE	TRUE.FALSE
+BCOR complex	8	human	2	5	TRUE	TRUE	TRUE.TRUE
+CENP-A NAC-CAD complex	13	human	0	3	FALSE	TRUE	FALSE.TRUE
+C complex spliceosome	80	human	69	65	TRUE	TRUE	TRUE.TRUE
+CDC5L core complex	6	human	3	5	TRUE	TRUE	TRUE.TRUE
+CDC5L complex	30	human	23	23	TRUE	TRUE	TRUE.TRUE
+EGFR-containing signaling complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+ESCRT-III complex	10	human	0	0	FALSE	FALSE	FALSE.FALSE
+ESCRT-II complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+DNA double-strand break end-joining complex	7	human	2	6	TRUE	TRUE	TRUE.TRUE
+NCBP-NIP1 complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+RNA pol II containing coactivator complex Tat-SF	5	human	5	5	TRUE	TRUE	TRUE.TRUE
+ESCRT-I complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Rap1 complex	7	human	3	7	TRUE	TRUE	TRUE.TRUE
+E2F-6 complex	12	human	0	4	FALSE	TRUE	FALSE.TRUE
+Exon junction complex (mRNA splicing-dependent)	2	human	2	2	TRUE	TRUE	TRUE.TRUE
+TIN2 complex	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+Oligosaccharyltransferase complex (Stt3A variant)	6	human	1	3	TRUE	TRUE	TRUE.TRUE
+Oligosaccharyltransferase complex (Stt3B variant)	7	human	1	4	TRUE	TRUE	TRUE.TRUE
+TRF1-TIN2 complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+TRF1 telomere length regulation complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Rap1 complex	7	human	3	7	TRUE	TRUE	TRUE.TRUE
+TRF2-Rap1 complex III	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+TRF-Rap1 complex I, 2MD	6	human	0	2	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (AHR, ARNT, DDB1, TBL3, CUL4B, RBX1)	6	human	1	3	TRUE	TRUE	TRUE.TRUE
+Ubiquitin E3 ligase (DET1, DDB1, CUL4A, RBX1, COP1)	5	human	0	3	FALSE	TRUE	FALSE.TRUE
+WRN-TRF2 complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+BLM-TRF2 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+Tankyrin 1-tankyrin 2-TRF1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+TRF2-Ku complex	3	human	2	3	TRUE	TRUE	TRUE.TRUE
+TFIIA-TRF2 complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+H2AX complex, isolated from cells without IR exposure	13	human	9	12	TRUE	TRUE	TRUE.TRUE
+Ubiquitin E3 ligase (BMI1, SPOP, CUL3)	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (H2AFY, SPOP, CUL3)	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+H2AX complex I	7	human	4	7	TRUE	TRUE	TRUE.TRUE
+H2AX complex II	10	human	5	8	TRUE	TRUE	TRUE.TRUE
+WINAC complex	14	human	2	11	TRUE	TRUE	TRUE.TRUE
+FIB-associated protein complex	6	human	3	5	TRUE	TRUE	TRUE.TRUE
+REST-CoREST-mSIN3A complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+CoREST-HDAC2 complex	2	human	1	2	TRUE	TRUE	TRUE.TRUE
+BAF complex	13	human	1	6	TRUE	TRUE	TRUE.TRUE
+EBAFb complex	10	human	1	9	TRUE	TRUE	TRUE.TRUE
+Ubiquitin E3 ligase (SPOP, DAXX, CUL3)	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+Protein phosphatase 4 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Apoptosome	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+pRB-E2F-1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+EBAFa complex	10	human	1	8	TRUE	TRUE	TRUE.TRUE
+Ubiquitin E3 ligase (FBXW7, CUL1, SKP1A, RBX1)	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+Menin-associated histone methyltransferase complex	7	human	1	4	TRUE	TRUE	TRUE.TRUE
+Ubiquitin E3 ligase (SIAH1, SIP, SKP1A, TBL1X)	4	human	0	2	FALSE	TRUE	FALSE.TRUE
+MLL-HCF complex	7	human	0	3	FALSE	TRUE	FALSE.TRUE
+ALL-1 supercomplex	28	human	9	26	TRUE	TRUE	TRUE.TRUE
+Ubiquitin E3 ligase (GLMN, FBXW8, SKP1A, RBX1)	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+Chromatin assembly complex (CAF-1 complex)	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+Neddylin ligase (FBXO11, SKP1, CUL1, RBX1)	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+SRm160/300 complex	5	human	5	5	TRUE	TRUE	TRUE.TRUE
+MKK4-ARRB2-ASK1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+MKK4-ARRB2-JNK3 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+POSH-MLK3 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+CRLR-RAMP1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+CRLR-RAMP1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Large Drosha complex	20	human	20	20	TRUE	TRUE	TRUE.TRUE
+FOXO3-PCAF complex, oxidative stress stimulated	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Septin complex	5	human	0	4	FALSE	TRUE	FALSE.TRUE
+ING4 complex (ING4, MYST2, C1orf149, PHF17)	4	human	0	3	FALSE	TRUE	FALSE.TRUE
+Rb-tal-1-E2A-Lmo2-Ldb1 complex	5	human	0	0	FALSE	FALSE	FALSE.FALSE
+hASC-1 complex	4	human	2	1	TRUE	TRUE	TRUE.TRUE
+GALNS-lysosomal hydrolase 1.27 MDa complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+Elongator holo complex	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+ASCOM complex	7	human	1	5	TRUE	TRUE	TRUE.TRUE
+NCOR1 complex	10	human	3	8	TRUE	TRUE	TRUE.TRUE
+SMAD3/4-E2F4/5-p107-DP1 complex	6	human	0	2	FALSE	TRUE	FALSE.TRUE
+NCOR2 complex	7	human	2	6	TRUE	TRUE	TRUE.TRUE
+Vigilin-DNA-PK-Ku antigen complex	4	human	4	4	TRUE	TRUE	TRUE.TRUE
+p27-cyclinE-CDK2 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+PRMT1 complex	1	human	1	1	TRUE	TRUE	TRUE.TRUE
+SF3A1-SF3A2-SF3A3 complex	3	human	3	2	TRUE	TRUE	TRUE.TRUE
+SF3b complex	8	human	7	7	TRUE	TRUE	TRUE.TRUE
+(E.F.G) complex	3	human	3	3	TRUE	TRUE	TRUE.TRUE
+SMN containing complex	8	human	6	5	TRUE	TRUE	TRUE.TRUE
+SMN-PolII-RHA complex	10	human	5	6	TRUE	TRUE	TRUE.TRUE
+PPP4C-PPP4R2-Gemin3-Gemin4 complex	4	human	0	2	FALSE	TRUE	FALSE.TRUE
+TGF-beta-receptor-PAR6 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+LINGO-1-Nogo-66-p75 signaling complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+ITGA4-PXN-GIT1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+AXIN-MEKK4-CCD1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+SMAD3-HEF1-APC10-CDH1 complex	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+PML-SMAD2/3-SARA complex	4	human	0	3	FALSE	TRUE	FALSE.TRUE
+TGF-beta receptor I-Axin-SMAD3 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+PIAS3-SMAD3-P300 complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+SNARE complex (SNAP25, VAMP3, VAMP2, NAPB, STX13)	5	human	0	0	FALSE	FALSE	FALSE.FALSE
+RICTOR-mTOR complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+MALT1 oligomer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+BCL10 oligomer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+BCL10-MALT1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+TRAF6 oligomer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+IKK-alpha--ER-alpha-AIB1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+ITGAM-ITGB2-CD11 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+AR-AKT-APPL complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (CDC34, CUL1, RBX1)	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (CHEK1, CUL4A)	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (CDT1, DDB1, CUL4A, RBX1)	4	human	0	3	FALSE	TRUE	FALSE.TRUE
+COP9 signalosome complex	9	human	1	1	TRUE	TRUE	TRUE.TRUE
+Kaiso-NCOR complex	10	human	0	5	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (NFKBIA, FBXW11, BTRC, CUL1, SKP1A)	5	human	0	1	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (CDC34, NEDD8, BTRC, CUL1, SKP1A, RBX1)	5	human	0	2	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (SMAD3, BTRC, CUL1, SKP1A, RBX1)	5	human	0	2	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (FBXO18, SKP1A, CUL1, RBX1)	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (NIPA, SKP1A, CUL1, RBX1)	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+LIG1-9-1-1 complex	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+FEN1-9-1-1 complex	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+RAD9-RAD1-HUS1-POLB complex	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+BRD4-RFC complex	6	human	0	3	FALSE	TRUE	FALSE.TRUE
+MCM8-ORC2-CDC6 complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+BRCA1-IRIS-pre-replication complex	4	human	0	3	FALSE	TRUE	FALSE.TRUE
+BARD1-BRCA1-CSTF complex	5	human	5	2	TRUE	TRUE	TRUE.TRUE
+BRCA1-BARD1-POLR2A complex	3	human	3	3	TRUE	TRUE	TRUE.TRUE
+LMO4-BRCA1-CTIP-LDB1 complex	4	human	1	2	TRUE	TRUE	TRUE.TRUE
+BRCA1-LMO4-CTIP complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+MDC1-MRN-ATM-FANCD2 complex	6	human	0	5	FALSE	TRUE	FALSE.TRUE
+MDC1-MRE11-RAD50-NBS1 complex	4	human	0	4	FALSE	TRUE	FALSE.TRUE
+TERF1 homodimer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+RAD52-ERCC4-ERCC1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+BLM-TOP3A complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+MSH2/6-BLM-p53-RAD51 complex	5	human	0	4	FALSE	TRUE	FALSE.TRUE
+MutS-alpha-PK-zeta complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+BLM-RAD51L3-XRCC2 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+PCNA homotrimer complex	1	human	0	1	FALSE	TRUE	FALSE.TRUE
+Replication-coupled CAF-1-MBD1-ETDB1 complex	3	human	0	3	FALSE	TRUE	FALSE.TRUE
+ASF1-interacting protein complex	6	human	0	3	FALSE	TRUE	FALSE.TRUE
+ASF1-histone containing complex	7	human	0	4	FALSE	TRUE	FALSE.TRUE
+SP1-MCAF2 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+MBD1-MCAF1-SETDB1 complex	3	human	0	3	FALSE	TRUE	FALSE.TRUE
+CTGF/Hcs24-actin complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Cofilin-actin-CAP1 complex	3	human	0	3	FALSE	TRUE	FALSE.TRUE
+RIAM-Rap1-GTP complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+ITGA6-ITGB4-Laminin10/12 complex	5	human	0	3	FALSE	TRUE	FALSE.TRUE
+ITGA6-ITGB4-Laminin10/12 complex	5	human	0	3	FALSE	TRUE	FALSE.TRUE
+ITGA6-ITGB4-CD151 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA6-ITGB4-FYN complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA6-ITGB4-LAMA5 complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+ITGA6-ITGB4 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB8-MMP14-TGFB1 complex	4	human	0	2	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB5-PLAUR complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB5-ICAM4 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB5-ADAM9 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB5-SPP1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB5-CYR61 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB5 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGB6-FYN-FN1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB6-SPP1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB6-TGFB3 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB6 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB3-CD47-FCER2 complex	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGB3-ITGAV-CD47 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB3-SPP1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB3-ADAM15 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITAGV-ITGB3-F11R complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB3-PXN-PTK2b complex	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB3-ADAM23 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB3-COL4A3 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB3-PPAP2b complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB3-EGFR complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA2b-ITGB3-CD9 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+ITGAV-ITGB3-LAMA4 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+FN1-TGM2 complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+ITGA2B-ITGB3-FN1-TGM2 complex	4	human	0	2	FALSE	TRUE	FALSE.TRUE
+ITGA2b-ITGB3-CD47-SRC complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+ITGA2b-ITGB3-TLN1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA2B-ITGB3-CIB1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+ITGA2B-ITGB3 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+ITGA2B-ITGB3-F11R complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+ITGA5-ITGB1-FN1-TGM2 complex	4	human	0	3	FALSE	TRUE	FALSE.TRUE
+ITGA5-ITGB1-ADAM15 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA5-ITGB4 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+CD98-LAT2-ITGB1 complex	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA7-ITGB1-CD151 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA3-ITGB1-BSG complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+ITGA3-ITGB1-CD63 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA3-ITGB1-CD151 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA3-ITGB1-THBS1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA3-ITGB1 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA6-ITGB1-CD151 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA6-ITGB1 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA4-ITGB1-EMILIN1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA4-ITGB1 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA4-ITGB1-CD81 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA4-ITGB1-CD53 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA4-ITGB1-VCAM1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA4-ITGB1-JAM2 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA4-ITGB1-CD47 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA4-ITGB1-THBS1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA4-ITGB1-THBS2 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA2-ITGB1-CD47 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA2-ITGB1-CHAD complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA2-ITGB1-COL6A3 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA2-ITGB1 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA1-ITGB1-COL6A3 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA1-ITGB1-PTPN2 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB1 complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+ITGA6-ITGB1-CYR61 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA9-ITGB1-ADAM9 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA9-ITGB1-VCAM1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA9-ITGB1-TNC complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGB1-ITGA9 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA9-ITGB1-ADAM15 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA9-ITGB1-FIGF complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA9-ITGB1-ADAM12 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+p130Cas-ER-alpha-cSrc-kinase- PI3-kinase p85-subunit complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+ERBB2-MEMO-SHC complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+LAT-PLC-gamma-1-p85-GRB2-CBL-VAV-SLP-76 signaling complex, C305 activated	7	human	1	0	TRUE	FALSE	TRUE.FALSE
+Cbl-SLP-76-Grb2 complex, Fc receptor gamma-R1 stimulated	3	human	1	0	TRUE	FALSE	TRUE.FALSE
+SLP-76-Cbl-Grb2-Shc complex, Fc receptor gamma-R1 stimulated	4	human	1	0	TRUE	FALSE	TRUE.FALSE
+PLC-gamma-2-SLP-76-Lyn-Grb2 complex	4	human	1	1	TRUE	TRUE	TRUE.TRUE
+PKC-alpha-PLD1-PLC-gamma-2 signaling complex, lacritin stimulated	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+HGF-Met complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+EGFR-CBL-GRB2 complex	3	human	1	0	TRUE	FALSE	TRUE.FALSE
+PLC-gamma-1-SLP-76-SOS1-LAT complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+p56(LCK)-CAML complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+FGFR2-c-Cbl-Lyn-Fyn complex	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+p21(ras)GAP-Fyn-Lyn-Yes complex, thrombin stimulated	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+CD20-LCK-LYN-FYN-p75/80 complex, (Raji human B cell line)	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+Class C VPS/HOPS complex	6	human	0	1	FALSE	TRUE	FALSE.TRUE
+CD19-Vav-PI 3-kinase (p85 subunit) complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Sam68-p85 P13K-IRS-1-IR signaling complex	4	human	1	1	TRUE	TRUE	TRUE.TRUE
+Sam68-p120GAP complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+Chromosomal passenger complex CPC (INCENP, BIRC5, AURKB)	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+Survivin homodimer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+RasGAP-AURKA/AURKB-survivin complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+PGC-1-SRp40-SRp55-SRp75 complex	4	human	4	2	TRUE	TRUE	TRUE.TRUE
+FOXO1-FHL2-SIRT1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+SIRT1 homotrimer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+FOXO3-SIRT1 complex, oxidative stress stimulated	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+NELF complex (Negative elongation factor complex)	4	human	1	3	TRUE	TRUE	TRUE.TRUE
+POLR2A-CCNT1-CDK9-NCL-LEM6-CPSF2 complex	6	human	6	5	TRUE	TRUE	TRUE.TRUE
+BRD4 complex	8	human	2	6	TRUE	TRUE	TRUE.TRUE
+P-TEFb-BRD4-TRAP220 complex	4	human	2	4	TRUE	TRUE	TRUE.TRUE
+P-TEFb-SKP2 complex	3	human	2	2	TRUE	TRUE	TRUE.TRUE
+HES1 promoter corepressor complex	6	human	3	2	TRUE	TRUE	TRUE.TRUE
+HES1 promoter-Notch enhancer complex	13	human	6	6	TRUE	TRUE	TRUE.TRUE
+ESR1-CDK7-CCNH-MNAT1-MTA1-HDAC2 complex	6	human	1	1	TRUE	TRUE	TRUE.TRUE
+Er-alpha-p53-hdm2 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+FOXO3-TP53 complex, oxidative stress stimulated	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+p53-SP1 complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+p53 homotetramer complex	1	human	0	1	FALSE	TRUE	FALSE.TRUE
+RNA polymerase II (RNAPII)	17	human	5	6	TRUE	TRUE	TRUE.TRUE
+BRCA1-core RNA polymerase II complex	13	human	5	5	TRUE	TRUE	TRUE.TRUE
+MT1-MMP-claudin-1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+SMAD3-SMAD4-cJun-cFos complex	4	human	1	4	TRUE	TRUE	TRUE.TRUE
+NFAT-JUN-FOS DNA-protein complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+ERG-JUN-FOS DNA-protein complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+ETS2-FOS-JUN complex	3	human	1	3	TRUE	TRUE	TRUE.TRUE
+ER-alpha-GRIP1-c-Jun complex	3	human	1	1	TRUE	TRUE	TRUE.TRUE
+ER-alpha-c-Jun complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+Ectodermin-SMAD4 complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+SMAD3-SMAD4-CTCF protein-DNA complex	3	human	0	3	FALSE	TRUE	FALSE.TRUE
+SMAD3-SMAD4-SP1 complex	3	human	0	3	FALSE	TRUE	FALSE.TRUE
+SMAD3-SMAD4-FOXO3-FOXG1 complex	4	human	0	2	FALSE	TRUE	FALSE.TRUE
+SMAD3-SMAD4-cJUN complex	3	human	1	3	TRUE	TRUE	TRUE.TRUE
+MMP-9-TIMP-1-LRP complex	3	human	1	0	TRUE	FALSE	TRUE.FALSE
+LRP-1-Alpha-2-M-annexin VI complex	3	human	1	1	TRUE	TRUE	TRUE.TRUE
+Amyloid beta protein oligomer	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+Ubiquitin E3 ligase (CHEK1, CUL1)	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Ubiquitin E3 ligase (CSN1, CSN8, HRT1, SKP1, SKP2, CUL1, CUL2, CUL3)	8	human	0	1	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (TRIM25, DDX58)	2	human	2	1	TRUE	TRUE	TRUE.TRUE
+MAD2-CDC20 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+Casein kinase II-HMG1 complex	4	human	1	3	TRUE	TRUE	TRUE.TRUE
+Casein kinase II complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+HCF-1 complex	19	human	5	15	TRUE	TRUE	TRUE.TRUE
+ATM-NBS1 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+PXN-ITGB5-PTK2 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+SRC-3 complex	7	human	1	2	TRUE	TRUE	TRUE.TRUE
+SRC-1 complex	4	human	1	2	TRUE	TRUE	TRUE.TRUE
+Set1B complex	6	human	1	2	TRUE	TRUE	TRUE.TRUE
+Set1A complex	6	human	1	3	TRUE	TRUE	TRUE.TRUE
+TAJ-NgR1-LINGO-1 signaling complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+BLM complex II	6	human	0	3	FALSE	TRUE	FALSE.TRUE
+FA complex (Fanconi anemia complex)	11	human	0	4	FALSE	TRUE	FALSE.TRUE
+TRAF6-MALT1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+TRAF2-MALT1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Ubiquitin ligase complex (TRAF6, TAB2, MALT1, UEV1A, BCL10)	5	human	0	0	FALSE	FALSE	FALSE.FALSE
+SETDB1-containing HMTase complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+CARMA1-BCL10-MALT1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+FYB-CARMA1-BCL-10-MALT1 complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+JUND-FOSB-SMAD3-SMAD4 complex	4	human	0	3	FALSE	TRUE	FALSE.TRUE
+17S U2 snRNP	33	human	30	29	TRUE	TRUE	TRUE.TRUE
+Ubiquitin-protein-ligase (UBE2N, UBE2V2/MMS2)	2	human	1	0	TRUE	FALSE	TRUE.FALSE
+SMN complex, U7 snRNA specific	7	human	7	5	TRUE	TRUE	TRUE.TRUE
+TRIKA2 protein kinase complex (TAK1, TAB1, TAB2)	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+MBD1-MCAF complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+SMAD3-SMAD4-FOXO3 complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+SMAD3-SMAD4-FOXO1 complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+SMAD3-SMAD4-FOXO4 complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+MBD1-Suv39h1-HP1 complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+PRMT5 complex	1	human	0	1	FALSE	TRUE	FALSE.TRUE
+TERF2-RAP1 complex	7	human	2	6	TRUE	TRUE	TRUE.TRUE
+RAD50-MRE11-NBN-p200-p350 complex	3	human	0	3	FALSE	TRUE	FALSE.TRUE
+ITGA6-ITGB4-CD9 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (CRY1, SKP1A, CUL1, FBXL3)	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (CRY2, SKP1A, CUL1, FBXL3)	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+MDC1-H2AFX-TP53BP1 complex	3	human	0	3	FALSE	TRUE	FALSE.TRUE
+MDC1-p53BP1-SMC1 complex	3	human	1	3	TRUE	TRUE	TRUE.TRUE
+RAD50-BRCA1 complex	2	human	1	2	TRUE	TRUE	TRUE.TRUE
+BARD1-BRCA1-CSTF64 complex	3	human	3	2	TRUE	TRUE	TRUE.TRUE
+BRCA1 A complex	4	human	2	4	TRUE	TRUE	TRUE.TRUE
+BRCA1 C complex	4	human	2	4	TRUE	TRUE	TRUE.TRUE
+BRCA1 B complex	3	human	2	2	TRUE	TRUE	TRUE.TRUE
+ETS2-ERG complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+ETS2-ETS1 complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+PCNA-CHL12-RFC2-5 complex	6	human	0	3	FALSE	TRUE	FALSE.TRUE
+MMP-2-claudin-1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+RFC complex	5	human	0	2	FALSE	TRUE	FALSE.TRUE
+OCT4-SOX2 DNA-protein complex	2	human	2	0	TRUE	FALSE	TRUE.FALSE
+OCT1-SOX2 DNA-protein complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+PAX6-SOX2 DNA-protein complex	2	human	1	0	TRUE	FALSE	TRUE.FALSE
+RAD9-RAD1-HUS1-APE1 complex	4	human	1	1	TRUE	TRUE	TRUE.TRUE
+9-1-1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+BRCA1-cABL complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+RPAP1-RPB2-RPB3 complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+BRCA1-SMAD3 complex	2	human	1	2	TRUE	TRUE	TRUE.TRUE
+BRCA1-HDAC1-HDAC2 complex	3	human	2	3	TRUE	TRUE	TRUE.TRUE
+BRCA1-BARD1-BACH1-DNA damage complex II	8	human	2	7	TRUE	TRUE	TRUE.TRUE
+ITGAV-ITGB3 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+BRCA1-BARD1-BACH1-DNA damage complex I	6	human	2	5	TRUE	TRUE	TRUE.TRUE
+BRCA1-BARD1-BRCA2-DNA damage complex III	3	human	2	3	TRUE	TRUE	TRUE.TRUE
+BRCA1-CtIP-CtBP complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+BRCA1-VCP complex	2	human	2	2	TRUE	TRUE	TRUE.TRUE
+hSIR2-p53 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+BRCA1-BARD1-UbcH5c complex	3	human	2	2	TRUE	TRUE	TRUE.TRUE
+BRCA1-BARD1-UbcH7c complex	3	human	3	3	TRUE	TRUE	TRUE.TRUE
+BRCA1-RAD51 complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+BRCA1-RNA polymerase II complex	26	human	9	9	TRUE	TRUE	TRUE.TRUE
+ITGB3-ITGAV-VTN complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+RSmad complex	10	human	0	8	FALSE	TRUE	FALSE.TRUE
+TIF1gamma-SMAD2-SMAD3 complex	3	human	0	3	FALSE	TRUE	FALSE.TRUE
+SRm160-SRm300 complex	2	human	2	2	TRUE	TRUE	TRUE.TRUE
+SMAD4-SMAD2-SMAD3 complex	3	human	0	3	FALSE	TRUE	FALSE.TRUE
+Profilin 1 complex	6	human	4	6	TRUE	TRUE	TRUE.TRUE
+AR coactivator complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+DAXX-Axin-p53-HIPK2 complex	4	human	0	3	FALSE	TRUE	FALSE.TRUE
+ATRX-DAXX complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB3-THBS1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ING4 complex (ING4, MYST2, C1orf149, PHF15)	4	human	0	2	FALSE	TRUE	FALSE.TRUE
+ING4 complex (ING4, MYST2, C1orf149, PHF16)	4	human	0	2	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB3-NOV complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA5-ITGB1-FN-1-NOV complex	4	human	0	2	FALSE	TRUE	FALSE.TRUE
+ING2 complex	12	human	3	10	TRUE	TRUE	TRUE.TRUE
+ITGA5-ITGB1-CAL4A3 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+HBO1 complex	7	human	0	3	FALSE	TRUE	FALSE.TRUE
+ING5 complex	11	human	0	5	FALSE	TRUE	FALSE.TRUE
+DSIF complex (DRB sensitivity-inducing factor complex)	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+Serine-palmitoyltransferase (SPT) complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+ITGA2b-ITGB3-CD9-GP1b-CD47 complex	6	human	0	0	FALSE	FALSE	FALSE.FALSE
+BRD4-P-TEFb complex	3	human	2	3	TRUE	TRUE	TRUE.TRUE
+P-TEFb-7SKRNA-HEXIM1 complex	3	human	3	2	TRUE	TRUE	TRUE.TRUE
+SCF subcomplex (WEE1, SKP2, BTRC)	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (CUL1, RBX1, SKP1A)	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA5-ITGB3-COL6A3 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Respiratory chain complex I (early intermediate NDUFAF1 assembly), mitochondrial	7	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGAV-ITGB1-SPP1 complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+Respiratory chain complex I (incomplete intermediate ND1, ND2, ND3, CIA30 assembly), mitochondrial	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+BCR-ABL (p185 fusion protein)-GRB2 complex	2	human	1	0	TRUE	FALSE	TRUE.FALSE
+BCR-ABL (p210 fusion protein)-GRB2-SOS1 complex	3	human	1	0	TRUE	FALSE	TRUE.FALSE
+SHC-GRB2 complex	2	human	1	0	TRUE	FALSE	TRUE.FALSE
+ITGA2b-ITGB3-CD47-FAK complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+RBPJ-NotchIC-Mastermind complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+RBP-Jkappa-Notch1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+RBP-Jkappa-SHARP complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+PLC-gamma-2-Syk-LAT-FcR-gamma complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+PLC-gamma-2-Lyn-FcR-gamma complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+SMRT-SKIP-CBF1 complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+PLC-gamma-2-SLP-76 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+PLC-gamma-2-LAT complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Ku antigen-YY1-alphaMyHC promoter complex	3	human	3	3	TRUE	TRUE	TRUE.TRUE
+SHARP-CtBP complex	3	human	1	1	TRUE	TRUE	TRUE.TRUE
+LAT-PLC-gamma-1-p85-GRB2-SOS signaling complex, C305 activated	5	human	1	0	TRUE	FALSE	TRUE.FALSE
+SHARP-CtBP1-CtIP complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+SHARP-CtIP-RBP-Jkappa complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+SHARP-CtBP1-CtIP-RBP-Jkappa corepressor complex	4	human	1	2	TRUE	TRUE	TRUE.TRUE
+Ecsit complex (ECSIT, MT-CO2, GAPDH, TRAF6, NDUFAF1)	5	human	0	1	FALSE	TRUE	FALSE.TRUE
+PTF1-bHLH complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+Ecsit complex (ECSIT, NDUFS3, TOM20)	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Ecsit complex (ECSIT, MT-CO2, NDUFA1, MT-ND1, TRAF6, NDUFAF1)	6	human	0	0	FALSE	FALSE	FALSE.FALSE
+Ecsit complex (ECSIT, NDUFS3, NDUFAF1)	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Respiratory chain complex I (incomplete NDUFAF1 assembly), mitochondrial	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Notch1-p56lck-PI3K complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+RBP-Jkappa-RING1-KyoT2 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+YY1-Notch1-RBP-Jkappa complex	3	human	1	1	TRUE	TRUE	TRUE.TRUE
+YY1-Notch1 complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+LCK-SLP76-PLC-gamma-1-LAT complex, pervanadate-activated	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+PLC-gamma-1-LAT-c-CBL complex, OKT3 stimulated	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+LAT-GRB2 complex, Fyn-mLck(KA) or Syk kinase activated	2	human	1	0	TRUE	FALSE	TRUE.FALSE
+SMAD1-CBP complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+SLP-76-PLC-gamma-1-ITK complex, alpha-TCR stimulated	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+SLP-76-PLC-gamma-1-VAV complex, alpha-TCR stimulated	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+CRK-BCAR1-DOCK1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+ITK-SLP-76 complex, anti-TCR stimulated	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+NuMA-LGN-G-alpha-i-1 complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+Axin-SMAD3 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+mTORC2 complex (mTOR/FRAP1, LST8, mAVO3/RICTOR)	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+ITGA9-ITGB1-VEGFC complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA9-ITGB1-VEGFA complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+SMAD3-E2F4/5-p107-DP1 complex	5	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA9-ITGB1-ADAM8 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+mTOR-signaling complex (mTOR/FRAP1, RAPTOR)	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+SMAD7-SMURF2 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Axin-PP2A A-PP2A C-GSK3-beta-beta-catenin complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+APC-Axin-1-beta-catenin complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+60S APC containing complex	7	human	1	2	TRUE	TRUE	TRUE.TRUE
+p27-cyclinE-Cdk2 - Ubiquitin E3 ligase (SKP1A, SKP2, CUL1, CKS1B, RBX1) complex	8	human	0	1	FALSE	TRUE	FALSE.TRUE
+TGF-beta receptor II-TGF-beta3 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+TGF-beta receptor II-TGF-beta receptor I-TGF-beta1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+TGF-beta receptor II-TGF-beta receptor I-TGF-beta3 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+RNA-induced silencing complex, RISC	4	human	4	1	TRUE	TRUE	TRUE.TRUE
+PAC3-PAC4 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+PAC1-PAC2 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+LAT2-ITGB1 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+Ubiquitin E3 ligase (SKP1A, SKP2, CUL1, CKS1B, RBX1)	5	human	0	1	FALSE	TRUE	FALSE.TRUE
+SMAD2-SMAD4-FAST1 complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+SMAD2-FAST1 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+Multisynthetase complex	11	human	8	10	TRUE	TRUE	TRUE.TRUE
+TGF-beta-receptor type II homodimer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+BMP2-BRIA complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+SKI-NCOR1-SIN3A-HDAC1 complex	4	human	1	3	TRUE	TRUE	TRUE.TRUE
+hs4 enhancer complex (faster migrating complex)	5	human	1	4	TRUE	TRUE	TRUE.TRUE
+hs4 enhancer complex (slow migrating complex)	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+MAD-MAX complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+MYC-MAX complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+MAD1-mSin3A-HDAC2 complex	3	human	2	2	TRUE	TRUE	TRUE.TRUE
+Nop56p-associated pre-rRNA complex	104	human	96	95	TRUE	TRUE	TRUE.TRUE
+Microprocessor complex	2	human	2	2	TRUE	TRUE	TRUE.TRUE
+ITGA10-ITGB1 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA11-ITGB1 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA11-ITGB1-COL1A1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+RNA polymerase II complex, chromatin structure modifying	19	human	2	6	TRUE	TRUE	TRUE.TRUE
+RNA polymerase II complex, chromatin structure modifying	19	human	2	6	TRUE	TRUE	TRUE.TRUE
+RNA polymerase II complex, chromatin structure modifying	19	human	2	6	TRUE	TRUE	TRUE.TRUE
+RNA polymerase II complex, incomplete (CDK8 complex), chromatin structure modifying	8	human	1	3	TRUE	TRUE	TRUE.TRUE
+CTF18-cohesion-RFC-POLH complex	8	human	0	3	FALSE	TRUE	FALSE.TRUE
+CTLH complex	5	human	0	1	FALSE	TRUE	FALSE.TRUE
+UTX-MLL2/3 complex	12	human	1	6	TRUE	TRUE	TRUE.TRUE
+DGCR8-NCL complex	2	human	2	2	TRUE	TRUE	TRUE.TRUE
+DGCR8-ILF3 complex	2	human	2	2	TRUE	TRUE	TRUE.TRUE
+ILF3-XPO5 complex	2	human	2	1	TRUE	TRUE	TRUE.TRUE
+DGCR8 multiprotein complex	11	human	10	11	TRUE	TRUE	TRUE.TRUE
+Nucleic and chromatin Fanconi complex	5	human	0	0	FALSE	FALSE	FALSE.FALSE
+CCND1-CDK4 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+CCND2-CDK4 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+CCND3-CDK4 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+CCND1-CDK6 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+CCND2-CDK6 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+CCND3-CDK6 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+APP-TOMM40 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+APP-TIMM23 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+ITGA6-ITGB4-SHC1-GRB2 complex	4	human	1	1	TRUE	TRUE	TRUE.TRUE
+TIMM17-TIMM23 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+TIM50a-SMN1 complex	2	human	2	1	TRUE	TRUE	TRUE.TRUE
+TIM50a-coilin complex	2	human	1	2	TRUE	TRUE	TRUE.TRUE
+DHX9-ADAR-vigilin-DNA-PK-Ku antigen complex	6	human	6	6	TRUE	TRUE	TRUE.TRUE
+ITGAV-ITGB3-SLC3A2 complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+ITGB1-NRP1 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGAV-P2RY2-GNA12 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA9-ITGB1-SPP1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA5-ITGB1-SPP1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+ITGA2B-ITGB3-ICAM4 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+ITGB5-ITGAV-VTN complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+SMN1-SIP1-SNRP complex	7	human	6	5	TRUE	TRUE	TRUE.TRUE
+OCT1-OBF1-DNA-TLE1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+OCT2-TLE4 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+TLE2 homodimer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+TLE1-TLE2 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+TLE1 homodimer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+TLE-Histone H3 complex	7	human	0	1	FALSE	TRUE	FALSE.TRUE
+Gamma-secretase complex (APH1B, PSEN1, PSENEN, NCSTN)	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+STAT6-p100-RHA complex	3	human	2	3	TRUE	TRUE	TRUE.TRUE
+OCT1-OBF1-DNA complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+Phosphatidylinositol 3-kinase (PIK3CA, PIK3R1)	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+POSH-AKT2 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+CRLR-RAMP2 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+CRLR-RAMP3 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+NK-3-Groucho-HIPK2-SIN3A-RbpA48-HDAC1 complex	11	human	1	4	TRUE	TRUE	TRUE.TRUE
+NK-3-Groucho complex	7	human	0	0	FALSE	FALSE	FALSE.FALSE
+Sulphiredoxin-peroxiredoxin complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+GNAQ-GEFT-RHOA complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+Notch2(N-TM)-Notch2(N-EC)-Delta complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+Bipartite complex (TFC4, CTNNB1)	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+CBF1-HDAC1-SMRT complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+Prolactin (PRL) - PRL receptor (PRLR) complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+RIAM-profilin complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+RIAM-VASP complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+PRL receptor (PRLR) dimer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+TF-FVIIa-FXa-TFPI complex	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+HESX1-TLE1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+AXIN-APC-betaCatenin-GSK3B complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+NCOR-SIN3-HDAC-HESX1 complex	6	human	2	5	TRUE	TRUE	TRUE.TRUE
+DAXX-AXIN complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+Daxx-Axin-p53 complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+NUMB-TP53-MDM2 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+CIN85 homotetramer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+CIN85-BLNK complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+USP1-UAF1 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+GNA14-p115RhoGEF complex	2	human	1	0	TRUE	FALSE	TRUE.FALSE
+LMO4-CREB complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+FHL2 homodimer complex	1	human	0	1	FALSE	TRUE	FALSE.TRUE
+PDGFRA-SHP-2 complex, PDGF stimulated	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+FHL3 homodimer complex	1	human	0	1	FALSE	TRUE	FALSE.TRUE
+ACT homodimer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+GRB2-SHP-2 complex, PDGF stimulated	2	human	1	0	TRUE	FALSE	TRUE.FALSE
+FHL2-FHL3 complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+FHL2-ACT complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+FHL2-CREB complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+FHL3-CREB complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+ACT-CREB complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+FHL4/STX11-ACT complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+SMAD4-SNO-SKI complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+SMAD2-SKI complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+SMAD3-SKI complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+SMAD4-SKI complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+SMAD2-SKI-NCOR complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+SMAD3-SKI-NCOR complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+SMAD4-SKI-NCOR complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+LIN2-LIN7-SAP97-MINT1 complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+LIN2-LIN7 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+ULBP1-KLRK1-HCST complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Heterodimer complex (CDK9, IL6ST)	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+Eps15-stonin2 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+SCAMP1-SCAMP2-SCAMP3 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+HERP1/HEY2-NCOR-SIN3A complex	4	human	1	3	TRUE	TRUE	TRUE.TRUE
+RB1-HDAC1-BRG1 complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+Delta1 homodimer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+Gamma-secretase-Delta1 complex	5	human	0	0	FALSE	FALSE	FALSE.FALSE
+SMN complex (GEMIN5,2,3,4, SMN)	5	human	2	3	TRUE	TRUE	TRUE.TRUE
+SMN complex (GEMIN5,4,3), SMN-independent intermediate	3	human	1	3	TRUE	TRUE	TRUE.TRUE
+SMN complex (GEMIN6,7, UNRIP), SMN-independent intermediate	3	human	1	1	TRUE	TRUE	TRUE.TRUE
+SMN complex (GEMIN2,5, SMN)	3	human	2	1	TRUE	TRUE	TRUE.TRUE
+Homotetrameric complex NIAP	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+Tetrameric COG subcomplex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+Binary COG subcomplex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+COG1-COG8 subcomplex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+COG2-COG3-COG4 subcomplex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+COG5-COG6-COG7 subcomplex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+COG1-COG8-COG2-COG3-COG4 subcomplex	5	human	0	0	FALSE	FALSE	FALSE.FALSE
+COG1-COG8-COG5-COG6-COG7 subcomplex	5	human	0	0	FALSE	FALSE	FALSE.FALSE
+GammaH2AFX-NDHII-Ku70-DNA complex	3	human	2	3	TRUE	TRUE	TRUE.TRUE
+NR3C2-UBC9-SRC-1 complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+RIN1-STAM2-HRS complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+RIN1-STAM2-EGFR complex, EGF stimulated	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+CHL2-BMP2 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+CHL2-BMP2-TSG complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Pericentrin-GCP complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+SKI-SMAD2-SMAD4  pentameric complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+SKI-SMAD3-SMAD4  pentameric complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+CREBBP-SMAD2 hexameric complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+CREBBP-SMAD3 hexameric complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+CREBBP-SMAD2-SMAD4 pentameric complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+CREBBP-SMAD3-SMAD4 pentameric complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+DRIP78-PHLP complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+ADRB2 homodimer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+TCL1(trimer)-AKT1 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+TCL1(trimer)-AKT2 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+TCL1(homotrimer) complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+Rb-HDAC1 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+GABP(gamma)1-E2F1-DP1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+Ternary complex (GATA4, SRF, MYOCD)	3	human	1	1	TRUE	TRUE	TRUE.TRUE
+RCP-Rab11 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+SMAD3-cSKI-SIN3A-HDAC1 complex	4	human	1	3	TRUE	TRUE	TRUE.TRUE
+SMURF2-SMAD3-SnoN complex, TGF(beta)-dependent	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+mTORC2 complex (mTOR/FRAP1, LST8, mAVO3/RICTOR, SIN1)	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+mTOR-RAPTOR complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+ClpP complex, heptameric	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+ClpX complex, hexameric	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+ClpXP complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Affixin-actinin(alpha) complex	2	human	1	0	TRUE	FALSE	TRUE.FALSE
+PAR4-BACE1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+NEMO-HIF2(alpha)-ARNT complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Ku70/Ku86/Werner complex	3	human	2	3	TRUE	TRUE	TRUE.TRUE
+SMAD6-HOXC8 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+SMAD6-HOXA9 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Catulin (alpha) - catenin (beta) complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Catenin (alpha) - catenin (beta) complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+HSP90-FKBP38-CAM-Ca(2+) complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+DLP1-hFIS1 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+GR-hnRNP U complex	2	human	2	2	TRUE	TRUE	TRUE.TRUE
+EIF3 core complex (EIF3A, EIF3B, EIF3G, EIF3I)	4	human	4	4	TRUE	TRUE	TRUE.TRUE
+EIF3 complex (EIF3A, EIF3B, EIF3G, EIF3I, EIF3C)	5	human	5	5	TRUE	TRUE	TRUE.TRUE
+EIF3 complex (EIF3B, EIF3G, EIF3I)	3	human	3	3	TRUE	TRUE	TRUE.TRUE
+EIF3 complex (EIF3B, EIF3J, EIF3I)	3	human	3	3	TRUE	TRUE	TRUE.TRUE
+EIF3 complex (EIF3A, EIF3B, EIF3G, EIF3I, EIF3J)	5	human	5	5	TRUE	TRUE	TRUE.TRUE
+CBF-DNA complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+p32-CBF-DNA complex	4	human	1	1	TRUE	TRUE	TRUE.TRUE
+beta(1)-AR receptosome (ADRB1-SAP97-AKAP79-PRKAR2A)	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+SVIP-p97/VCP-DERL1 complex	3	human	1	1	TRUE	TRUE	TRUE.TRUE
+gp78-p97/VCP-DERL1 complex	3	human	1	1	TRUE	TRUE	TRUE.TRUE
+p97/VCP-VIMP-DERL1 complex	3	human	1	1	TRUE	TRUE	TRUE.TRUE
+p97/VCP-VIMP-DERL2 complex	3	human	1	1	TRUE	TRUE	TRUE.TRUE
+p97/VCP-VIMP-DERL1-DERL2-HRD1-SEL1L complex	6	human	1	1	TRUE	TRUE	TRUE.TRUE
+ZO1-(beta)cadherin-(VE)cadherin-VEGFR2 complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+RB1(hypophosphorylated)-E2F4 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+CyclinD3-CDK4-CDK6 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+CyclinD3-CDK4-CDK6-p21 complex	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+p34(SEI-1)-CDK4-CyclinD2 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+pRb2/p130-multimolecular complex (DNMT1, E2F4, SuV39H1, HDAC1, RBL2)	5	human	1	2	TRUE	TRUE	TRUE.TRUE
+pRb2/p130-multimolecular complex (RB2, E2F4, HDAC1, SUV39H1, P300)	5	human	1	1	TRUE	TRUE	TRUE.TRUE
+E2F1-p107-cyclinA complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+RB1-TFAP2A complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+CTFC-TAF1 complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+CTCF-nucleophosmin complex	2	human	1	2	TRUE	TRUE	TRUE.TRUE
+SMARCA2/BRM-BAF57-MECP2 complex	3	human	2	3	TRUE	TRUE	TRUE.TRUE
+E2F4-p107-cyclinE complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+E2F4-p130 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+ELK1-SRF-ELK3 complex	3	human	1	0	TRUE	FALSE	TRUE.FALSE
+AP1G1-PACS1-FURIN complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+SH3KBP1-CBLB-EGFR complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+MGC1-DNA-PKcs-Ku complex	4	human	3	4	TRUE	TRUE	TRUE.TRUE
+Polycystin-1 multiprotein complex (ACTN1, CDH1, SRC, JUP, VCL, CTNNB1, PXN, BCAR1, PKD1, PTK2, TLN1)	11	human	1	2	TRUE	TRUE	TRUE.TRUE
+NCOA6-DNA-PK-Ku-PARP1 complex	5	human	4	4	TRUE	TRUE	TRUE.TRUE
+DNA-PK-Ku-eIF2-NF90-NF45 complex	8	human	8	8	TRUE	TRUE	TRUE.TRUE
+SWI/SNF chromatin-remodeling complex	5	human	3	5	TRUE	TRUE	TRUE.TRUE
+YWHAQ-CALM1-CABIN1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+TIAM1-EFNB1-EPHA2 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+TNF-alpha/NF-kappa B signaling complex (CHUK, KPNA3, NFKB2, NFKBIB, REL, IKBKG,  NFKB1, NFKBIE, RELB,  NFKBIA, RELA, TNIP2)	12	human	0	5	FALSE	TRUE	FALSE.TRUE
+TNF-alpha/NF-kappa B signaling complex (SEC16A, CHUK, IKBKB, NFKB2, REL, IKBKG, MAP3K14, RELA, FBXW7, USP2)	10	human	0	4	FALSE	TRUE	FALSE.TRUE
+PTIP-HMT complex	10	human	1	5	TRUE	TRUE	TRUE.TRUE
+TNF-alpha/NF-kappa B signaling complex (CHUK, BTRC, NFKB2, PPP6C, REL, CUL1, IKBKE, SAPS2, SAPS1, ANKRD28, RELA, SKP1)	12	human	0	4	FALSE	TRUE	FALSE.TRUE
+PTIP-DNA damage response complex	6	human	0	5	FALSE	TRUE	FALSE.TRUE
+CBP-RARA-RXRA-DNA complex, ligand stimulated	3	human	1	0	TRUE	FALSE	TRUE.FALSE
+Kinase maturation complex 1	16	human	6	10	TRUE	TRUE	TRUE.TRUE
+TBP-TAF complex	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+Ubiquilin-proteasome complex	6	human	2	3	TRUE	TRUE	TRUE.TRUE
+TANK-TRAF2-TRAF3 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+RAF1-PPP2-PIN1 complex	5	human	0	3	FALSE	TRUE	FALSE.TRUE
+Kinase maturation complex 2	8	human	2	3	TRUE	TRUE	TRUE.TRUE
+Pex26-Pex6-Pex1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+CS-MAP3K7IP1-MAP3K7IP2 complex	3	human	1	1	TRUE	TRUE	TRUE.TRUE
+Calreticulin oligomer complex	1	human	1	1	TRUE	TRUE	TRUE.TRUE
+CHUK-IQGAP2-AKAP8L-RELA-TNIP2 complex	5	human	1	2	TRUE	TRUE	TRUE.TRUE
+p14-Mp1-MEK1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Casein kinase II (beta-dimer, alpha'-dimer)	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+Casein kinase II (beta-dimer, alpha-dimer)	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+p14-Mp1-ERK2 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+REL-MAP3K8-RELA-TNIP2-PAPOLA complex	5	human	1	2	TRUE	TRUE	TRUE.TRUE
+RPA complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+CHUK-NFKB2-REL-IKBKG-SPAG9-NFKB1-NFKBIE-COPB2-TNIP1-NFKBIA-RELA-TNIP2 complex	12	human	0	6	FALSE	TRUE	FALSE.TRUE
+53BP1-containing complex	5	human	2	4	TRUE	TRUE	TRUE.TRUE
+TNF-alpha/Nf-kappa B signaling complex (RPL6, RPL30, RPS13, CHUK, DDX3X, NFKB2, NFKBIB, REL, IKBKG, NFKB1, MAP3K8, RELB, GLG1, NFKBIA, RELA, TNIP2,  GTF2I)	17	human	4	9	TRUE	TRUE	TRUE.TRUE
+TNF-alpha/NF-kappa B signaling complex 5	25	human	4	10	TRUE	TRUE	TRUE.TRUE
+IKBKB-CDC37-KIAA1967-HSP90AB1-HSP90AA1 complex	5	human	3	4	TRUE	TRUE	TRUE.TRUE
+WRN-Ku70-Ku80-PARP1 complex	4	human	3	4	TRUE	TRUE	TRUE.TRUE
+CAP(C)-CAP(E) complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+SMC1-SMC3 complex	2	human	1	2	TRUE	TRUE	TRUE.TRUE
+XRCC1-LIG3-PNK-TDP1 complex	4	human	0	4	FALSE	TRUE	FALSE.TRUE
+Dolichol-phosphate mannose (DPM) synthase	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Ku-ORC complex	6	human	2	5	TRUE	TRUE	TRUE.TRUE
+MNK1-eIF4F complex	5	human	2	1	TRUE	TRUE	TRUE.TRUE
+TCF4-CTNNB1-SUMO1-EP300-HADAC6 complex	5	human	2	1	TRUE	TRUE	TRUE.TRUE
+TCF4-CTNNB1-EP300 complex	3	human	1	0	TRUE	FALSE	TRUE.FALSE
+TCF4-CTNNB1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+TCF4-CTNNB1-CREBBP complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+TNF-alpha/NF-kappa B signaling complex 6	14	human	9	10	TRUE	TRUE	TRUE.TRUE
+VHL-VDU1-TCEB1-TCEB2 complex	4	human	0	3	FALSE	TRUE	FALSE.TRUE
+TNF-alpha/NF-kappa B signaling complex 7	8	human	2	4	TRUE	TRUE	TRUE.TRUE
+TNF-alpha/NF-kappa B signaling complex 8	6	human	3	5	TRUE	TRUE	TRUE.TRUE
+VHL-TCEB1-TCEB2 complex	3	human	0	3	FALSE	TRUE	FALSE.TRUE
+VHL-TBP1-HIF1A complex	3	human	0	3	FALSE	TRUE	FALSE.TRUE
+Cell-cell junction complex (ARHGAP10-CTNNA1)	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+HIF1A-OS9-EGLN1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+HIF1A-OS9-EGLN3 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+RAB9-TIP47-MPRI complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+Cell-cell junction complex (CDH1-CTNNB1)	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+CAS-SRC-FAK complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+tRNA splicing endonuclease	5	human	0	2	FALSE	TRUE	FALSE.TRUE
+RNA endonuclease (SEN2deltaEx8, SEN54, CLP1)	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+TNF-alpha/NF-kappa B signaling complex 9	5	human	1	3	TRUE	TRUE	TRUE.TRUE
+TNF-alpha/NF-kappa B signaling complex 10	10	human	3	4	TRUE	TRUE	TRUE.TRUE
+P53-BARD1-Ku70 complex	3	human	2	3	TRUE	TRUE	TRUE.TRUE
+ETS2-SMARCA4-INI1 complex	3	human	0	3	FALSE	TRUE	FALSE.TRUE
+LATS1-HTRA2-BIRC4 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+DDEF1-CTTN-PXN complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+CDH1-CKS1B complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+CDH1-SKP2 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+YY1-MDM2-p53 complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+ELMO1-DOCK1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+ELMO1-DOCK2 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+ELMO1-DOCK1-RAC1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+ELMO1-DOCK1-CRKII complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+AGO2-FXR1-TNF(alpha)ARE-RNP complex	2	human	2	1	TRUE	TRUE	TRUE.TRUE
+Cell division cycle complex (CDC27, CDC16, ANAPC7)	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+Actin-ribonucleoprotein complex (POLR2A, GTF2F1, HNRNPU)	3	human	3	2	TRUE	TRUE	TRUE.TRUE
+THRB-RXRB complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+ATM homodimer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+ERAP1-ERAP2 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Grancalcin-sorcin complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+SRI homodimer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+Chromatin remodeling complex (TACC2, TACC3, PCAF)	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+EGR-EP300 complex	2	human	1	0	TRUE	FALSE	TRUE.FALSE
+TRBP containing complex (DICER, TRBP, AGO2, RPL7A, EIF6, MOV10)	6	human	6	2	TRUE	TRUE	TRUE.TRUE
+TRBP containing complex (DICER, RPL7A, EIF6, MOV10 and subunits of the 60S ribosomal particle)	25	human	24	22	TRUE	TRUE	TRUE.TRUE
+RNA-induced silencing complex, RISC	4	human	4	1	TRUE	TRUE	TRUE.TRUE
+ARNT-HIF1A complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+TRIB3-DDIT3 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+RAG1-RAG2 tetramer complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+GAIT complex	4	human	3	4	TRUE	TRUE	TRUE.TRUE
+MLL1-WDR5 complex	27	human	4	15	TRUE	TRUE	TRUE.TRUE
+SERPINA1-ELA2 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+SERPINA3-CTSG complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+SERPINA1-CTSG complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+BRCC complex	5	human	1	2	TRUE	TRUE	TRUE.TRUE
+PLEKHM2-KIF5B complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+NGF-TrkA complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Neurotrophin-3-p75 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+TIAM1-GRIN1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+EDG1-HTR1D complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+HTR1D  homodimer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+HTR1A-HTR1D complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+HTR1B homodimer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+HTR1A-HTR1B complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+HTR1D-HTR1B complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+GABBR2-HTR1A complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+HTR1A-GPR26 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+HTR1A-EDG3 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+HTR1A homodimer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+HTR1A-EDG1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+HSP70-BAG5-PARK2 complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+NGF-p75 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+ANCO1-HDAC3  complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+NRG1-IKZF4 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+EPOR receptor complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+CRKII-C3G complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+EPO-EPOR complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Splicing-associated factors complex	5	human	5	3	TRUE	TRUE	TRUE.TRUE
+Mediator complex	32	human	0	6	FALSE	TRUE	FALSE.TRUE
+MED18-MED20-MED29 mediator subcomplex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+p50-p65 NF(kappa)B complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+p50-p65 NF(kappa)B-SRC1 complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+I(kappa)B(alpha)-NF(kappa)Bp50-NF(kappa)Bp65 complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+IKB(epsilon)-RELA-cREL complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+IKB(beta)-RELA-cREL complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+IKB(alpha)-RELA-cREL complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+MURR1-NF(kappa)Bp65-IKBA complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+TFIIH transcription factor complex (ERCC2, ERCC3, GTF2H1, CDK7, CCNH, GTF2H2)	6	human	1	1	TRUE	TRUE	TRUE.TRUE
+ILK-PARVB-ARHGEF6 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+PARVB-ARHGEF6 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+EED-EZH-YY1 polycomb complex	3	human	2	1	TRUE	TRUE	TRUE.TRUE
+Polycomb repressive complex	4	human	1	2	TRUE	TRUE	TRUE.TRUE
+BMI1-HPH1-HPH2 complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+EED-EZH polycomb complex	2	human	1	0	TRUE	FALSE	TRUE.FALSE
+CALM1-FKBP38-BCL2 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+TRAF2-cIAP1/BIRC2 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Homodimeric complex LTBR	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+Tumor necrosis factor receptor 1 signaling complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+PLCB1-PARD3-PARD6A complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+PLCB3-PARD3-PARD6A complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+TRAF2-TRADD complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Ternary complex (TRAF2, FADD, TRADD)	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+CCNB2-CDC2 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+CCNB1-CDC2 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+CDC2-PCNA-CCNB1-GADD45A complex	4	human	0	3	FALSE	TRUE	FALSE.TRUE
+CDC2-PCNA-CCNB1-GADD45B complex	4	human	0	2	FALSE	TRUE	FALSE.TRUE
+CDC2-PCNA-CCNB1-GADD45G complex	4	human	0	2	FALSE	TRUE	FALSE.TRUE
+IL-12 subunit p40 homodimer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+CDC2-CCNB1-CCNF complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+CDC2-CCNB1-PTCH1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+CDK2-CCNA2 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+CDC2-CCNA2 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+PAR6-CDC42 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+CDC2-CCNA2-CDK2 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+CDK2-CCNE1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+LMO4-gp130 complex	5	human	0	0	FALSE	FALSE	FALSE.FALSE
+Stat1-alpha-dimer-CBP DNA-protein complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+SHP-NR5A2 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+CNTF-CNTFR-gp130-LIFR complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+LIFR-LIF-gp130 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+LINC complex, S-phase	7	human	0	4	FALSE	TRUE	FALSE.TRUE
+LINC core complex	5	human	0	3	FALSE	TRUE	FALSE.TRUE
+LINC complex, quiescent cells	7	human	0	3	FALSE	TRUE	FALSE.TRUE
+Emerin complex 1	8	human	1	5	TRUE	TRUE	TRUE.TRUE
+Emerin-actin-NMI-(alphaII)spectrin complex	4	human	0	3	FALSE	TRUE	FALSE.TRUE
+Emerin-actin-NMI complex	3	human	0	2	FALSE	TRUE	FALSE.TRUE
+Emerin architectural complex	6	human	0	5	FALSE	TRUE	FALSE.TRUE
+Emerin regulatory complex	9	human	0	6	FALSE	TRUE	FALSE.TRUE
+Emerin complex 24	15	human	2	11	TRUE	TRUE	TRUE.TRUE
+Emerin complex 25	16	human	9	13	TRUE	TRUE	TRUE.TRUE
+Emerin complex 32	22	human	2	14	TRUE	TRUE	TRUE.TRUE
+Emerin complex 52	23	human	13	18	TRUE	TRUE	TRUE.TRUE
+HSP90-CIP1-FKBPL complex	3	human	1	1	TRUE	TRUE	TRUE.TRUE
+PSD95-FYN-NR2A complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Securin-separase complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+ESPL1-CDC2 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+FARP2-NRP1-PlexinA1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+FARP2-NRP1-PlexinA2 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+FARP2-NRP1-PlexinA3 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+FARP2-NRP1-PlexinA4 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+SEMA4A-PlexinD1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Ternary complex (LRRC7, CAMK2a, ACTN4)	3	human	1	1	TRUE	TRUE	TRUE.TRUE
+CEBPE-E2F1-RB1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+TRIM27-RB1 complex	2	human	0	1	FALSE	TRUE	FALSE.TRUE
+hRAD51C-hXRCC3 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Membrane protein complex (VCP, UFD1L, SEC61B)	3	human	2	3	TRUE	TRUE	TRUE.TRUE
+SEMA6D-PlexinA1-NRP1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+TALL1 homo-oligomer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+Nucleolar remodeling complex (NoRC complex)	2	human	1	2	TRUE	TRUE	TRUE.TRUE
+TIP5-DNMT-HDAC1 complex	4	human	2	3	TRUE	TRUE	TRUE.TRUE
+VEGFA(165)-KDR-NRP1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+NRP1-VEGF(165/121) complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+PRMT2 homo-oligomer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+CIN85-SH3GL3-CBL complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+IKBKG homotrimer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+NRP1-VEGFC complex, heparin dependent	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+NRP2-VEGFC complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+NRP2-VEGFD complex, heparin dependent	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+NRP1-VEGFD complex, heparin dependent	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+TGF-beta receptor-SMAD3 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+Pre-initiation complex (PIC)	3	human	1	3	TRUE	TRUE	TRUE.TRUE
+NRP2-VEGFR3 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+PlexinA1-NRP1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+PlexinA1-NRP1-SEMA3A complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+2AR-mGluR2 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+MRIT complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+SUMO1-SUA1-UBA2 complex	3	human	1	3	TRUE	TRUE	TRUE.TRUE
+SUA1-UBA2 complex	2	human	0	2	FALSE	TRUE	FALSE.TRUE
+PLXNA2-RANBPM complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+PLXNA3-RANBPM complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+PLXNA4-RANBPM complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+CRMP-MICAL-PlexinA1 complex, induced by SEMA3A	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+RUNX1-CBF-beta-DNA complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+Death induced signaling complex II (FADD, CASP8, CFLAR), cytosolic, CD95L induced	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+Death induced signaling complex DISC (FAS, FADD, CASP8, CFLAR), membrane-associated, CD95L induced	4	human	0	1	FALSE	TRUE	FALSE.TRUE
+Death-inducing signaling complex DISC (type I cells associated), stimulated	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+PGAM5-KEAP1-NRF2 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+GABAA receptor	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+Apoptosome-procaspase 9 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+MCL1-BAK1 complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+IKBKG-IKBKB  complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+IKBKG-CHUK complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+DJ-1-SNCA complex, high molecular weight complex	2	human	1	1	TRUE	TRUE	TRUE.TRUE
+MAP2K1-BRAF-RAF1-YWHAE-KSR1 complex	5	human	1	1	TRUE	TRUE	TRUE.TRUE
+PINK1-MIRO2-Milton complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+MIRO2-Milton complex	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+PPD complex	3	human	1	1	TRUE	TRUE	TRUE.TRUE
+AIF-CYPA-DNA complex	2	human	1	2	TRUE	TRUE	TRUE.TRUE
+I-kappa-B kinase (IKK) complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+HSP90-CDC37-LRRK2 complex	3	human	1	2	TRUE	TRUE	TRUE.TRUE
+FAS-FADD-CASP8-CASP10 complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+FAS-FADD-CASP10 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+CAV1-VDAC1-ESR1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+FE65-TSHZ3-HDAC1 complex	3	human	0	1	FALSE	TRUE	FALSE.TRUE
+BRAF-MAP2K1-MAP2K2-YWHAE complex	4	human	1	1	TRUE	TRUE	TRUE.TRUE
+RAF1-MAP2K1-YWHAE complex	3	human	1	1	TRUE	TRUE	TRUE.TRUE
+PPP2R1A-PPP2R1B-PPP2CA-PPME1-EIF4A1 complex	5	human	1	4	TRUE	TRUE	TRUE.TRUE
+KSR1 homooligomer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+BRAF-RAF1-14-3-3 complex	9	human	2	5	TRUE	TRUE	TRUE.TRUE
+KSR1-RAF1-MEK complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+KSR1-BRAF-MEK complex	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+RAF1-RAS complex, EGF induced	4	human	0	0	FALSE	FALSE	FALSE.FALSE
+RAF1-BRAF complex, RAS stimulated	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+RAF1-CNK1 complex, RAS stimulated	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+BRAF-CNK1 complex, not RAS stimulated	2	human	0	0	FALSE	FALSE	FALSE.FALSE
+CNK1 homodimer complex	1	human	0	0	FALSE	FALSE	FALSE.FALSE
+CNK1-SRC-RAF1 complex	3	human	0	0	FALSE	FALSE	FALSE.FALSE
+1,3-beta-glucan synthase complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+6-phosphofructokinase complex (GO)	2	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+90S preribosome	48	yeast	33	8	TRUE	TRUE	TRUE.TRUE
+90S preribosome (GO)	4	yeast	3	1	TRUE	TRUE	TRUE.TRUE
+acetolactate synthase complex (GO)	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+actin cytoskeleton-regulatory complex, Pan1p/Sla1p/End3p complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Ada2/Gcn5/Ada3 transcription activator complex	10	yeast	0	4	FALSE	TRUE	FALSE.TRUE
+adenylyl cyclase complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+alpha DNA polymerase:primase complex	7	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+alpha-1,6-mannosyltransferase complex	6	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+alpha-glucosidase II complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+alpha,alpha-trehalose-phosphate synthase complex (UDP-forming)	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+anaphase-promoting complex	16	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+anthranilate synthase complex	2	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+AP-1 adaptor complex	7	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+AP-2 adaptor complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+AP-3 adaptor complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Apg12p/Apg5p/Apg16 multimeric complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Arl1-arl3-sys1	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Arp2/3 protein complex	8	yeast	1	2	TRUE	TRUE	TRUE.TRUE
+Asf1-Rad53 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Atg11-Atg17-Atg29-Cis1 complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Atg1p signaling complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Atg20p/Snx4p/Snx41p complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Aurora B-INCENP protein kinase complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+Bni4p/Glc7p complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+box C/D snoRNP complex (GO)	4	yeast	4	3	TRUE	TRUE	TRUE.TRUE
+Bub2p/Bfa1p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+bud site selection pathway	6	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+Bud14p/Glc7p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Bur1-Bur2 CDK-cyclin complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+CAAX-protein geranylgeranyltransferase complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+CAF-1 complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+calcineurin complex (GO)	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+cAMP-dependent protein kinase complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Car1p/Arg3p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+carbamoyl-phosphate synthase complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+carboxy-terminal domain protein kinase complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Cbf1p/Met4p/Met28p complex	3	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+CBF3 complex (GO)	4	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+Cbp1p/Pet309p complex	2	yeast	2	0	TRUE	FALSE	TRUE.FALSE
+CCAAT-binding factor complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+CCR4-NOT complex	6	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+CCR4-NOT core complex	9	yeast	3	0	TRUE	FALSE	TRUE.FALSE
+ccz1-mon1-ypt7	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Cdc24p/Far1p/Gbetagamma protein complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Cdc28p/Clb1p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Cdc28p/Clb2p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Cdc28p/Clb5p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Cdc28p/Clb6p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Cdc28p/Cln3p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Cdc42p/Ste20p complex	2	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+Cdc48-Shp1 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+Cdc48-Ufd1-Npl4 complex	3	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+Cdc73p/Paf1p complex	7	yeast	3	3	TRUE	TRUE	TRUE.TRUE
+chaperonin-containing T-complex	13	yeast	2	6	TRUE	TRUE	TRUE.TRUE
+chitin biosynth pathway	6	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+cho2-opi3	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+chromatin accessibility complex (GO)	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+chromatin assembly complex (GO)	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+chromatin silencing complex	5	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+Chs5p/Arf-1binding proteins (ChAPs)	6	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Chz1p/Htz1p/Htb1p complex	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+clathrin vesicle coat	4	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+Cln-Cdc28 protein kinase complex	8	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+cohesin loading complex (GO)	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+COMA complex	11	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+commitment complex	21	yeast	21	0	TRUE	FALSE	TRUE.FALSE
+COMPASS complex	8	yeast	1	2	TRUE	TRUE	TRUE.TRUE
+COPI vesicle coat	8	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+COPII	11	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+COPII vesicle coat	9	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+core H-ACA snoRNP	5	yeast	4	2	TRUE	TRUE	TRUE.TRUE
+CORVET complex	6	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Cox14p/Cox1p/Mss51p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+CPF complex	16	yeast	13	3	TRUE	TRUE	TRUE.TRUE
+Cpr6-Hsc82-Sti1-Hsp82 complex	4	yeast	1	2	TRUE	TRUE	TRUE.TRUE
+Csh1p/Csg2p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Cul3-RING ubiquitin ligase complex (GO)	5	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+CURI complex (GO)	5	yeast	1	1	TRUE	TRUE	TRUE.TRUE
+cyclin-dependent protein kinase holoenzyme complex (GO)	13	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+Cytochrome bc1 complex (Ubiquinol-cytochrome c reductase complex, complex III)	9	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+cytoplasmic dynein complex (GO)	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+cytoplasmic ribosomal large subunit	81	yeast	68	24	TRUE	TRUE	TRUE.TRUE
+cytoplasmic ribosomal small subunit	57	yeast	27	16	TRUE	TRUE	TRUE.TRUE
+cytoskeleton assembly pathway	16	yeast	1	1	TRUE	TRUE	TRUE.TRUE
+cytosolic large ribosomal subunit	64	yeast	48	26	TRUE	TRUE	TRUE.TRUE
+cytosolic small ribosomal subunit	15	yeast	8	5	TRUE	TRUE	TRUE.TRUE
+DASH complex	10	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Dcp1-Dcp2 decapping enzyme complex	4	yeast	3	2	TRUE	TRUE	TRUE.TRUE
+Dcs1-Dcs2 heterodimer	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Def1p/Rad26p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+degradosome	2	yeast	2	0	TRUE	FALSE	TRUE.FALSE
+delta DNA polymerase complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+dipthamide complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+DNA ligase IV complex (GO)	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+DNA replication factor A complex	4	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+DNA replication factor C complex (Ctf18p/Ctf8p/dcc1p)	7	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+DNA replication factor C complex (Rad24p)	5	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+DNA-directed RNA polymerase I complex	15	yeast	0	9	FALSE	TRUE	FALSE.TRUE
+DNA-directed RNA polymerase II, holoenzyme	15	yeast	2	8	TRUE	TRUE	TRUE.TRUE
+DNA-directed RNA polymerase III complex	18	yeast	0	8	FALSE	TRUE	FALSE.TRUE
+Doa10p ubiquitin ligase complex	5	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+Dop1-Mon2 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Dpb11p/Sld2p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Dph1-Dph2-Dph3 complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+dynactin complex (GO)	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+eEF1	5	yeast	5	3	TRUE	TRUE	TRUE.TRUE
+eIF1/eIF1A/40S complex	2	yeast	2	0	TRUE	FALSE	TRUE.FALSE
+eisosome	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+EKC/KEOPS protein complex	5	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Elg1 RFC-like complex	6	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+elm1-hsl1-hsl7	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Elongator holoenzyme complex	6	yeast	4	1	TRUE	TRUE	TRUE.TRUE
+emc complex	5	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+endoplasmic reticulum Sec complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+epsilon DNA polymerase complex	5	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+ER SNARE Use1	8	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+ER V-ATPase assembly complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+ESCRT I complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+ESCRT II complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+ESCRT III complex (GO)	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+ESCRT-0 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+ESCRT-IIIb DID4 subcomplex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Esp1p/Pds1p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+eukaryotic translation initiation factor 2B complex	9	yeast	8	5	TRUE	TRUE	TRUE.TRUE
+eukaryotic translation initiation factor 3 complex	11	yeast	11	4	TRUE	TRUE	TRUE.TRUE
+eukaryotic translation initiation factor 4F complex (JB)	4	yeast	4	1	TRUE	TRUE	TRUE.TRUE
+eukaryotic translation initiation factor 4F complex (AB)	5	yeast	5	2	TRUE	TRUE	TRUE.TRUE
+exocyst	8	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+exosome (RNase complex)	16	yeast	15	1	TRUE	TRUE	TRUE.TRUE
+F0/F1 ATP synthase (complex V)	15	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Far3p/Far7p/Far8p/Far9p/Far10p/Far11p complex	6	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Fatty Acid Import Complex	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+fatty acid synthase complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Fth1p/Fet5p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+GAL3p/GAL80p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+GAL4p/GAL80p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+gamma-tubulin small complex, spindle pole body	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+GARP complex	5	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+GCR complex	2	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+GET complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+GID complex	8	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+GINS complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+glycine cleavage complex (GO)	4	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+glycosylphosphatidylinositol-N-acetylglucosaminyltransferase (GPI-GnT) complex (GO)	6	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Golgi transport complex	8	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+GPI-anchor transamidase complex	5	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Grh1-Bug1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+GSE Complex	5	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+GSH degradosomal complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Gsp1-Prp20 complex	3	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+Gyl1-Gyp5 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+H+-transporting ATPase, Golgi	13	yeast	1	2	TRUE	TRUE	TRUE.TRUE
+H+-transporting ATPase, vacuolar	13	yeast	1	3	TRUE	TRUE	TRUE.TRUE
+HAT-A4 complex	8	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+HDA complex	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+heterogeneous nuclear ribonucleoprotein complex (GO)	2	yeast	2	0	TRUE	FALSE	TRUE.FALSE
+heterotrimeric G-protein complex (GO)	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+high affinity iron permease complex (GO)	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+HIR complex	4	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+HMC Complex	4	yeast	1	3	TRUE	TRUE	TRUE.TRUE
+HOG pathway	11	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+Holliday junction resolvase complex (GO)	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Hop2p/Mnd1p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+HOPS complex	7	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+hst3-hst4	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Hym1p/Kic1p/Sog2p complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+i-AAA complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Ic-CPY complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Ino2p/Ino4p basic helix-loop-helix heteromeric complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+INO80 complex	14	yeast	1	9	TRUE	TRUE	TRUE.TRUE
+ISW1 complex (JB)	5	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+ISW1 complex (AB)	4	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+Kap114-Nap1 histone complex	5	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+Kel1p/Kel2p/Lte1p complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+kinesin complex (GO)	6	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+kinetochore	18	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+Kornberg's mediator (SRB) complex	27	yeast	0	6	FALSE	TRUE	FALSE.TRUE
+Ku70:Ku80 complex	2	yeast	2	0	TRUE	FALSE	TRUE.FALSE
+LMA1 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+lst4-lst7	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+luminal surveillance complex	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+m-AAA complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+mannosyltransferase complex (GO)	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+MBF transcription complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+MCM complex (GO)	6	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Mdm10/Mdm12/Mmm1 complex (GO)	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Mei5p/Sae3p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+meiotic recombination initiation complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Met4p/Met28p/Met31p complex	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+Met4p/Met28p/Met32p complex	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+methionyl glutamyl tRNA synthetase complex	3	yeast	2	2	TRUE	TRUE	TRUE.TRUE
+Mgm1p/Ugo1p/Fzo1p complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+MIND complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+mitochondrial DNA-directed RNA polymerase complex	2	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+mitochondrial inner membrane peptidase complex (GO)	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+mitochondrial inner membrane presequence translocase complex (GO)	6	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+mitochondrial inner membrane protein insertion complex (GO)	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+mitochondrial intermembrane space protein transporter complex (GO)	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+mitochondrial isocitrate dehydrogenase complex (NAD+)	2	yeast	2	0	TRUE	FALSE	TRUE.FALSE
+mitochondrial outer membrane translocase complex (GO)	8	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+mitochondrial oxoglutarate dehydrogenase complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+mitochondrial processing peptidase complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+mitochondrial proton-transporting ATP synthase complex	6	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+mitochondrial pyruvate dehydrogenase complex	7	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+mitochondrial respiratory chain complex II (GO)	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+mitochondrial respiratory chain complex IV	9	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+mitochondrial ribosome (GO)	4	yeast	1	1	TRUE	TRUE	TRUE.TRUE
+mitochondrial small ribosomal subunit	34	yeast	11	0	TRUE	FALSE	TRUE.FALSE
+mitochondrial sorting and assembly machinery complex (GO)	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+mitochondtrial large ribosomal subunit	46	yeast	18	0	TRUE	FALSE	TRUE.FALSE
+mitotic checkpoint complex	6	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Mlh2-Mlh1 heterodimer	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+mms22-rtt101-mms1	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Mob1p/Dbf2p complex	2	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+Mob2p/Cbk1p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+monopolin complex (GO)	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Mot1p complex	2	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+Mps2p/Bbp1p complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Mre11 complex (GO)	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+mRNA cap complex (GO)	3	yeast	3	0	TRUE	FALSE	TRUE.FALSE
+mRNA capping enzyme complex	2	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+mRNA cleavage factor complex	9	yeast	9	3	TRUE	TRUE	TRUE.TRUE
+Mst27p/Mst28p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Mtk1p/Pbp1p complex	2	yeast	1	1	TRUE	TRUE	TRUE.TRUE
+Mto1p/Mss1p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+multi-eIF complex	8	yeast	8	5	TRUE	TRUE	TRUE.TRUE
+MutLalpha complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+MutLbeta complex (GO)	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+MutSalpha complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+MutSBeta complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+myosin V complex (GO)	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Nam1-Sls1 complex	2	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+nascent polypeptide-associated complex	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+NatA complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+NatB complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+NatC complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+NC2 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+Ndc80 complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Nem1p/Spo7p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+No-Go mRNA decay	2	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+Noc1p-Noc2p complex (GO)	2	yeast	2	0	TRUE	FALSE	TRUE.FALSE
+Nonsense-mediated mRNA decay pathway complex	3	yeast	3	0	TRUE	FALSE	TRUE.FALSE
+Npa2p-containing subcomplex	5	yeast	3	1	TRUE	TRUE	TRUE.TRUE
+Nrd1-Nab3-Sen1 termination complex	4	yeast	4	0	TRUE	FALSE	TRUE.FALSE
+Ntr1p/Ntr2p/Prp43p complex	3	yeast	2	0	TRUE	FALSE	TRUE.FALSE
+NuA3 histone acetyltransferase complex (GO)	5	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+NuA4 histone acetyltransferase complex	13	yeast	0	6	FALSE	TRUE	FALSE.TRUE
+nuclear cohesin complex	6	yeast	0	3	FALSE	TRUE	FALSE.TRUE
+nuclear condensin complex	5	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+nuclear pore	52	yeast	7	2	TRUE	TRUE	TRUE.TRUE
+nuclear telomere cap complex (GO)	11	yeast	0	4	FALSE	TRUE	FALSE.TRUE
+nucleolar preribosome, large subunit precursor (GO)	6	yeast	3	3	TRUE	TRUE	TRUE.TRUE
+nucleolar preribosome, small subunit precursor (GO)	5	yeast	3	1	TRUE	TRUE	TRUE.TRUE
+nucleolar ribonuclease P complex	9	yeast	6	0	TRUE	FALSE	TRUE.FALSE
+Nucleosomal protein complex	8	yeast	0	6	FALSE	TRUE	FALSE.TRUE
+nucleotide-excision repair factor 1 complex	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+nucleotide-excision repair factor 1 complex (GO)	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+nucleotide-excision repair factor 2 complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+nucleotide-excision repair factor 3 complex	7	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+nucleotide-excision repair factor 3 complex (GO)	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+nucleotide-excision repair factor 4 complex (GO)	4	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+OAF complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+oligosaccharyl transferase complex (GO)	9	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+origin recognition complex	6	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+palmitoyltransferase complex (GO)	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+PAN complex	2	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+Pba1-Pba2 complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Pcl7-Pho85 CDK-cyclin complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+peroxin docking complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+phenylalanine-tRNA ligase complex	2	yeast	2	1	TRUE	TRUE	TRUE.TRUE
+Pho80-Pho81-Pho85 CDK-cyclin complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Pho85p/Pcl10p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Pho85p/Pcl1p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Pho85p/Pcl2p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+phosphatidylinositol (PtdIns) 3-kinase complex (functions in autophagy)	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+phosphatidylinositol 3-kinase complex II	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+phosphopyruvate hydratase complex (GO)	2	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+PKC pathway	14	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+polarisome	5	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+Polzeta-Rev1p complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+pre-IC	7	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+prefoldin complex	6	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+preribosome (GO)	2	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+preribosome, large subunit precursor	30	yeast	21	8	TRUE	TRUE	TRUE.TRUE
+presequence translocase-associated import motor	7	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+prohibitin complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+protein farnesyltransferase complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Protein O-mannosyltransferase(Pmt1p/Pmt2p)	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Protein O-mannosyltransferase(Pmt3p/Pmt5p)	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+protein phosphatase type 1 complex (GO)	7	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+protein phosphatase type 2A complex	8	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Prp19-associated complex	8	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+Prs1-Prs3 heterodimer	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Psr2-Psr1-Whi2 complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putatie Saf1-Aah1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Abp1-Crn1 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Ade16-Ade17-Sol2 complex	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Ark1-Ste4 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Aro3-Bcs1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Arx1-Rsa4-Sda1-Ipi3-Nsa2-Nog2-Bud20-Ipi1-Mdn1 complex	9	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Asn1-Asn2 isozyme complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Atg18-Atg2 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ats1-Kti11 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Bat1-Bat2 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Bdh1-Bdh2 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Boi2-Cdc24 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Bre1-Lge1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Bud6-Yor304c-a complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Cdc19-Pyk2 isozyme complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Cdc47-Erg26 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Cia1-Yhr122w-Met18-Nar1 complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Cin8-Zwf1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Cmd1-Mlc1-Myo2-Myo1-Mlc2 complex	5	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Cox20-Chs1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Crm1-Mir1-Erd2-Tub1-Gea2-Mtr10-Kap104 complex	7	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Crn1-Inp52-Bsp1 complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Cul3-Yil001w complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Cwc2-Spp382-Ntr2 complex	3	yeast	2	0	TRUE	FALSE	TRUE.FALSE
+putative Cyc3-Yat1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ddi1-Pmt4 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Dhr2-Ubp10 complex	2	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+putative Dre2-Tah18 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Drn1-Dbr1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ecm30-Ubp15 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ede1-Syp1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Efg1-Bud22 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Eft1-Eft2 complex	2	yeast	2	1	TRUE	TRUE	TRUE.TRUE
+putative Ela1-Tys1 complex	2	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+putative Emp24-Erv25-Erp3-Erp5 complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Erg7-Erg27 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Erv46-Erv41-Ero1 complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Faa4-Ygl082w complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Fap1-Fpr1-Yil161w complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Fbp26-Ylr345w complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Flc2-Pdr5 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Flc2-Tcb3 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Fmc1-Atp12 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Fpr3-Ssb2 complex	2	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+putative Fun19-Kap123 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Gdh1-Gdh3 isozyme complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Gdi1-Ypt6-Ypt1 complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Gir2-Rbg2 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Glt1-Ylr257w complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Grh1-Fmp38 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Gsy1-Gsy2 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Hca4-Esf1-Esf2 complex	3	yeast	3	1	TRUE	TRUE	TRUE.TRUE
+putative Heh2-Erg24 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Hmg1-Hmg2 isozyme complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Hmt1-Scd6-Psp2 complex	3	yeast	2	0	TRUE	FALSE	TRUE.FALSE
+putative Hrr25-Ltv1-Rio2-Tsr1 complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Hsp42-Gln1 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Hsp42-Sis1 complex	2	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+putative Ipp1-Ack1-Rom2 complex	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Ipp1-Tus1-Ypl066w complex	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Kap123-Ypr174c complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Kem1-Gbp2-Sro9-Sbp1 complex	4	yeast	4	1	TRUE	TRUE	TRUE.TRUE
+putative Kex2-Sil1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Las17-Sla1-Vrp1 complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Leu4-Leu9 isozyme complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Lsg1-Nmd3-Rei1 complex	3	yeast	2	0	TRUE	FALSE	TRUE.FALSE
+putative Lys20-Lys21 isozyme complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Map1-Ybr030w complex	2	yeast	1	1	TRUE	TRUE	TRUE.TRUE
+putative Mba1-Ste50 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Mdm10-Mpm1-Tom40-Yhm2 complex	4	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Met13-Met12 isozyme complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Met13-Yml082w complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Mnl1-Pdi1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Mob1-Dbf20 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Nfs1-Isd11 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Nma2-Nma1 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Nnf2-Yel043w complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Nqm1-Tal1 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Nth1-Bmh1-Bmh2 complex	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Nuc1-Trz1-Ymr099c complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Nup170-Nup53-Hms1 complex	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Nvj1-Tos4 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Oca6-Oca5-Oca4-Oca3-Oca1-Oca2 complex	6	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Osh2-Swh1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Oye2-Oye3 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Paa1-Ptc2 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Pck1-Eno1 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Pcl8-Pho85 CDK-cyclin complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Pcm1-Mgs1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Pet112-Ymr293c complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Pex5-Mmt1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Pkh1-Mrp8-Pil1-Lsp1 complex	4	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Pmr1-Psd1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Pol4-Rpn5 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Psy2-Rrd1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ptc3-Paa1 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Ptc4-Ydr186c complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ptc6-Pro2 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ptc7-Sec14 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Put1-Ymr315w complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Pyc1-Pyc2 isozyme complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Rgd1-Fyv8 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Rim1-Rad52 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Rpl23a-Rpl23b-Bcp1-Rkm1 complex	4	yeast	2	0	TRUE	FALSE	TRUE.FALSE
+putative Sah1-Caf16 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Sas3-Nto1-Ylr455w complex	3	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+putative Sas5-Wtm2 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ser3-Ser33 isozyme complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Sfp1-Mrs6 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Sgn1-Ygr250c complex	2	yeast	2	0	TRUE	FALSE	TRUE.FALSE
+putative Sit4-Sap185-Rts3-Hrk1 complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Skp1-Ypt52-Ymr258c complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Sla2-Lsb3 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Slu7-Prp18 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Slx5-Swa2 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Snf7-Vps4 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Sok1-Rtn1-Crp1-Ids2-Pep4 complex	5	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+putative Spe3-Spe4 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ssd1-Psy4-Pph3-Psy2 complex	4	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+putative Ssl2-Yor352w complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ste23-Mrn1 complex	2	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+putative Tao3-Yml081w complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Tdh1-Tdh2 isozyme complex	2	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+putative Tdh3-Pgk1-Eno2-Fba1-Pgm1 complex	5	yeast	1	5	TRUE	TRUE	TRUE.TRUE
+putative Tkl2-Tkl1 isozyme complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Tma20-Tma22 complex	2	yeast	2	0	TRUE	FALSE	TRUE.FALSE
+putative Tom71-Ylr072w complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Trm3-Fas1 complex	2	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+putative Trm7-Rtt10 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Trm7-Ymr259c complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Trr1-Trr2 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Tub3-Gcn1-Gcn20-Gfa1-Mae1-Sam1-Clu1 complex	7	yeast	1	3	TRUE	TRUE	TRUE.TRUE
+putative Uba1-Ydr415c complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ubc4-Ufd4 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ubp13-Yol087c complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Uga1-Ndt80 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ura5-Ura10 isozyme complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Vab2-Ydr357c-Ykl061w-YGL079w-Ynl086w complex	5	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Vac8-Nce102 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Yae1-Ynl260c complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Yak1-Ypl247c complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ybr137w-Sgt2-Mdy2-Yor164c complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ybr225w-Mds3-Cdc25 complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ybt1-Dak1 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Ycp4-Rfs1-Pst2 complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Yef1-Utr1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Yer071c-Aim21-Cap1-Cap2 complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Yer140w-Slp1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ygr017w-Vip1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ygr071c-Vid22-Tbf1 complex	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Ygr130c-Ymr031c complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ygr283c-Idp3 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ygr283c-Ymr310c complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Yhb1-Aco1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Yhr131c-Rsp5 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Yjl070c-Amd1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Yjr136c-Ykl033w complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+putative Ykl088w-Ppz1 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Yll032c-Yml119w complex	2	yeast	1	1	TRUE	TRUE	TRUE.TRUE
+putative Yor251c-Rev1 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+putative Ypk1-Ypk2 complex	2	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+putative Ypt1-Dss4 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Pxa1p/Pxa2p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Q-biosynthetic Coq polypeptide complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+R2TP complex	4	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+Rab-protein geranylgeranyltransferase complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Rad17p/Ddc1p/Mec3p complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Rad23-Png1 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+rad5-rad6-rad18	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+rad51-rad57	5	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+rad9-chk1	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+RAVE complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+RecQ helicase-Topo III complex (GO)	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+RENT complex (GO)	4	yeast	1	2	TRUE	TRUE	TRUE.TRUE
+repairosome (GO)	4	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+RES complex	3	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+retromer complex	6	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+ribonuclease H2 complex (GO)	3	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+ribonuclease MRP complex	10	yeast	8	0	TRUE	FALSE	TRUE.FALSE
+ribonucleoprotein complex (GO)	3	yeast	2	3	TRUE	TRUE	TRUE.TRUE
+ribonucleoside-diphosphate reductase complex	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+ribonucleoside-diphosphate reductase complex (GO)	4	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+ribosome-associated complex	3	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+Ric1-Rgp1-Ypt6	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+RIM101 protease module	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+RIM101 signal module	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+RING finger peroxin complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Rix1p complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+RNA polymerase I transcription factor complex (GO)	5	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+RNA polymerase I upstream activating factor complex	6	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+RNA polymerase II complex	19	yeast	4	9	TRUE	TRUE	TRUE.TRUE
+Rpd3L complex	13	yeast	0	7	FALSE	TRUE	FALSE.TRUE
+Rpd3S complex	5	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+RSC complex (JB)	27	yeast	0	19	FALSE	TRUE	FALSE.TRUE
+RSC complex (AB)	17	yeast	0	13	FALSE	TRUE	FALSE.TRUE
+Rsp5-Ubp2-Rup1 deubiquitinating enzyme complex	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+RTG pathway	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Rtt103-Rai1-Rat1 complex	3	yeast	2	0	TRUE	FALSE	TRUE.FALSE
+rtt109-asf1	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Rtt109-Vps75 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Rvs161-Rvs167 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+SAGA complex	22	yeast	0	9	FALSE	TRUE	FALSE.TRUE
+SAS Complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+SBF transcription complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+SCF ubiquitin ligase complex (JB)	5	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+SCF ubiquitin ligase complex (AB)	14	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+SCF-CDC4 complex	5	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Scs2-Opi1 complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+Sds22p/Glc7p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+septin complex	6	yeast	0	6	FALSE	TRUE	FALSE.TRUE
+serine C-palmitoyltransferase complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+Set3C	7	yeast	1	2	TRUE	TRUE	TRUE.TRUE
+SF3b complex	6	yeast	4	0	TRUE	FALSE	TRUE.FALSE
+She2-She3-Myo4 complex	3	yeast	2	1	TRUE	TRUE	TRUE.TRUE
+Shq1p/Naf1p complex	2	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+signal peptidase complex (GO)	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+signal recognition particle	7	yeast	7	2	TRUE	TRUE	TRUE.TRUE
+signal recognition particle receptor complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+signalosome complex	6	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Sin3 complex (GO)	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+Sis2-Ykl088w-Vhs3 complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Sit4-Sap155 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Sit4-Sap190 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Ski complex	5	yeast	2	0	TRUE	FALSE	TRUE.FALSE
+Sko1p/Cyc8p/Tup1 repressor complex	3	yeast	0	3	FALSE	TRUE	FALSE.TRUE
+Sli15p/Bir1p complex	2	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+SLIK (SAGA-like) complex	19	yeast	0	8	FALSE	TRUE	FALSE.TRUE
+Slx1-Slx4 complex (GO)	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+small nuclear ribonucleoprotein complex (GO)	3	yeast	2	0	TRUE	FALSE	TRUE.FALSE
+smc5p-Smc6p complex	8	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+SNARE complex (GO)	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+snf1 protein kinase complex	7	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+Sno1p/Snz1p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+snRNP U6	11	yeast	11	0	TRUE	FALSE	TRUE.FALSE
+Sod1-Css1 heterodimer	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+SPB components	7	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+spliceosome	16	yeast	6	2	TRUE	TRUE	TRUE.TRUE
+Sro1p/Sec4p/Sec9p complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Ste11-Ste50 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Ste12-Dig1-Dig2 complex	3	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+STE5-MAPK complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+subunit VII of the cytochrome bc1 complex	4	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+succinyl-CoA ligase	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+sulfite reductase complex (NADPH) (GO)	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Sum1p/Rfm1p/Hst1p complex	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+SUMO activating enzyme complex	2	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+Sur1p/Csg2p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Swh1p/Nvj1p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+SWI/SNF complex	12	yeast	0	7	FALSE	TRUE	FALSE.TRUE
+SWR1 complex	14	yeast	0	10	FALSE	TRUE	FALSE.TRUE
+synaptonemal complex (GO)	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+Synaptonemal complex (SC)	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Tap42p/Pph21p/Rrd2p complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Tap42p/Sit4p/Rrd1p complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Telomerase	3	yeast	2	0	TRUE	FALSE	TRUE.FALSE
+Tlg1 SNARE complex	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Tof1p/Mrc1p/Csm3p complex	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+TORC1 complex (GO)	5	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+TORC2 complex (GO)	8	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+TRAMP complex	4	yeast	3	0	TRUE	FALSE	TRUE.FALSE
+transcription elongation factor complex	13	yeast	3	7	TRUE	TRUE	TRUE.TRUE
+transcription factor complex	10	yeast	2	5	TRUE	TRUE	TRUE.TRUE
+transcription factor TFIIA complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+transcription factor TFIID complex	21	yeast	0	9	FALSE	TRUE	FALSE.TRUE
+transcription factor TFIIE complex	2	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+transcription factor TFIIH complex	10	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+transcription factor TFIIIB complex (GO)	3	yeast	0	3	FALSE	TRUE	FALSE.TRUE
+transcription factor TFIIIC complex	6	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+translation release factor complex	2	yeast	2	1	TRUE	TRUE	TRUE.TRUE
+translocon complex (GO)	5	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+TRAPP complex	10	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+TREX complex	8	yeast	5	2	TRUE	TRUE	TRUE.TRUE
+Trm112-Trm11 complex	2	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+Trm9-Trm112 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+tRNA (m1A) methyltransferase complex	2	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+tRNA methyltransferase complex	2	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+tRNA-intron endonuclease complex (GO)	4	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+tubulin complex	3	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+U2 snRNP complex	18	yeast	18	0	TRUE	FALSE	TRUE.FALSE
+U4/U6 x U5 tri-snRNP complex	28	yeast	22	1	TRUE	TRUE	TRUE.TRUE
+U5 snRNP complex	14	yeast	10	0	TRUE	FALSE	TRUE.FALSE
+ubiquitin conjugating enzyme complex	3	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+ubiquitin ligase complex (GO)	10	yeast	0	2	FALSE	TRUE	FALSE.TRUE
+ubiquitin ligase ERAD-L complex	5	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Ubp3-Bre5 complex	2	yeast	2	0	TRUE	FALSE	TRUE.FALSE
+UDP-N-acetylglucosamine transferase complex (GO)	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Ula1-Uba3 enzyme complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Ulp1 nuclear pore complex	3	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+Ume6p/Ime1p complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+UTP C complex	6	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+Vac14-Fig4 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+vacuolar proton-transporting V-type ATPase, V0 domain (JB)	4	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+vacuolar proton-transporting V-type ATPase, V0 domain (AB)	7	yeast	0	1	FALSE	TRUE	FALSE.TRUE
+vacuolar proton-transporting V-type ATPase, V1 domain	9	yeast	1	2	TRUE	TRUE	TRUE.TRUE
+vacuolar transporter chaperone complex (GO)	4	yeast	1	0	TRUE	FALSE	TRUE.FALSE
+Vam3p/Vam7 vacuolar tSNARE complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Vps55/Vps68 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+Vti1-Pep12 complex	2	yeast	0	0	FALSE	FALSE	FALSE.FALSE
+20S proteasome core particle	14	yeast	1	3	TRUE	TRUE	TRUE.TRUE
+19S proteasome regulatory particle	19	yeast	0	4	FALSE	TRUE	FALSE.TRUE
+proteasome associated	20	yeast	0	0	FALSE	FALSE	FALSE.FALSE

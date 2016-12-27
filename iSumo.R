@@ -358,6 +358,11 @@ if (taxId == "9606"){
 	colnames(yeastComplex) = c("nComp", "avgCompSz")
 }
 
+## overall enrichment of SUMO in complex subunits set
+unionSumoUniprotKb = Reduce(union, sumoUniproKb)
+unionCorumSubunits = Reduce(union, corumSubunits)
+
+
 ## Table 2/Figure 2. analyzing RNA-binding, SUMO in protein complexes
 ## get proteins that are RNA-binding
 humanRnaBinding = unlist(getUniprotKbByTermId(term.id = "GO:0003723"),
@@ -397,6 +402,10 @@ complexComp$Organism = as.factor(complexComp$Organism)
 complexComp[, ":="("RNA binding" = `Number of RNA-binding subunits`>0,
 				   "SUMOylated" = `Number of SUMOylated subunits`>0)][,
 				   "RNA.SUMO" := interaction(`RNA binding`, `SUMOylated`)]
+## save it.
+write.table(complexComp, "tableS3.complexes.txt",
+			sep = "\t", row.names = F, quote = F)
+
 
 ## analysis of complex size correlation with RNA-binding or SUMO
 ## TODO: annotate the graph with the following!!!
