@@ -358,9 +358,144 @@ if (taxId == "9606"){
 	colnames(yeastComplex) = c("nComp", "avgCompSz")
 }
 
-## Table 2. analyzing RNA-binding, SUMO in protein complexes
+## Table 2/Figure 2. analyzing RNA-binding, SUMO in protein complexes
+## get proteins that are RNA-binding
+humanRnaBinding = unlist(getUniprotKbByTermId(term.id = "GO:0003723"),
+						 use.names = F)
+yeastRnaBinding = unlist(getUniprotKbByTermId(term.id = "GO:0003723",
+											  taxId = "559292"),
+						 use.name = F)
+yeastRnaBinding = sysName[primaryIdentifier %in% yeastRnaBinding,
+						  secondaryIdentifier]
+humanSumo = Reduce(union, readRDS("data/9606.sumoUniprotKb.rds"))
+yeastSumo = readRDS("data/559292.sumoSgd.rds")
 
+## assemble human and yeast complex centric data separately
+hDt = do.call("rbind", lapply(names(corumSubunits), function(x){
+	prots = corumSubunits[[x]]
+	size = length(prots)
+	nRna = sum(prots %in% humanRnaBinding)
+	nSumo = sum(prots %in% humanSumo)
+	return(c(x, size, "human", nRna, nSumo))
+}))
+yDt = do.call("rbind", lapply(names(cpxSubunits), function(x){
+	prots = cpxSubunits[[x]]
+	size = length(prots)
+	nRna = sum(prots %in% yeastRnaBinding)
+	nSumo = sum(prots %in% yeastSumoSys)
+	return(c(x, size, "yeast", nRna, nSumo))
+}))
+## put them together into one dt, rename, convert classes
+complexComp = data.table(rbind(hDt, yDt))
+colnames(complexComp) = c("Complex name", "Complex size", "Organism",
+						  "Number of RNA-binding subunits",
+						  "Number of SUMOylated subunits")
+class(complexComp$`Complex size`)="numeric"
+class(complexComp$`Number of RNA-binding subunits`)="numeric"
+class(complexComp$`Number of SUMOylated subunits`)="numeric"
+complexComp$Organism = as.factor(complexComp$Organism)
+complexComp[, ":="("RNA binding" = `Number of RNA-binding subunits`>0,
+				   "SUMOylated" = `Number of SUMOylated subunits`>0)][,
+				   "RNA.SUMO" := interaction(`RNA binding`, `SUMOylated`)]
 
+## analysis of complex size correlation with RNA-binding or SUMO
+## TODO: annotate the graph with the following!!!
+complexComp[Organism=="human", table(`RNA binding`, SUMOylated)]
+complexComp[Organism=="yeast", table(`RNA binding`, SUMOylated)]
+## pairwise wilcox rank test
+pairwise.wilcox.test(x = complexComp[Organism=="human", `Complex size`],
+					 g = complexComp[Organism=="human", `RNA.SUMO`],
+					 p.adjust.method = "fdr")
+pairwise.wilcox.test(x = complexComp[Organism=="yeast", `Complex size`],
+					 g = complexComp[Organism=="yeast", `RNA.SUMO`],
+					 p.adjust.method = "fdr")
+
+## first make boxplot to show complex size related to RNA/SUMO
+## (violin and jitter too busy since majority of points are at the bottom)
+fig2a = ggplot(data = complexComp,
+			   mapping = aes(x = RNA.SUMO, y = `Complex size`))
+svg(width = 12, height = 8, filename = "fig2a.compSzRnaSumo.svg")
+plot.new()
+fig2a + geom_boxplot() +
+#	geom_violin(draw_quantiles = T) +
+#	geom_jitter(width = 0.2) + 
+	facet_wrap(facets = ~Organism) +
+#	annotate("text", )
+	theme(plot.background = element_blank(),
+		  panel.grid = element_blank(),
+		  panel.background = element_blank(),
+		  plot.margin = margin(t = 20, r = 60, b = 20, l = 20, unit = "pt"),
+		  strip.placement = "indside",
+		  text = element_text(size = 16),
+		  axis.line =
+		  	element_line(size=1, colour = "black",
+		  				 arrow = arrow(angle = 30,
+		  				 			  length = unit(x = 0.1, units = "inch"),
+		  				 			  type = "open", ends = "last")),
+#		  axis.title.x = element_text(size = 16),
+#		  axis.title.y = element_text(size = 16),
+		  axis.text.x = element_text(size = 16, angle = 335, hjust = 0),
+#		  axis.text.y = element_text(size = 16),
+		  axis.ticks = element_blank())
+dev.off()
+
+## second make scatter plot of nSUMO-nRNA, with size correspond to complex size
+fig2b = ggplot(data = complexComp,
+			   mapping = aes(x = `Number of RNA-binding subunits`,
+			   			  y = `Number of SUMOylated subunits`,
+			   			  color = Organism))
+svg(width = 8, height = 8, filename = "fig2b.sumoRna.svg")
+plot.new()
+fig2b + geom_point(aes(size = complexComp$`Complex size`), alpha=0.5) +
+	scale_size(breaks = c(5, 10, 20, 60, 100), range = c(1,8),
+			   guide = guide_legend(title = "Complex size")) +
+	## labeling human big SUMOs
+	geom_text(mapping = aes(label = `Complex name`, size = 24),
+		data = complexComp[Organism=="human"][
+			order(`Number of SUMOylated subunits`,decreasing = T)][1:6],
+		check_overlap = T, nudge_y = 3, nudge_x = 8, show.legend = F) +
+	geom_text(mapping = aes(label = `Complex name`, size = 24),
+			  data = complexComp[Organism=="human"][
+			  	order(`Number of SUMOylated subunits`,decreasing = T)][7],
+			  check_overlap = T, nudge_y = 3, nudge_x = 2, show.legend = F) +
+	## labeling yeast big SUMOs
+	geom_text(mapping = aes(label = `Complex name`, size = 24),
+			  data = complexComp[Organism=="yeast"][
+			  	order(`Number of SUMOylated subunits`,decreasing = T)][1],
+			  check_overlap = T, nudge_y = 3, nudge_x = 16, show.legend = F) +
+	geom_text(mapping = aes(label = `Complex name`, size = 24),
+			  data = complexComp[Organism=="yeast"][
+			  	order(`Number of SUMOylated subunits`,decreasing = T)][3],
+			  check_overlap = T, nudge_y = 3, nudge_x = 2, show.legend = F) +
+	geom_text(mapping = aes(label = `Complex name`, size = 32),
+			  data = complexComp[Organism=="yeast"][
+			  	order(`Number of SUMOylated subunits`,decreasing = T)][c(2,4)],
+			  check_overlap = T, nudge_y = -3, nudge_x = 16, show.legend = F) +
+	## labeling human big RNA binding low SUMOs
+	geom_text(mapping = aes(label = `Complex name`, size = 32),
+			  data = complexComp[Organism=="human" &
+			  				   	`Number of SUMOylated subunits`<10][
+			  	order(`Number of RNA-binding subunits`,decreasing = T)][1:3],
+			  check_overlap = T, nudge_y = 4, nudge_x = 8, show.legend = F) +
+	xlim(-7,133) +
+	theme(plot.background = element_blank(),
+		  panel.grid = element_blank(),
+		  panel.background = element_blank(),
+		  plot.margin = margin(t = 20, r = 20, b = 20, l = 20, unit = "pt"),
+		  text = element_text(size = 16),
+		  axis.line =
+		  	element_line(size=1, colour = "black",
+		  				 arrow = arrow(angle = 30,
+		  				 			  length = unit(x = 0.1, units = "inch"),
+		  				 			  type = "open", ends = "last")),
+		  axis.ticks = element_blank(),
+		  legend.background = element_blank(),
+		  legend.key = element_blank(),
+		  legend.key.size = unit(16, "pt"),
+		  legend.position = c(0.2, 0.7),
+		  legend.box = "vertical",
+		  legend.text = element_text(size = 16))
+dev.off()
 
 ## task 7: phosphosite
 ## include number of P/M/A/U modification sites
@@ -612,7 +747,7 @@ varImp = as.data.table(rf@model$variable_importances)
 varImp$variable = reorder(varImp$variable, varImp$relative_importance)
 
 svg(filename=paste(taxId, ".varImp.svg", sep=""),
-	width=12, height=8,
+	width=10, height=8,
 	pointsize=12)
 plot.new()
 

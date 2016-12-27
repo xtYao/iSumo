@@ -8,11 +8,17 @@ write.table(proteome$sgd, "data/559292.sgd.txt", quote = F, row.names = F)
 sysName = read.table("data/sysNameSgdMapping.csv",
 					 sep = " ", quote = '"', header = T)
 sysName = as.data.table(sysName)[reason=="MATCH"]
-setkey(sysName, "input")
+setkey(sysName, "secondaryIdentifier")
+
+dup = yeastSumoRaw[duplicated(systematic_name),systematic_name]
+yeastSumoRaw[systematic_name %in% dup]
 yeastSumoRaw[, sgd := sysName[systematic_name, primaryIdentifier]]
+
+yeastSumoSys = yeastSumoRaw[systematic_name != "not_found",systematic_name]
 
 write.table(yeastSumoRaw$systematic_name, "data/559292.sumo.raw.sysName.txt",
 			quote=F, sep="\t", row.names = F)
+saveRDS(unique(yeastSumoRaw$sgd), "data/559292.sumoSgd.rds")
 
 yeastSumo = proteome[, 1:5, with=F]
 yeastSumo[, ":="(
