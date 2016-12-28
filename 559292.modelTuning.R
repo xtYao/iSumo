@@ -31,18 +31,6 @@ rf0.nt200 = h2o.randomForest(x = 3:(nc-1), y = nc,
 					   score_each_iteration = T,
 					   seed = 123)
 
-## even larger number of trees without balancing
-rf0.nt300 = h2o.randomForest(x = 3:(nc-1), y = nc,
-							 training_frame = train, validation_frame = valid,
-							 balance_classes = F,
-							 nfolds = 10,
-							 keep_cross_validation_predictions = T,
-							 keep_cross_validation_fold_assignment = T,
-							 ntrees = 300,
-							 ##stopping_rounds = 2,
-							 score_each_iteration = T,
-							 seed = 123)
-
 ## balancing, stopping round 2, default max depth 20
 rf0.b = h2o.randomForest(x = 3:(nc-1), y = nc,
 						 training_frame = train, validation_frame = valid,
@@ -54,6 +42,17 @@ rf0.b = h2o.randomForest(x = 3:(nc-1), y = nc,
 						 stopping_rounds = 2,
 						 score_each_iteration = T,
 						 seed = 123)
+
+## balancing, stopping round 2, default max depth 20
+rf0.b.nt200 = h2o.randomForest(x = 3:(nc-1), y = nc,
+                         training_frame = train, validation_frame = valid,
+                         balance_classes = T,
+                         nfolds = 10,
+                         keep_cross_validation_predictions = T,
+                         keep_cross_validation_fold_assignment = T,
+                         ntrees = 200,
+                         score_each_iteration = T,
+                         seed = 123)
 
 ## balancing, stopping rounds 2, max depth 30
 rf0.b.md30 = h2o.randomForest(x = 3:(nc-1), y = nc,
@@ -121,20 +120,6 @@ rf2.b.md30.nt100 = h2o.randomForest(x = 3:(nc-1), y = nc,
 							  seed = 123,
 							  max_depth = 30)
 
-## balancing, 200 trees, max depth 30, default mtries
-rf2.b.nt200 = h2o.randomForest(x = 3:(nc-1), y = nc,
-									training_frame = train,
-									validation_frame = valid,
-									balance_classes = T,
-									nfolds = 10,
-									keep_cross_validation_predictions = T,
-									keep_cross_validation_fold_assignment = T,
-									ntrees = 200,
-									#stopping_rounds = 3,
-									score_each_iteration = T,
-									seed = 123,
-									max_depth = 30)
-
 ## max depth 20
 rf2.b.nt200 = h2o.randomForest(x = 3:(nc-1), y = nc,
 							   training_frame = train,
@@ -149,24 +134,23 @@ rf2.b.nt200 = h2o.randomForest(x = 3:(nc-1), y = nc,
 							   seed = 123)
 
 ## looks like if we keep increasing the number of trees, we can acheive better
-## validation and cross-validation AUC, but at the cost of long training time 
+## validation and cross-validation AUC, but at the cost of long training time
 
 ## compare the validation performance
 rfs = list(rf0,
 		   rf0.nt200,
-		   rf0.nt300,
 		   rf0.b,
+		   rf0.b.nt200,
 		   rf0.b.md30,
 		   rf0.b.md30.mt10, ## early converging
 		   rf1.b, ## late converging
 		   rf2.b.md30,
 		   rf2.b.md30.nt100,
-		   rf2.b.md30.nt200,
 		   rf2.b.nt200) ## hard-set nTree
 names(rfs) = sapply(rfs, function(x) x@model_id)
 
 manifest =
-	do.call('rbind', 
+	do.call('rbind',
 			lapply(rfs, function(x) as.data.table(x@model$model_summary)))
 manifest[, id := names(rfs)]
 setkey(manifest, "id")
@@ -201,7 +185,7 @@ for (m in names(rfs)){
 ## save performance metrics
 write.table(manifest,
 			paste("models/",taxId,"/manifest.txt",sep=""),
-			sep = "\t", quote = F, row.names = names(rfs))
+			sep = "\t", quote = F, row.names = F)
 
 #########################
 ## conclusion: the models specifying 200 or 300 trees without balancing
@@ -211,7 +195,7 @@ write.table(manifest,
 ## save it
 ## save models to the disk
 system("mkdir -p models")
-rf = rfs[['DRF_model_R_1481241242856_9655']]
+rf = rfs[['DRF_model_R_1482893981494_810']]
 h2o.saveModel(rf, paste("models/",taxId,".rf.h2o",sep=""))
 
 ## fit null model the same way

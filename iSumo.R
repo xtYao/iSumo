@@ -233,7 +233,7 @@ getUniprotKbByTermId = function(term.id, taxId="9606"){
 
 ## expand proteome with GO assocaition
 goMat = as.data.table(lapply(sigGo$term.id, function(x){
-    ids = unlist(getUniprotKbByTermId(x), use.names = F)
+    ids = unlist(getUniprotKbByTermId(x, taxId = taxId), use.names = F)
     if (taxId == "9606"){
         proteome$uniprotKb %in% ids
     } else if (taxId == "559292"){
@@ -358,11 +358,6 @@ if (taxId == "9606"){
 	colnames(yeastComplex) = c("nComp", "avgCompSz")
 }
 
-## overall enrichment of SUMO in complex subunits set
-unionSumoUniprotKb = Reduce(union, sumoUniproKb)
-unionCorumSubunits = Reduce(union, corumSubunits)
-
-
 ## Table 2/Figure 2. analyzing RNA-binding, SUMO in protein complexes
 ## get proteins that are RNA-binding
 humanRnaBinding = unlist(getUniprotKbByTermId(term.id = "GO:0003723"),
@@ -427,7 +422,7 @@ svg(width = 12, height = 8, filename = "fig2a.compSzRnaSumo.svg")
 plot.new()
 fig2a + geom_boxplot() +
 #	geom_violin(draw_quantiles = T) +
-#	geom_jitter(width = 0.2) + 
+#	geom_jitter(width = 0.2) +
 	facet_wrap(facets = ~Organism) +
 #	annotate("text", )
 	theme(plot.background = element_blank(),
@@ -617,8 +612,8 @@ if (taxId == "9606"){
     pl.mar = margin(t = 0, r = 120, b = 12, l = 4, unit = "pt")
     width = 11
 } else if (taxId == "559292"){
-    pl.mar = margin(t = 0, r = 40, b = 12, l = 4, unit = "pt")
-    width = 8
+    pl.mar = margin(t = 0, r = 100, b = 12, l = 4, unit = "pt")
+    width = 10
 }
 
 svg(filename = paste(taxId, ".sumoStudies.svg", sep = ""),
@@ -644,7 +639,8 @@ fig1 = ggplot(data = m3) +
 		  axis.text.x = element_text(size = 16, angle = 335, hjust = 0),
 		  axis.text.y = element_text(size = 16),
 		  axis.ticks = element_blank()) +
-	theme(legend.position = c(0.2, 0.5),
+	theme(legend.background = element_blank(),
+	      legend.position = c(0.2, 0.5),
 		  legend.text = element_text(size = 16),
 		  legend.key.size = unit(0.5, "inch"),
 		  legend.title = element_text(size = 16)) +

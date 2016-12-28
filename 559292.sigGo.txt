@@ -1,0 +1,281 @@
+term.id	term.name	term.size	p.value
+GO:0097659	nucleic acid-templated transcription	678	3.98e-34
+GO:0006351	transcription, DNA-templated	678	3.98e-34
+GO:0032774	RNA biosynthetic process	680	5.97e-34
+GO:1901362	organic cyclic compound biosynthetic process	918	1.64e-33
+GO:0034654	nucleobase-containing compound biosynthetic process	823	4.25e-33
+GO:0006325	chromatin organization	325	9.56e-33
+GO:0019438	aromatic compound biosynthetic process	874	1e-32
+GO:0018130	heterocycle biosynthetic process	883	1.24e-32
+GO:0031981	nuclear lumen	764	4.58e-30
+GO:0051171	regulation of nitrogen compound metabolic process	777	2.1e-27
+GO:0043933	macromolecular complex subunit organization	867	1.6e-25
+GO:0010556	regulation of macromolecule biosynthetic process	725	4.11e-25
+GO:0006366	transcription from RNA polymerase II promoter	484	8.43e-25
+GO:2000112	regulation of cellular macromolecule biosynthetic process	718	1.58e-24
+GO:0019219	regulation of nucleobase-containing compound metabolic process	666	6.25e-24
+GO:0010468	regulation of gene expression	697	7.28e-24
+GO:0031326	regulation of cellular biosynthetic process	755	1.46e-23
+GO:0009889	regulation of biosynthetic process	756	1.71e-23
+GO:0034728	nucleosome organization	73	6.5e-23
+GO:0060255	regulation of macromolecule metabolic process	902	8.02e-23
+GO:0080090	regulation of primary metabolic process	917	6.22e-22
+GO:0031323	regulation of cellular metabolic process	930	3.5e-21
+GO:0019222	regulation of metabolic process	951	6.14e-21
+GO:2001141	regulation of RNA biosynthetic process	577	1.08e-20
+GO:1903506	regulation of nucleic acid-templated transcription	577	1.08e-20
+GO:0006355	regulation of transcription, DNA-templated	577	1.08e-20
+GO:1901363	heterocyclic compound binding	944	2.14e-20
+GO:0051252	regulation of RNA metabolic process	596	2.2e-20
+GO:0071824	protein-DNA complex subunit organization	164	4.28e-20
+GO:0097159	organic cyclic compound binding	954	7.56e-20
+GO:0005654	nucleoplasm	272	4.41e-19
+GO:0003676	nucleic acid binding	879	1.81e-18
+GO:0006338	chromatin remodeling	90	3.37e-18
+GO:0043044	ATP-dependent chromatin remodeling	38	1.39e-17
+GO:0044451	nucleoplasm part	244	1.6e-17
+GO:0006357	regulation of transcription from RNA polymerase II promoter	413	2.07e-17
+GO:0000785	chromatin	141	2.74e-17
+GO:0070603	SWI/SNF superfamily-type complex	59	4.82e-17
+GO:0006333	chromatin assembly or disassembly	63	6.06e-17
+GO:0000790	nuclear chromatin	116	1.09e-15
+GO:0051172	negative regulation of nitrogen compound metabolic process	346	1.27e-15
+GO:0045934	negative regulation of nucleobase-containing compound metabolic process	310	2.74e-15
+GO:0009892	negative regulation of metabolic process	402	6.16e-14
+GO:0010605	negative regulation of macromolecule metabolic process	375	7.62e-14
+GO:0051173	positive regulation of nitrogen compound metabolic process	386	1.51e-13
+GO:0045935	positive regulation of nucleobase-containing compound metabolic process	346	2.12e-13
+GO:0044427	chromosomal part	336	4.19e-13
+GO:0010604	positive regulation of macromolecule metabolic process	443	4.26e-13
+GO:0031324	negative regulation of cellular metabolic process	400	4.71e-13
+GO:0009893	positive regulation of metabolic process	463	9.3e-13
+GO:0005694	chromosome	362	1.03e-12
+GO:0010629	negative regulation of gene expression	307	1.07e-12
+GO:0051253	negative regulation of RNA metabolic process	275	1.4e-12
+GO:0010558	negative regulation of macromolecule biosynthetic process	323	1.66e-12
+GO:2000113	negative regulation of cellular macromolecule biosynthetic process	323	1.66e-12
+GO:0010557	positive regulation of macromolecule biosynthetic process	358	1.72e-12
+GO:0009890	negative regulation of biosynthetic process	345	2.06e-12
+GO:0031327	negative regulation of cellular biosynthetic process	345	2.06e-12
+GO:1902679	negative regulation of RNA biosynthetic process	272	2.85e-12
+GO:1903507	negative regulation of nucleic acid-templated transcription	272	2.85e-12
+GO:0045892	negative regulation of transcription, DNA-templated	272	2.85e-12
+GO:0048519	negative regulation of biological process	548	3.09e-12
+GO:0010628	positive regulation of gene expression	355	3.42e-12
+GO:0048523	negative regulation of cellular process	541	3.43e-12
+GO:0031325	positive regulation of cellular metabolic process	459	4.62e-12
+GO:0009891	positive regulation of biosynthetic process	374	7.49e-12
+GO:0031328	positive regulation of cellular biosynthetic process	374	7.49e-12
+GO:0044454	nuclear chromosome part	257	2.71e-11
+GO:1902680	positive regulation of RNA biosynthetic process	313	3.75e-11
+GO:1903508	positive regulation of nucleic acid-templated transcription	313	3.75e-11
+GO:0045893	positive regulation of transcription, DNA-templated	313	3.75e-11
+GO:0000228	nuclear chromosome	282	6.83e-11
+GO:0046496	nicotinamide nucleotide metabolic process	72	8.21e-11
+GO:0048518	positive regulation of biological process	583	9.17e-11
+GO:0051254	positive regulation of RNA metabolic process	322	1.72e-10
+GO:0019362	pyridine nucleotide metabolic process	74	1.97e-10
+GO:0044445	cytosolic part	179	2.95e-10
+GO:0048522	positive regulation of cellular process	570	3.42e-10
+GO:0045944	positive regulation of transcription from RNA polymerase II promoter	268	7.45e-10
+GO:0046031	ADP metabolic process	32	1.11e-09
+GO:1901564	organonitrogen compound metabolic process	916	1.46e-09
+GO:0072524	pyridine-containing compound metabolic process	84	1.56e-09
+GO:0009135	purine nucleoside diphosphate metabolic process	33	2.39e-09
+GO:0009185	ribonucleoside diphosphate metabolic process	33	2.39e-09
+GO:0009179	purine ribonucleoside diphosphate metabolic process	33	2.39e-09
+GO:0005730	nucleolus	256	3.37e-09
+GO:0006733	oxidoreduction coenzyme metabolic process	87	4.6e-09
+GO:0022626	cytosolic ribosome	114	5.15e-09
+GO:0006757	ATP generation from ADP	24	5.47e-09
+GO:0006096	glycolytic process	24	5.47e-09
+GO:0032986	protein-DNA complex disassembly	21	5.48e-09
+GO:0003677	DNA binding	376	7.31e-09
+GO:0006354	DNA-templated transcription, elongation	99	7.73e-09
+GO:0055029	nuclear DNA-directed RNA polymerase complex	94	8.52e-09
+GO:0009132	nucleoside diphosphate metabolic process	35	1e-08
+GO:0016458	gene silencing	158	1.14e-08
+GO:0045814	negative regulation of gene expression, epigenetic	152	1.16e-08
+GO:0006342	chromatin silencing	152	1.16e-08
+GO:0006165	nucleoside diphosphate phosphorylation	25	1.39e-08
+GO:0030880	RNA polymerase complex	96	1.62e-08
+GO:0000428	DNA-directed RNA polymerase complex	96	1.62e-08
+GO:0006090	pyruvate metabolic process	40	2.09e-08
+GO:0040029	regulation of gene expression, epigenetic	155	2.34e-08
+GO:1990904	ribonucleoprotein complex	576	2.55e-08
+GO:0030529	intracellular ribonucleoprotein complex	576	2.55e-08
+GO:1902494	catalytic complex	626	2.57e-08
+GO:0046939	nucleotide phosphorylation	26	3.33e-08
+GO:0016586	RSC complex	17	3.72e-08
+GO:0005829	cytosol	741	3.8e-08
+GO:0031498	chromatin disassembly	20	4.48e-08
+GO:0006337	nucleosome disassembly	20	4.48e-08
+GO:0006368	transcription elongation from RNA polymerase II promoter	89	5.19e-08
+GO:0016052	carbohydrate catabolic process	69	6.01e-08
+GO:0098781	ncRNA transcription	55	6.48e-08
+GO:0002181	cytoplasmic translation	131	1.03e-07
+GO:0006323	DNA packaging	57	1.55e-07
+GO:0044724	single-organism carbohydrate catabolic process	62	1.73e-07
+GO:0097346	INO80-type complex	25	2.35e-07
+GO:0034660	ncRNA metabolic process	452	2.92e-07
+GO:0044877	macromolecular complex binding	203	5.42e-07
+GO:1902275	regulation of chromatin organization	65	5.47e-07
+GO:0003723	RNA binding	524	1.43e-06
+GO:0006360	transcription from RNA polymerase I promoter	68	1.6e-06
+GO:0044822	poly(A) RNA binding	255	2.65e-06
+GO:0043486	histone exchange	18	2.79e-06
+GO:0006259	DNA metabolic process	441	3.03e-06
+GO:0006367	transcription initiation from RNA polymerase II promoter	60	3.4e-06
+GO:0000122	negative regulation of transcription from RNA polymerase II promoter	147	3.64e-06
+GO:0006732	coenzyme metabolic process	141	3.94e-06
+GO:0033554	cellular response to stress	648	4.94e-06
+GO:0000988	transcription factor activity, protein binding	124	5.83e-06
+GO:0006352	DNA-templated transcription, initiation	72	5.99e-06
+GO:0071103	DNA conformation change	83	6.18e-06
+GO:0006950	response to stress	701	1.06e-05
+GO:1905268	negative regulation of chromatin organization	35	1.18e-05
+GO:0043620	regulation of DNA-templated transcription in response to stress	54	1.46e-05
+GO:0043618	regulation of transcription from RNA polymerase II promoter in response to stress	54	1.46e-05
+GO:0003682	chromatin binding	116	1.54e-05
+GO:0051276	chromosome organization	329	1.65e-05
+GO:0031497	chromatin assembly	36	1.95e-05
+GO:0000812	Swr1 complex	14	2.3e-05
+GO:0009117	nucleotide metabolic process	177	2.34e-05
+GO:1901566	organonitrogen compound biosynthetic process	703	2.52e-05
+GO:0044281	small molecule metabolic process	695	2.7e-05
+GO:0065003	macromolecular complex assembly	559	3.76e-05
+GO:0060968	regulation of gene silencing	42	3.85e-05
+GO:0032984	macromolecular complex disassembly	84	3.87e-05
+GO:0055086	nucleobase-containing small molecule metabolic process	210	5.08e-05
+GO:0006753	nucleoside phosphate metabolic process	183	6.29e-05
+GO:0005975	carbohydrate metabolic process	213	7.88e-05
+GO:0051052	regulation of DNA metabolic process	105	8.19e-05
+GO:0030684	preribosome	166	0.000118
+GO:0070897	DNA-templated transcriptional preinitiation complex assembly	50	0.00013
+GO:0043604	amide biosynthetic process	396	0.000132
+GO:0044283	small molecule biosynthetic process	277	0.000137
+GO:1990837	sequence-specific double-stranded DNA binding	140	0.000145
+GO:0006082	organic acid metabolic process	365	0.000156
+GO:0003690	double-stranded DNA binding	176	0.000191
+GO:0006348	chromatin silencing at telomere	85	0.00022
+GO:0000989	transcription factor activity, transcription factor binding	116	0.00022
+GO:0060969	negative regulation of gene silencing	28	0.000231
+GO:0042393	histone binding	37	0.000242
+GO:0006412	translation	378	0.000255
+GO:0044723	single-organism carbohydrate metabolic process	193	0.000289
+GO:0022613	ribonucleoprotein complex biogenesis	429	0.00029
+GO:0018205	peptidyl-lysine modification	111	0.000293
+GO:0043043	peptide biosynthetic process	382	0.000379
+GO:0043565	sequence-specific DNA binding	248	0.000429
+GO:2000142	regulation of DNA-templated transcription, initiation	21	0.000432
+GO:0060260	regulation of transcription initiation from RNA polymerase II promoter	21	0.000432
+GO:0016569	covalent chromatin modification	120	0.00048
+GO:0016570	histone modification	120	0.00048
+GO:0044452	nucleolar part	71	0.000543
+GO:0006974	cellular response to DNA damage stimulus	306	0.000634
+GO:0061695	transferase complex, transferring phosphorus-containing groups	156	0.000685
+GO:1990234	transferase complex	372	0.000711
+GO:0036003	positive regulation of transcription from RNA polymerase II promoter in response to stress	35	0.000749
+GO:0022625	cytosolic large ribosomal subunit	61	0.000786
+GO:0031935	regulation of chromatin silencing	40	0.000805
+GO:0043603	cellular amide metabolic process	441	0.000855
+GO:0006066	alcohol metabolic process	91	0.000877
+GO:0010494	cytoplasmic stress granule	85	0.000909
+GO:0042254	ribosome biogenesis	342	0.000936
+GO:0019752	carboxylic acid metabolic process	302	0.000972
+GO:0051128	regulation of cellular component organization	409	0.001
+GO:0000123	histone acetyltransferase complex	51	0.00103
+GO:0031011	Ino80 complex	15	0.00111
+GO:0051123	RNA polymerase II transcriptional preinitiation complex assembly	46	0.00113
+GO:0034622	cellular macromolecular complex assembly	489	0.00131
+GO:0042790	transcription of nuclear large rRNA transcript from RNA polymerase I promoter	19	0.0014
+GO:0070210	Rpd3L-Expanded complex	19	0.0014
+GO:0006518	peptide metabolic process	413	0.00143
+GO:0042766	nucleosome mobilization	12	0.00147
+GO:0008134	transcription factor binding	81	0.00147
+GO:0051186	cofactor metabolic process	183	0.00155
+GO:0043436	oxoacid metabolic process	315	0.00163
+GO:0009126	purine nucleoside monophosphate metabolic process	95	0.00204
+GO:0009167	purine ribonucleoside monophosphate metabolic process	95	0.00204
+GO:0035770	ribonucleoprotein granule	115	0.0022
+GO:0036464	cytoplasmic ribonucleoprotein granule	115	0.0022
+GO:0033202	DNA helicase complex	16	0.00233
+GO:0016591	DNA-directed RNA polymerase II, holoenzyme	71	0.00238
+GO:0065004	protein-DNA complex assembly	109	0.00247
+GO:0009161	ribonucleoside monophosphate metabolic process	97	0.00304
+GO:0009303	rRNA transcription	29	0.00309
+GO:0022607	cellular component assembly	773	0.00334
+GO:0006414	translational elongation	39	0.00347
+GO:0019693	ribose phosphate metabolic process	132	0.00389
+GO:0051196	regulation of coenzyme metabolic process	10	0.00436
+GO:0017053	transcriptional repressor complex	10	0.00436
+GO:0005840	ribosome	207	0.00503
+GO:0009123	nucleoside monophosphate metabolic process	100	0.0054
+GO:0006281	DNA repair	255	0.00581
+GO:0031936	negative regulation of chromatin silencing	26	0.00623
+GO:0019319	hexose biosynthetic process	31	0.00711
+GO:0006094	gluconeogenesis	31	0.00711
+GO:0051716	cellular response to stimulus	987	0.0075
+GO:0005736	DNA-directed RNA polymerase I complex	14	0.00756
+GO:0090033	positive regulation of filamentous growth	22	0.00765
+GO:1900430	positive regulation of filamentous growth of a population of unicellular organisms	22	0.00765
+GO:0046128	purine ribonucleoside metabolic process	102	0.0078
+GO:0051129	negative regulation of cellular component organization	144	0.0083
+GO:0005940	septin ring	18	0.00841
+GO:0030466	chromatin silencing at silent mating-type cassette	53	0.00929
+GO:0042278	purine nucleoside metabolic process	103	0.00933
+GO:0031938	regulation of chromatin silencing at telomere	27	0.00967
+GO:0045815	positive regulation of gene expression, epigenetic	27	0.00967
+GO:0005844	polysome	27	0.00967
+GO:0009119	ribonucleoside metabolic process	110	0.00973
+GO:0009116	nucleoside metabolic process	117	0.00997
+GO:0046364	monosaccharide biosynthetic process	32	0.0105
+GO:0000183	chromatin silencing at rDNA	32	0.0105
+GO:0016072	rRNA metabolic process	245	0.0109
+GO:0006458	'de novo' protein folding	11	0.0111
+GO:0016584	nucleosome positioning	11	0.0111
+GO:0051193	regulation of cofactor metabolic process	11	0.0111
+GO:0000975	regulatory region DNA binding	111	0.0115
+GO:0044212	transcription regulatory region DNA binding	111	0.0115
+GO:0000278	mitotic cell cycle	344	0.0116
+GO:0045927	positive regulation of growth	23	0.0125
+GO:1902493	acetyltransferase complex	60	0.0126
+GO:0031248	protein acetyltransferase complex	60	0.0126
+GO:0008135	translation factor activity, RNA binding	43	0.0129
+GO:0009199	ribonucleoside triphosphate metabolic process	85	0.013
+GO:0022411	cellular component disassembly	126	0.0137
+GO:0016051	carbohydrate biosynthetic process	92	0.0142
+GO:0043566	structure-specific DNA binding	38	0.0143
+GO:0000118	histone deacetylase complex	33	0.0151
+GO:0001076	transcription factor activity, RNA polymerase II transcription factor binding	55	0.0157
+GO:0001067	regulatory region nucleic acid binding	113	0.016
+GO:1901615	organic hydroxy compound metabolic process	114	0.0189
+GO:1901657	glycosyl compound metabolic process	121	0.0189
+GO:1903047	mitotic cell cycle process	325	0.0201
+GO:0046034	ATP metabolic process	81	0.0211
+GO:0009259	ribonucleotide metabolic process	115	0.0221
+GO:0003729	mRNA binding	181	0.0221
+GO:0044712	single-organism catabolic process	236	0.0227
+GO:0090544	BAF-type complex	12	0.0245
+GO:0016514	SWI/SNF complex	12	0.0245
+GO:0033698	Rpd3L complex	12	0.0245
+GO:0006364	rRNA processing	229	0.0251
+GO:0046165	alcohol biosynthetic process	57	0.0258
+GO:0006403	RNA localization	116	0.0259
+GO:0070786	positive regulation of growth of unicellular organism as a thread of attached cells	16	0.0275
+GO:0009205	purine ribonucleoside triphosphate metabolic process	83	0.0309
+GO:0018193	peptidyl-amino acid modification	184	0.0315
+GO:0016573	histone acetylation	52	0.0324
+GO:0006363	termination of RNA polymerase I transcription	6	0.0325
+GO:0070577	lysine-acetylated histone binding	6	0.0325
+GO:0030687	preribosome, large subunit precursor	77	0.0342
+GO:0001173	DNA-templated transcriptional start site selection	9	0.0346
+GO:0001174	transcriptional start site selection at RNA polymerase II promoter	9	0.0346
+GO:0009150	purine ribonucleotide metabolic process	111	0.0354
+GO:2001020	regulation of response to DNA damage stimulus	21	0.0397
+GO:0006475	internal protein amino acid acetylation	53	0.0415
+GO:0018394	peptidyl-lysine acetylation	53	0.0415
+GO:0018393	internal peptidyl-lysine acetylation	53	0.0415
+GO:0009144	purine nucleoside triphosphate metabolic process	85	0.0447
+GO:0019682	glyceraldehyde-3-phosphate metabolic process	13	0.049
+GO:0000987	core promoter proximal region sequence-specific DNA binding	66	0.0491
