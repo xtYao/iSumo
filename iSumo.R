@@ -45,9 +45,9 @@ if (!file.exists(proteomeFn)){
                                    replacement = "uniprotKb", x = names(proteome))
             names(proteome) = gsub(pattern = "Cross-reference",
                                    replacement = "", x = names(proteome))
-            names(proteome) = gsub(pattern = " (Ensembl)",
-                                   replacement = "ensembl",
-                                   x = names(proteome), fixed = T)
+            # names(proteome) = gsub(pattern = " (Ensembl)",
+            #                        replacement = "ensembl",
+            #                        x = names(proteome), fixed = T)
             names(proteome) = gsub(pattern = " (GeneID)",
                                    replacement = "geneId",
                                    x = names(proteome), fixed = T)
@@ -58,32 +58,67 @@ if (!file.exists(proteomeFn)){
                                    x = names(proteome), fixed = T)
             names(proteome) = gsub(pattern = "Gene names",
                                    replacement = "gene", x = names(proteome))
-
-            proteomeAll = proteome
-            ## filter1: full annotation score
-            proteome = proteome[Annotation=="5 out of 5"]
+            names(proteome) = gsub(pattern = " (STRING)",
+            					   replacement = "stringId",
+            					   x = names(proteome), fixed = T)
+            
             ## convert numeric value
             proteome[, Mass := as.numeric(gsub(",","",Mass))]
             proteome[, Length := as.numeric(Length)]
+            proteome[, Annotation := 
+            		 	sapply(Annotation,
+            		 		   function(x) as.numeric(strsplit(x, " out")[[1]][1]))]
+            proteome[, stringId := gsub(";", "", x = stringId)]
 
-            ## filter2: non-empty HGNC symbol
-            proteinWoSymbol = proteome[symbol=="", protein]
-            saveRDS(proteinWoSymbol,
-                    paste("data/", taxId, ".proteinWoSymbol.rds", sep=""))
-            proteome = proteome[symbol != ""]
+            ## filter1: non-empty HGNC symbol, non-empty geneId
+            proteome = proteome[symbol != "" & geneId != ""]
 
-            ## filter3: deduplicate by hgnc, keep the ones with geneId
+            ## filter2: deduplicate by hgnc, keep the ones with geneId
             symbolDup = proteome[which(duplicated(symbol)), unique(symbol)]
+            ## dedup step 1: gid present
             proteomeSymbolDedup =
                 proteome[symbol %in% symbolDup &
-                             geneId != "" &
-                             !duplicated(geneId)][!duplicated(symbol)]
-            proteome = rbind(proteome[!(hgnc %in% hgncDup)], proteomeHgncDedup)
-
+                             geneId != ""]
+            ## dedup step 2:
+            dedup = proteomeSymbolDedup[numeric(0),]
+            for (syb in proteomeSymbolDedup[, unique(symbol)]) {
+            	thisProt = proteomeSymbolDedup[symbol == syb]
+            	if (nrow(thisProt)==1) {
+            		dedup = rbindlist(list(dedup, thisProt))
+            	} else {
+            		thisProt = thisProt[which(Annotation==max(Annotation))]
+            		if (nrow(thisProt)==1) {
+            			dedup = rbindlist(list(dedup, thisProt))
+            		} else {
+            			if ("" %in% thisProt[, unique(stringId)]) {
+            				thisProt = thisProt[stringId != ""]
+            				dedup = rbindlist(list(dedup, thisProt[which.max(Mass)]))
+            			} else {
+            				dedup = rbindlist(list(dedup, thisProt[which.max(Mass)]))
+            			}
+            		}
+            	}
+            }
+            proteome = rbindlist(list(proteome[!(symbol %in% symbolDup)], dedup))
+            
+            ## filter 3: dedup by geneId
+            geneIdDup = proteome[duplicated(geneId), unique(geneId)]
+            proteomeGeneIdDedup = proteome[geneId %in% geneIdDup]
+            dedup = proteome[numeric(0),]
+            for (gid in geneIdDup) {
+            	thisProt = proteomeGeneIdDedup[geneId == gid]
+            	dedup = rbindlist(list(dedup, thisProt[which.max(Annotation)]))
+            }
+            proteome = rbindlist(list(proteome[!(geneId %in% geneIdDup)], dedup))
+            saveRDS(proteome, "data/9606.tmpProteome.rds")
+            
+            ## filter 4: Annotation score >= 3
+            proteome = proteome[Annotation>=3]
+            
             ## save the data
             setkey(proteome, "uniprotKb")
             write.table(proteome,
-                        gsub(".tab", ".mod.tab", uniprotTab),
+                        gsub(".tab", ".proteome.txt", uniprotTab),
                         quote=F, sep = "\t", row.names = F)
         } else if (taxId == "559292") {
             print("analyzing S cerevisiae (S288c) data.")
@@ -107,7 +142,7 @@ if (!file.exists(proteomeFn)){
             proteome[, gene := ifelse(nchar(gene)!=0 & !grepl(";", gene), gene,
                                       sapply(strsplit(proteome$`Gene names`[1:10], " "), head, 1))]
 
-            ## remove semi colons from sgd and geneId
+            ## remove semi colons from sgd and geneId, and stringId
             proteome[, geneId := gsub(";", "", x = geneId)]
             proteome[, sgd := gsub(";", "", x = sgd)]
 
@@ -251,17 +286,15 @@ if (taxId=="9606"){
 	protInteract = fread("data/9606.protein.actions.v10.txt")
 	protInteract = protInteract[mode=="binding",
 								.(p1=item_id_a, p2=item_id_b)]
-	if (any(grepl("\\.", protInteract$p1))){
-		protInteract$p1 = sapply(strsplit(protInteract$p1, split = "\\."),
-								 function(x) x[2])
-		protInteract$p2 = sapply(strsplit(protInteract$p2, split = "\\."),
-								 function(x) x[2])
-	}
-	## mapping from ENSP to UniprotKb
-	ensp = fread(paste("data/", taxId, ".uniprotKb2ensp.txt", sep=""))
-	setkey(ensp, ensp)
-	protInteract$u1 = ensp[protInteract$p1, uniprotKb]
-	protInteract$u2 = ensp[protInteract$p2, uniprotKb]
+	
+	## mapping from stringId to UniprotKb
+	stringId2uniprotKb = proteome[stringId != "", .(stringId, uniprotKb)]
+	setkey(stringId2uniprotKb, "stringId")
+	protInteract$u1 = ifelse(protInteract$p1 %in% stringId2uniprotKb$stringId,
+							 stringId2uniprotKb[protInteract$p1, uniprotKb], NA)
+	protInteract$u2 = ifelse(protInteract$p2 %in% stringId2uniprotKb$stringId,
+							 stringId2uniprotKb[protInteract$p2, uniprotKb], NA)
+
 	protInteract = protInteract[!is.na(u1) & !is.na(u2), .(u1, u2)]
 	write.table(protInteract, paste("data/", taxId, ".stringInt.txt", sep=""),
 				quote = F, sep = "\t", row.names = F)
@@ -545,6 +578,14 @@ seq = data.table(seq)
 writeLines(seq[, paste(">", UNIPROTKB, "\n", SEQUENCE, "\n", sep="")],
            con = paste("data/", taxId, ".seq.fa", sep=""), sep = "\n")
 
+## just some ammendment to ref proteome
+# extraUniprotKb = setdiff(proteome$uniprotKb, oldUniprotKb)
+# seq2 = select(x = up, columns = c("UNIPROTKB", "SEQUENCE"),
+# 			 keytype = "UNIPROTKB", keys = extraUniprotKb)
+# seq2 = data.table(seq2)
+# writeLines(seq2[, paste(">", UNIPROTKB, "\n", SEQUENCE, "\n", sep="")],
+# 		   con = paste("data/", taxId, ".extra.seq.fa", sep=""), sep = "\n")
+
 ## Manual step: feed the sequences into GPS-SUMO 2.0 web server
 ## download the result as text and rename it ./data/[taxId].gps.txt
 gps = fread(paste("data/",taxId,".gps.txt", sep=""))
@@ -802,6 +843,10 @@ setkey(finalPrediction, "uniprotKb")
 saveRDS(finalPrediction, paste(taxId, ".finalPrediction.rds", sep=""))
 write.table(finalPrediction, paste(taxId, ".finalPrediction.csv", sep=""),
 			sep = "\t", row.names = F, quote = F)
+
+## post check: how do we do on GO annotated SUMO proteins.
+goSumo = finalPrediction[getUniprotKbByTermId("GO:0016925", taxId)[[1]]][!is.na(predict)]
+goSumoXferase = finalPrediction[getUniprotKbByTermId("GO:0019789", taxId)[[1]]][!is.na(predict)]
 
 ##### SAVE WORKSPCE
 save.image(file = paste(taxId, "RData", sep = "."))

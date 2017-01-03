@@ -5,6 +5,13 @@ dt = h2o.importFile(paste("data/",taxId,".iSumo.txt",sep=""))
 dt.sp = h2o.splitFrame(dt, c(0.65,0.25), seed = 123)
 train = dt.sp[[1]]; valid = dt.sp[[2]]; test = dt.sp[[3]]
 
+write.table(as.data.table(train), "data/9606.train.txt",
+			quote = F, row.names = F, sep = "\t")
+write.table(as.data.table(valid), "data/9606.valid.txt",
+			quote = F, row.names = F, sep = "\t")
+write.table(as.data.table(test), "data/9606.test.txt",
+			quote = F, row.names = F, sep = "\t")
+
 nc = ncol(dt)
 ## TODO: tune par
 ## imbalanced, stopping round 2, default max depth 20
@@ -43,17 +50,17 @@ rf0.b.nt200 = h2o.randomForest(x = 3:(nc-1), y = nc,
 						 seed = 123)
 
 ## balancing, stopping rounds 2, max depth 30
-rf0.b.md30 = h2o.randomForest(x = 3:(nc-1), y = nc,
-							  training_frame = train, validation_frame = valid,
-							  balance_classes = T,
-							  nfolds = 10,
-							  keep_cross_validation_predictions = T,
-							  keep_cross_validation_fold_assignment = T,
-							  ntrees = 200,
-							  stopping_rounds = 2,
-							  score_each_iteration = T,
-							  seed = 123,
-							  max_depth = 30)
+# rf0.b.md30 = h2o.randomForest(x = 3:(nc-1), y = nc,
+# 							  training_frame = train, validation_frame = valid,
+# 							  balance_classes = T,
+# 							  nfolds = 10,
+# 							  keep_cross_validation_predictions = T,
+# 							  keep_cross_validation_fold_assignment = T,
+# 							  ntrees = 200,
+# 							  stopping_rounds = 2,
+# 							  score_each_iteration = T,
+# 							  seed = 123,
+# 							  max_depth = 30)
 
 ## balancing, stopping round 2, max depth 30, mtries 10
 rf0.b.md30.mt10 = h2o.randomForest(x = 3:(nc-1), y = nc,
@@ -83,26 +90,26 @@ rf1.b = h2o.randomForest(x = 3:(nc-1), y = nc,
 						 seed = 123,
 						 max_depth = 30)
 
-## balancing, 50 trees, max depth 30, default mtries
-rf2.b.md30 = h2o.randomForest(x = 3:(nc-1), y = nc,
-							  training_frame = train, validation_frame = valid,
-							  balance_classes = T,
-							  nfolds = 10,
-							  keep_cross_validation_predictions = T,
-							  keep_cross_validation_fold_assignment = T,
-							  ntrees = 50,
-							  #stopping_rounds = 3,
-							  score_each_iteration = T,
-							  seed = 123,
-							  max_depth = 30)
+# ## balancing, 50 trees, max depth 30, default mtries
+# rf2.b.md30 = h2o.randomForest(x = 3:(nc-1), y = nc,
+# 							  training_frame = train, validation_frame = valid,
+# 							  balance_classes = T,
+# 							  nfolds = 10,
+# 							  keep_cross_validation_predictions = T,
+# 							  keep_cross_validation_fold_assignment = T,
+# 							  ntrees = 50,
+# 							  #stopping_rounds = 3,
+# 							  score_each_iteration = T,
+# 							  seed = 123,
+# 							  max_depth = 30)
 ## balancing, 100 trees, max depth 30, default mtries
-rf2.b.md30.nt100 = h2o.randomForest(x = 3:(nc-1), y = nc,
+rf1.b.md30.nt200 = h2o.randomForest(x = 3:(nc-1), y = nc,
 							  training_frame = train, validation_frame = valid,
 							  balance_classes = T,
 							  nfolds = 10,
 							  keep_cross_validation_predictions = T,
 							  keep_cross_validation_fold_assignment = T,
-							  ntrees = 100,
+							  ntrees = 200,
 							  #stopping_rounds = 3,
 							  score_each_iteration = T,
 							  seed = 123,
@@ -115,13 +122,10 @@ rf2.b.md30.nt100 = h2o.randomForest(x = 3:(nc-1), y = nc,
 rfs = list(rf0,
            rf0.nt200,
            rf0.b.nt200,
-           rf0.b.md30,
            rf0.b.md30.mt10, ## early converging
 		   rf1.b, ## late converging
-		   rf2.b.md30,
-		   rf2.b.md30.nt100
-		   # rf2.b.md30.nt200
-		   ) ## hard-set nTree
+		   rf1.b.md30.nt200
+		   )
 names(rfs) = sapply(rfs, function(x) x@model_id)
 
 ## manifest of all these models
@@ -166,18 +170,20 @@ write.table(manifest,
 
 
 
-## conclusion: the balanced 200 tree 20 max depth is the best
-rf = rfs[["DRF_model_R_1482256972191_9663"]]
+## conclusion: the balanced 200 tree 30 max depth is the best
+rf = rfs[["DRF_model_R_1483337422475_12346"]]
 h2o.saveModel(rf, paste("models/",taxId,".rf.h2o",sep=""))
 
 ## fit null model the same way
 rf.null = h2o.randomForest(x = names(gpsCount)[-1], y = "isSumo",
-                           training_frame = train, validation_frame = valid,
-                           balance_classes = T,
-                           nfolds = 10,
-                           keep_cross_validation_predictions = T,
-                           keep_cross_validation_fold_assignment = T,
-                           ntrees = 200,
-                           score_each_iteration = T,
-                           seed = 123)
+						   training_frame = train, validation_frame = valid,
+						   balance_classes = T,
+						   nfolds = 10,
+						   keep_cross_validation_predictions = T,
+						   keep_cross_validation_fold_assignment = T,
+						   ntrees = 200,
+						   #stopping_rounds = 3,
+						   score_each_iteration = T,
+						   seed = 123,
+						   max_depth = 30)
 h2o.saveModel(rf.null, paste("models/",taxId,".rf.null.h2o",sep=""))

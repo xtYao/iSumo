@@ -11,9 +11,9 @@ sumoUniprotKb = lapply(sumoEnsg, function(x) ensg[ensg %in% x, uniprotKb])
 ## newly added 4 studies
 hendriks = fread("data/hendriks.txt")
 hendriks = hendriks[, unique(uniprotKb)]
-hendriks2 = fread("data/hendriks2.txt", sep = "\t")
-hendriks2 = sort(unique(do.call(c, strsplit(hendriks2$uniprotKb, split = ";"))))
-hendriks2 = unique(gsub(hendriks2, pattern = "-*", replacement = ""))
+# hendriks2 = fread("data/hendriks2.txt", sep = "\t")
+# hendriks2 = sort(unique(do.call(c, strsplit(hendriks2$uniprotKb, split = ";"))))
+# hendriks2 = unique(gsub(hendriks2, pattern = "-*", replacement = ""))
 impens = fread("data/Impens.txt")
 impens = unique(impens$uniprotKb)
 lamoliatte = fread("data/lamoliatte.txt")
@@ -48,6 +48,7 @@ sumoUniprotKb = setNames(sumoUniprotKb, humanStudies)
 
 saveRDS(sumoUniprotKb, "9606.sumoUniprotKb.rds")
 
-sumo = as.data.table(lapply(sumoUniprotKb, function(x) proteome$uniprotKb %in% x))
+sumo = as.data.table(lapply(sumoUniprotKb,
+							function(x) proteome$uniprotKb %in% x))
 sumo[, uniprotKb := proteome$uniprotKb]
 write.table(sumo, "data/9606.sumo.txt", quote = F, row.names = F, sep = "\t")
