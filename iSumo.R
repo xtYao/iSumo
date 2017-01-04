@@ -655,7 +655,7 @@ if (taxId == "9606"){
 }
 
 pdf(file = paste(taxId, ".sumoStudies.pdf", sep = ""),
-    width = 7.5, height = 5)
+    width = 10, height = 7.5)
 fig1 = ggplot(data = m3) +
 	geom_bar(mapping = aes(x = variable, y = nSumo, fill = hits),
 			 stat = "identity") +
