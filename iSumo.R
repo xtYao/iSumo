@@ -61,11 +61,11 @@ if (!file.exists(proteomeFn)){
             names(proteome) = gsub(pattern = " (STRING)",
             					   replacement = "stringId",
             					   x = names(proteome), fixed = T)
-            
+
             ## convert numeric value
             proteome[, Mass := as.numeric(gsub(",","",Mass))]
             proteome[, Length := as.numeric(Length)]
-            proteome[, Annotation := 
+            proteome[, Annotation :=
             		 	sapply(Annotation,
             		 		   function(x) as.numeric(strsplit(x, " out")[[1]][1]))]
             proteome[, stringId := gsub(";", "", x = stringId)]
@@ -100,7 +100,7 @@ if (!file.exists(proteomeFn)){
             	}
             }
             proteome = rbindlist(list(proteome[!(symbol %in% symbolDup)], dedup))
-            
+
             ## filter 3: dedup by geneId
             geneIdDup = proteome[duplicated(geneId), unique(geneId)]
             proteomeGeneIdDedup = proteome[geneId %in% geneIdDup]
@@ -111,10 +111,10 @@ if (!file.exists(proteomeFn)){
             }
             proteome = rbindlist(list(proteome[!(geneId %in% geneIdDup)], dedup))
             saveRDS(proteome, "data/9606.tmpProteome.rds")
-            
+
             ## filter 4: Annotation score >= 3
             proteome = proteome[Annotation>=3]
-            
+
             ## save the data
             setkey(proteome, "uniprotKb")
             write.table(proteome,
@@ -286,7 +286,7 @@ if (taxId=="9606"){
 	protInteract = fread("data/9606.protein.actions.v10.txt")
 	protInteract = protInteract[mode=="binding",
 								.(p1=item_id_a, p2=item_id_b)]
-	
+
 	## mapping from stringId to UniprotKb
 	stringId2uniprotKb = proteome[stringId != "", .(stringId, uniprotKb)]
 	setkey(stringId2uniprotKb, "stringId")
@@ -447,12 +447,12 @@ pairwise.wilcox.test(x = complexComp[Organism=="yeast", `Complex size`],
 					 g = complexComp[Organism=="yeast", `RNA.SUMO`],
 					 p.adjust.method = "fdr")
 
+complexComp = fread("tableS3.complexes.txt")
 ## first make boxplot to show complex size related to RNA/SUMO
 ## (violin and jitter too busy since majority of points are at the bottom)
 fig2a = ggplot(data = complexComp,
 			   mapping = aes(x = RNA.SUMO, y = `Complex size`))
-svg(width = 12, height = 8, filename = "fig2a.compSzRnaSumo.svg")
-plot.new()
+pdf(width = 7.5, height = 5, file = "fig2a.compSzRnaSumo.pdf")
 fig2a + geom_boxplot() +
 #	geom_violin(draw_quantiles = T) +
 #	geom_jitter(width = 0.2) +
@@ -481,8 +481,7 @@ fig2b = ggplot(data = complexComp,
 			   mapping = aes(x = `Number of RNA-binding subunits`,
 			   			  y = `Number of SUMOylated subunits`,
 			   			  color = Organism))
-svg(width = 8, height = 8, filename = "fig2b.sumoRna.svg")
-plot.new()
+pdf(width = 7.5, height = 5, file = "fig2b.sumoRna.pdf")
 fig2b + geom_point(aes(size = complexComp$`Complex size`), alpha=0.5) +
 	scale_size(breaks = c(5, 10, 20, 60, 100), range = c(1,8),
 			   guide = guide_legend(title = "Complex size")) +
@@ -650,16 +649,13 @@ if (taxId == "9606"){
 
 ## some species specific pars
 if (taxId == "9606"){
-    pl.mar = margin(t = 0, r = 120, b = 12, l = 4, unit = "pt")
-    width = 11
+    pl.mar = margin(t = 0, r = 120, b = 12, l = 0, unit = "pt")
 } else if (taxId == "559292"){
-    pl.mar = margin(t = 0, r = 100, b = 12, l = 4, unit = "pt")
-    width = 10
+    pl.mar = margin(t = 0, r = 100, b = 12, l = 0, unit = "pt")
 }
 
-svg(filename = paste(taxId, ".sumoStudies.svg", sep = ""),
-    width = width, height = 8)
-plot.new()
+pdf(file = paste(taxId, ".sumoStudies.pdf", sep = ""),
+    width = 7.5, height = 5)
 fig1 = ggplot(data = m3) +
 	geom_bar(mapping = aes(x = variable, y = nSumo, fill = hits),
 			 stat = "identity") +
@@ -681,9 +677,9 @@ fig1 = ggplot(data = m3) +
 		  axis.text.y = element_text(size = 16),
 		  axis.ticks = element_blank()) +
 	theme(legend.background = element_blank(),
-	      legend.position = c(0.2, 0.5),
+	      legend.position = c(0.2, 0.75),
 		  legend.text = element_text(size = 16),
-		  legend.key.size = unit(0.5, "inch"),
+		  legend.key.size = unit(0.2, "inch"),
 		  legend.title = element_text(size = 16)) +
     theme(plot.margin = pl.mar)
 print(fig1)
@@ -750,9 +746,8 @@ getModelPred = function(x, train, valid, test){
 pred = getModelPred(rf, train, valid, test)
 pred.null = getModelPred(rf.null, train, valid, test)
 
-svg(filename=paste(taxId, ".ROC.svg", sep=""),
-	width=8, height=8,
-	pointsize=12)
+pdf(file=paste(taxId, ".ROC.pdf", sep=""),
+	width=8, height=8)
 plot.new()
 par(cex=1, cex.lab=1, cex.main=1, tcl=-0.1)
 for (pr in names(pred)) {
@@ -779,7 +774,7 @@ title(##main = "Receiver operating characteristics (ROC)
 ##of iSUMO model versus with only predicted sequence motif",
 	  xlab = "False positive rate", ylab = "True positive rate")
 abline(a = 0, b = 1, lty=3, lwd=0.5, col=grey(0.25))
-legend(x = 0.7, y = 0.3,
+legend(x = 0.8, y = 0.5,
 	   fill = c("red","blue",rgb(0, 0, 0, 0),rgb(0, 0, 0, 0)),lty = c(0,0,2,1),
 	   border = F, bty = "n", xjust = 0.5, y.intersp = 1.25,
 	   legend = c("iSUMO","seq motif only","validation set","test set"))
@@ -792,9 +787,8 @@ varImp = as.data.table(rf@model$variable_importances)
 ## sort variable levels by importance
 varImp$variable = reorder(varImp$variable, varImp$relative_importance)
 
-svg(filename=paste(taxId, ".varImp.svg", sep=""),
-	width=10, height=8,
-	pointsize=12)
+pdf(file=paste(taxId, ".varImp.pdf", sep=""),
+	width=8, height=12)
 plot.new()
 
 fig3 = ggplot(data = varImp[1:30]) +
